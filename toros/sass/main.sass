@@ -1,0 +1,943 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+*
+	outline: none !important
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.2
+	font-family: $font
+	overflow-x: hidden 
+	color: $text
+	margin-left: auto
+	margin-right: auto
+	font-weight: 500
+	background-color: #efefef
+
+
+.btn
+	width: 200px
+	height: 60px
+	background-color: $accent
+	color: white
+	font-size: 16px
+	border: none
+	border-radius: 3px
+	cursor: pointer
+
+.btn-opacity
+	background: none
+	border: 3px solid $accent
+.wrapper
+	overflow-x: hidden
+.container
+	max-width: 1330px
+	padding:
+		right: 15px
+		left: 15px
+	margin:
+		left: auto
+		right: auto
+
+
+.about-us
+	.wrapper-slide-down_mobile
+		text-align: left
+		margin-bottom: 20px	
+.wrapper-slide-down_mobile
+	width: 100%
+	text-align: center
+	display: none
+.slide-down-open
+	color: $text
+	font-weight: 700
+	font-size: 15px
+	display: inline-block
+	border-bottom: 3px solid $accent
+	padding-right: 20px
+	position: relative
+	transition: border-bottom .3s
+	&:after
+		content: ''
+		display: block
+		background-position: center
+		background-repeat: no-repeat
+		width: 11px
+		height: 10px
+		background-image: url('../img/icons/right.svg')
+		position: absolute
+		right: 0
+		top: calc(50% - 5px)
+	&:hover
+		text-decoration: none
+		color: $text
+		border-bottom: 3px solid #efefef
+.section-head
+	margin-bottom: 30px
+	span
+		font-size: 35px
+		font-weight: 900
+		
+.mobile_menu-mask
+	width: 100vw
+	height: 100vh
+	position: fixed
+	left: 0
+	top: 0
+	background-color: rgba(#000, .4)
+	opacity: 0
+	pointer-events: none
+	transition: opacity .3s, pointer-events .3s
+	z-index: 99
+.mobile_menu-mask__active
+	opacity: 1
+	pointer-events: auto
+.mobile_menu-wrapper
+	position: fixed
+	top: 0
+	right: 0
+	width: 403px
+	background-color: white
+	height: 100vh
+	z-index: 100
+	padding-top: 54px
+	transition: transform .3s
+	transform: translateX(460px)
+.mobile_menu-wrapper__active
+	transform: translateX(0)
+.mobile_menu-item
+	width: 100%
+.mobile_menu-close
+	width: 17px
+	height: 18px
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url('../img/icons/close.svg')
+	position: absolute
+	right: 23px
+	top: 23px
+.mobile_menu-item__link
+	display: block
+	width: 100%
+	height: 53px
+	line-height: 53px
+	color: $text
+	font-family: RobotoCon
+	font-size: 22px
+	font-weight: 700
+	padding-left: 38px
+	&:hover
+		color: white
+		background-color: $accent
+		text-decoration: none
+
+.mobile_menu-item--dropdown
+	padding-left: 38px
+	padding-top: 20px
+.mobile_menu--dropdown__item
+	display: block
+	margin-bottom: 10px
+	color: $text
+	transition: color .3s
+	font-weight: 500
+	&:hover
+		text-decoration: none
+		color: $accent
+
+.container-fluid
+	max-width: 1920px
+	padding-left: 15px
+	padding-right: 15px
+	margin-left: auto
+	margin-right: auto
+.header-logo
+	display: flex
+	align-items: center
+	border-right: 1px solid #c4c4c4
+	&:hover
+		text-decoration: none
+.header-logo_image
+	width: 67px
+	height: 61px
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url('../img/icons/logo.svg')
+.header-logo_text
+	font-size: 14px
+	width: 233px
+	font-weight: 300
+	margin-left: 10px
+	color: $text
+.header-menu--action
+	align-items: center
+	cursor: pointer
+	display: none
+.header-menu--action_text
+	font-family: RobotoCon
+	font-weight: 700
+	font-size: 22px
+	margin-bottom: 1px
+	margin-right: 10px
+.burger
+	width: 21px
+	height: 18px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	
+.burger-line
+	width: 100%
+	height: 4px
+	background-color: $text
+	border-radius: 3px
+header
+	height: 95px
+	.container
+		display: flex
+		height: 100%
+
+.header-menu
+	display: flex
+	flex-grow: 1
+	height: 95px
+.header-menu_item
+	display: flex
+	align-items: center
+	justify-content: center	
+	font-family: RobotoCon
+	font-size: 22px
+	flex-grow: 1
+	border-right: 1px solid #c4c4c4
+	height: 100%
+	position: relative
+	transition: background-color .3s, color .3s
+	a
+		color: $text
+		font-weight: 900
+		height: 100%
+		display: flex
+		align-items: center
+	&:hover
+		color: white
+		text-decoration: none
+		background-color: $accent
+		a
+			text-decoration: none
+			color: white
+
+		.header-menu_item__dropdown
+			opacity: 1
+			pointer-events: auto
+			a
+				color: $text
+
+	&:last-child
+		.header-menu_item__dropdown
+			left: auto
+			right: 0
+.header-menu_item__dropdown
+	position: absolute
+	top: 96px
+	background-color: white
+	z-index: 11
+	left: 0
+	min-width: 519px
+	padding-top: 13px
+	padding-bottom: 13px
+
+.header-menu
+	.header-menu_item__dropdown
+		opacity: 0
+		pointer-events: none
+		transition: opacity .3s, pointer-events .3s
+		.header-menu_dropdown-item-link
+			display: block
+			height: 38px
+			font-size: 15px
+			font-weight: 500
+			font-family: Roboto
+			font-family: $text
+			transition: background-color .3s, color .3s
+			padding-left: 31px
+			line-height: 38px
+			&:hover
+				cursor: pointer
+				background-color: $accent
+				color: white
+.main-slider
+	position: relative
+	margin-bottom: 46px
+	.dots
+		position: absolute
+		z-index: 10
+		bottom: 48px
+		height: 10px
+		display: flex
+		list-style-type: none
+		width: 100%
+		justify-content: center
+		padding-left: 0
+		li
+			width: 10px
+			height: 10px
+			border: 3px solid white
+			border-radius: 50%
+			margin-right: 3px
+			margin-left: 3px
+			button
+				display: none
+		.slick-active
+			background-color: white
+.main-slider_item
+	height: 401px
+	background-position: center
+	background-repeat: no-repeat
+
+.our-result
+	padding-bottom: 40px
+	.container-fluid
+		display: flex
+		justify-content: flex-start
+		flex-wrap: wrap
+
+.our-result_item
+	width: calc(100% / 4 - 60px / 4)
+	margin-right: 20px
+	display: block
+	margin-bottom: 20px
+	&:nth-child(4n + 4)
+		margin-right: 0
+	&:hover
+		text-decoration: none
+		.our-result_item_text
+			background-color: $accent
+			span
+				color: white
+
+.our-result_item_image
+	width: 100%
+	height: 398px
+	background-position: center
+	background-size: cover
+	border: 1px solid #27313d
+.our-result_item_text
+	min-height: 88px
+	background-color: white
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	transition: background-color .3s, color .3s
+	border-bottom-left-radius: 5px
+	border-bottom-right-radius: 5px
+	border-left: 1px solid #c4c4c4
+	border-right: 1px solid #c4c4c4
+	border-bottom: 1px solid #c4c4c4
+
+
+	span
+		font-weight: 700
+		font-size: 20px
+		display: block
+		max-width: 332px 
+		color: $text
+
+.our-result_item_image-1
+	background-image: url('../img/result1.jpg')
+.our-result_item_image-2
+	background-image: url('../img/result2.jpg')
+.our-result_item_image-3
+	background-image: url('../img/result3.jpg')
+.our-result_item_image-4
+	background-image: url('../img/result4.jpg')
+.our-result_item_image-5
+	background-image: url('../img/result5.jpg')
+.our-result_item_image-6
+	background-image: url('../img/result6.jpg')
+.our-result_item_image-7
+	background-image: url('../img/result7.jpg')
+.our-result_item_image-8
+	background-image: url('../img/result8.jpg')
+
+
+
+.about-us
+	padding-top: 75px
+	padding-bottom: 70px
+	background-color: white
+	.container
+		display: flex
+
+.about-us_left
+	width: 50%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	padding-right: 6%
+	.section-head
+		margin-bottom: 15px
+.about-us_right
+	width: 50%
+	iframe
+		width: 100%
+		height: 400px
+.about-us__text
+	font-size: 15px
+	font-weight: 300
+	line-height: 22px
+
+.service
+	padding-top: 60px
+	margin-bottom: 60px
+	.our-result_item_text
+		span
+			font-size: 18px
+.service-items-wrapper
+	display: flex
+	flex-wrap: wrap
+.our-service_item_image-1
+	background-image: url('../img/serv1.jpg')
+.our-service_item_image-2
+	background-image: url('../img/serv2.jpg')
+.our-service_item_image-3
+	background-image: url('../img/serv3.jpg')
+.our-service_item_image-4
+	background-image: url('../img/serv4.jpg')
+
+
+.triggers-wrapper
+	display: flex
+	justify-content: space-between
+	margin-bottom: 66px
+.triggers-item
+	width: calc(100% / 4)
+	min-height: 185px
+	background-color: white
+	border-bottom: 3px solid $accent
+	border-bottom-left-radius: 5px
+	border-bottom-right-radius: 5px
+	padding-top: 40px
+	padding-left: 30px
+	padding-right: 30px
+	margin-right: 20px
+	&:nth-child(4)
+		margin-right: 0
+.triggers-item_image
+	display: flex
+	justify-content: center
+	margin-bottom: 10px
+.triggers-item_text
+	text-align: center
+	span
+		font-size: 16px
+		font-weight: 700
+
+
+.news
+	margin-bottom: 20px
+.news-wrapper
+	display: flex
+	flex-wrap: wrap
+
+
+.news-item
+	width: calc(100% / 4 - 60px / 4)
+	text-decoration: none !important
+	margin-right: 20px
+	&:nth-child(4)
+		margin-right: 0
+.news-img
+	width: 100%
+	height: 214px
+	position: relative
+	background-position: center
+	background-repeat: no-repeat
+	margin-bottom: 15px
+.news-read_more
+	width: 90px 
+	height: 50px
+	background-color: $accent
+	position: absolute
+	right: 0
+	bottom: 0
+	background-repeat: no-repeat
+	background-position: center
+	background-image: url('../img/icons/newsright.svg')
+	&:hover
+		background-color: #018f59
+
+
+.news-head
+	display: block
+	font-size: 15px
+	font-weight: 700
+	color: $text
+	margin-bottom: 8px
+	min-height: 55px
+.news-date
+	display: block
+	color: $text
+	margin-bottom: 7px
+	font-size: 14px
+
+.news-text
+	display: block
+	color: $text
+	font-size: 15px
+.wrapper-news-slide-down
+	display: flex
+	justify-content: flex-end
+	margin-top: 30px
+.our-customers
+	.container
+		position: relative
+	.section-head
+		margin-bottom: 5px
+.our-customers-slider
+	max-width: 90%
+	margin-left: auto
+	margin-right: auto
+	position: static
+	.slick-arrow
+		width: 60px
+		height: 60px
+		background-color: $accent
+		background-position: center
+		background-repeat: no-repeat
+		position: absolute
+		top: calc(50% - 30px)
+		cursor: pointer
+	.slick-next
+		right: 0
+		background-image: url('../img/icons/newsright.svg')
+	.slick-prev
+		left: 0
+		z-index: 2
+		background-image: url('../img/icons/left.svg')
+		
+.our-customers-slider_item
+	height: 186px
+	background-position: center
+	background-repeat: no-repeat
+	
+
+.footer-top
+	background-color: #27313d
+	color: white
+	padding-top: 58px
+	padding-bottom: 58px
+	.container
+		display: flex
+		justify-content: space-between
+
+.footer-top_nav
+	width: 60%
+	display: flex
+
+.footer-top_nav-col
+	display: flex
+	flex-direction: column
+
+
+.footer-top_nav-col
+	margin-right: 10%
+
+.footer-top_nav-item
+	color: white
+	font-size: 15px
+	margin-bottom: 10px
+	text-decoration: none
+	&:hover
+		color: white
+		cursor: pointer !important
+ 
+
+.footer-top_contact
+	display: flex
+	flex-direction: column
+	margin-left: 5%
+	
+
+
+.footer-top_contact--item
+	color: white
+	&:hover
+		color: white
+		text-decoration: none
+
+.footer-top_contact--phone
+	font-weight: 700
+	font-size: 17px
+	position: relative
+	margin-bottom: 8px
+	&:before
+		content: ''
+		position: absolute
+		width: 13px
+		height: 13px
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url('../img/icons/phone.svg')
+		left: -20px
+		bottom: 2px
+
+.footer-top_contact--mail, .footer-top_contact--inst
+	margin-bottom: 6px
+
+.footer-top_contact--mail
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		width: 14px
+		height: 12px
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url('../img/icons/mail.svg')
+		left: -20px
+		bottom: 3px
+.footer-top_contact--inst
+	position: relative
+	margin-bottom: 20px
+	&:before
+		content: ''
+		position: absolute
+		width: 15px
+		height: 15px
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url('../img/icons/inst.svg')
+		left: -20px
+		bottom: 0
+
+.footer-top_contact--place
+	position: relative
+	width: 142px
+	&:before
+		content: ''
+		position: absolute
+		width: 14px
+		height: 19px
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url('../img/icons/place.svg')
+		left: -20px
+		top: 0
+
+
+.footer-buttons
+	display: flex
+	flex-direction: column
+	.btn
+		margin-bottom: 20px
+.footer-buttons-map_site
+	color: white
+	font-size: 15px
+	margin-left: auto
+	margin-right: auto
+	text-decoration: underline
+	&:hover
+		color: white
+
+.footer-bottom
+	height: 76px
+	background-color: #232c37
+	.container
+		height: 100%
+		display: flex
+		align-items: center
+.footer-bottom_text
+	color: white
+.footer-bottom_link
+	color: white
+	margin-left: 103px
+	&:hover
+		color: white
+
+@media (max-width: 1639px)
+	.header-menu_item
+		&:nth-child(n + 4)
+			.header-menu_item__dropdown
+				left: auto
+				right: 0
+
+
+@media (max-width: 1334px)
+	.our-result_item_text
+		span
+			font-size: 17px
+
+@media (max-width: 1224px)
+	.our-result_item
+		width: calc(100% / 3 - 40px / 3)
+		
+		&:nth-child(4n + 4)
+			margin-right: 20px
+
+	.our-result_item
+		&:nth-child(3n + 3)
+			margin-right: 0 
+@media (max-width: 1263px)
+	.header-menu
+		display: none
+	.header-logo
+		border-right: 0
+	.header-menu--action
+		display: flex
+	header
+		.container
+			justify-content: space-between
+
+
+@media (max-width: 1168px)
+	.footer-top_contact
+		margin-left: 0
+	.footer-top_nav
+		width: 60%
+@media (max-width: 1054px)
+	.about-us
+		.container
+			flex-direction: column
+	.about-us_left
+		width: 100%
+		padding-right: 0
+		margin-bottom: 10px
+	.about-us_right
+		width: 100%
+		iframe
+			width: 70%
+			height: 379px
+
+@media (max-width: 1018px)
+	.footer-top
+		.container
+			flex-wrap: wrap
+	.footer-buttons
+		width: 100%
+		flex-direction: row
+		align-items: center
+		margin-bottom: 0
+		margin-top: 30px
+		.btn
+			margin-bottom: 0
+			margin-right: 20px
+	.footer-buttons-map_site
+		margin-right: 0
+
+	.footer-top_nav
+		flex-grow: 1
+		width: auto
+@media (max-width: 954px)
+	.triggers-wrapper
+		flex-wrap: wrap
+	.triggers-item
+		width: calc(100% / 2 - 20px / 2)
+		margin-bottom: 20px
+		&:nth-child(2)
+			margin-right: 0
+@media (max-width: 836px)
+	.our-result_item
+		width: calc(50% - 20px / 2)
+		&:nth-child(3n + 3)
+			margin-right: 20px
+		&:nth-child(4n + 4)
+			margin-right: 20px
+		&:nth-child(2n + 2)
+			margin-right: 0
+
+@media (max-width: 788px)
+	.footer-top_nav-item
+		font-size: 13px
+
+
+@media (max-width: 652px)
+	.footer-top_nav-col
+		display: none
+		&:first-child
+			display: flex
+@media (max-width: 560px)
+	.our-result_item
+		width: 100%
+		margin-right: 0
+		&:nth-child(3n + 3)
+			margin-right: 0
+		&:nth-child(4n + 4)
+			margin-right: 0
+		&:nth-child(2n + 2)
+			margin-right: 0
+	.wrapper-slide-down_mobile
+		display: block
+	
+	.our-result
+		.our-result_item
+			display: none
+			&:nth-child(1)
+				display: block 
+			&:nth-child(2)
+				display: block 
+			&:nth-child(3)
+				display: block 
+
+	.our-result__active
+		.our-result_item
+		 	display: block
+	
+	.text-mobile
+		p
+			display: none
+			&:nth-child(1)
+				display: block
+	.text-mobile__active
+		p
+			display: block
+
+	.service-items-wrapper
+		.our-result_item
+			display: none
+			&:nth-child(1)
+				display: block
+			&:nth-child(2)
+				display: block
+	
+	.service-items-wrapper__active
+		.our-result_item
+			display: block
+	
+	.triggers-wrapper
+		flex-direction: column
+	.triggers-item
+		margin-right: 0
+		width: 100%
+	.footer-buttons
+		flex-wrap: wrap
+		justify-content: center
+		.btn-opacity
+			margin-right: 0
+		.btn
+			width: calc(50% - 10px)
+	.footer-buttons-map_site
+		width: 100%
+		text-align: center
+		margin-left: 0
+		margin-right: 0
+		margin-top: 20px
+
+
+@media (max-width: 768px)
+	.section-head
+		margin-bottom: 20px
+		span
+			font-size: 25px
+
+	.about-us
+		padding-top: 30px
+		padding-bottom: 25px
+		.section-head
+			margin-bottom: 5px
+
+	.news-item
+		width: calc(50% - 10px)
+		display: none
+		&:nth-child(2)
+			display: block
+			margin-right: 0
+		&:nth-child(1)
+			display: block
+	.news-img
+		background-size: cover
+	
+	.triggers-wrapper
+		margin-bottom: 20px
+	
+	.our-customers-slider_item
+		background-size: 60%
+	.our-customers-slider
+		.slick-next
+			right: 15px
+		.slick-prev
+			left: 15px
+
+@media (max-width: 620px)
+	.about-us_right
+		iframe
+			width: 100%
+
+@media (max-width: 538px)
+	.footer-bottom
+		height: auto
+		padding-top: 20px
+		padding-bottom: 20px
+		font-size: 14px
+		.container	
+			flex-direction: column
+	.footer-bottom_link
+		margin-left: 0
+		margin-top: 4px
+@media (max-width: 516px)
+	.header-menu--action_text
+		display: none
+
+@media (max-width: 460px)
+	.mobile_menu-wrapper
+		width: 100%
+	.news-item
+		width: 100%
+		margin-right: 0
+		&:nth-child(2)
+			display: none
+			
+
+
+
+@media (max-width: 386px)
+	.header-logo_text
+		width: 170px
+	.about-us_right
+		iframe
+			height: 185px
+
+	.our-customers-slider
+		.slick-arrow
+			width: 50px
+			height: 50px
+	.our-customers-slider_item
+		height: 130px
+
+	.footer-top_contact--item
+		font-size: 13px
+	.footer-top_nav-col
+		margin-right: 0
+	.footer-top_contact
+		width: 50%
+		align-items: flex-end
+	.footer-top_nav
+		width: 50%
+	.footer-top_contact--place
+		width: 108px
+	
+	.footer-buttons 
+		.btn
+			font-size: 13px
+
+
+@media (max-width: 320px)
+	.our-result_item_image
+		height: 224px
+	.wrapper-news-slide-down
+		justify-content: center

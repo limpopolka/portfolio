@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+	<link rel="stylesheet" href="libs/datepicker/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+
+<body>
+
+
+	<div class="mask">
+		
+	</div>
+	<div class="wrapper">
+		<header>
+			<div class="header-top">
+				<div class="container">
+					<div class="burger">
+						
+					</div>
+					<div class="header-top__left">
+						<div class="haeder-top__link-item">
+							<a href="#" class="header-top__link header-top__link-has_child">О проекте</a>
+							<div class="submenu-wrap">
+								<div class="submenu">
+									<a href="#" class="submenu-link">Генплан</a>
+									<a href="#" class="submenu-link">Инфраструктура</a>
+									<a href="#" class="submenu-link">Описание проекта</a>
+									<a href="#" class="submenu-link">Технические характеристики</a>
+								</div>
+							</div>
+						</div>
+						<div class="haeder-top__link-item">
+							<a href="#" class="header-top__link">Галерея</a>
+						</div>
+						<div class="haeder-top__link-item">
+							<a href="#" class="header-top__link callme">Обратная связь</a>
+						</div>
+					</div>
+
+					<div class="header-top__right">
+						<div class="header_icon-box">
+							<div class="header-top__link--mail header_icon"></div>
+							<a href="#" class="header-top__link  header-top__link--with-before">kpp1@skypoint-park.ru</a>
+						</div>
+
+						<div class="header_icon-box">
+							<div class="header-top__link--phone header_icon"></div>
+							<a href="#" class="header-top__link  header-top__link--with-before">+7 (495) 739-71-31</a>
+						</div>
+
+						<div class="header_icon-box">
+							<div class="header-top__link--place header_icon"></div>
+							<a href="#" class="header-top__link  header-top__link--with-before">г. Москва, Международное шоссе, 28Б, стр.5</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="container">
+					<a href="#" class="header-bottom__logo"></a>
+					<div class="header-bottom__right">
+						<nav class="header-bottom__nav">
+							<a href="#" class="header-bottom__nav-item">Паркинг</a>
+							<a href="#" class="header-bottom__nav-item">Местоположение</a>
+							<a href="#" class="header-bottom__nav-item">Аренда офисов</a>
+							<a href="#" class="header-bottom__nav-item">Контакты</a>
+						</nav>
+						<a href="#" class="btn bron">Забронировать</a>
+					</div>
+
+				</div>
+			</div>
+		</header>
+		
+
+		<div class="main-screen">
+			<div class="container">
+				<div class="main-screen__left">
+					<div class="main-screen__left-head">Парковка в Шереметьево на территории бизнес-парка</div>
+					<div class="main-screen__left-head-bottom">SKYPOINT-SHERATON</div>
+					<div class="main-screen__left-text">с <span class="main-screen__left-bold">БЕСПЛАТНЫМ</span> трансфером</div>
+					<a href="#" class="btn btn-blue-hov bron">Забронировать</a>
+				</div>
+				<div class="main-screen__right col-item">
+					<a href="#" class="main-screen__right__item main-screen__right__item--dark-blue">
+						<div class="main-screen__right__item__img"></div>
+						<div class="main-screen__right__item__text">Наземный паркинг</div>
+						<div class="main-screen__right__item__price">
+							<div class="main-screen__right__item__price-left">200</div>
+							<div class="main-screen__right__item__price-right">
+								<div class="main-screen__right__item__price-right-top">Рублей</div>
+								<div class="main-screen__right__item__price-right-bottom">в сутки</div>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="main-screen__right__item main-screen__right__item--blue">
+						<div class="main-screen__right__item__img"></div>
+						<div class="main-screen__right__item__text">Наземный паркинг</div>
+						<div class="main-screen__right__item__price">
+							<div class="main-screen__right__item__price-left">200</div>
+							<div class="main-screen__right__item__price-right">
+								<div class="main-screen__right__item__price-right-top">Рублей</div>
+								<div class="main-screen__right__item__price-right-bottom">в сутки</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="our_place">
+			<div class="container">
+				<div class="section-text">
+					<div class="section-head">Мы располжены по адресу</div>
+					<div class="section-description">Международное шоссе, 28Б, стр.5, бизнес-парк SkyPoint, 800 метров до аэропорта</div>
+				</div>
+				<div class="wrap-btn">
+					<a href="#" data-block-id="video" class="btn btn--big btn--big-video">Видеопроезд</a>
+					<a href="#" data-block-id="rasp" class="btn btn--big btn--big-clock">Расписание трансфера</a>
+				</div>
+				<div id="rasp" class="our_hidden-block our_table">
+					<div class="section-text">
+						<div class="section-head">Расписание Парковка — Терминалы F и E</div>
+						<div class="section-description-small">
+							<span>Пожалуйста, ознакомьтесь со схемами остановок в терминалах:</span> 
+							<a class="terminal-link" href="#">Терминал F</a>, 
+							<a class="terminal-link" href="#">Терминал E</a>,
+							<a class="terminal-link" href="#">Терминал D</a>,
+							<a class="terminal-link" href="#">Терминал B</a>,
+						</div>
+					</div>
+					<div class="table">
+						<div class="table-row table-row-head">
+							<div class="table-row__item">
+								<span class="hotel">Отель</span>
+								<span>Терминал F и E</span>
+							</div>
+							<div class="table-row__item">
+								<span class="hotel">Отель</span>
+								<span>Терминал F и E</span>
+							</div>
+							<div class="table-row__item">
+								<span class="hotel">Отель</span>
+								<span>Терминал F и E</span>
+							</div>
+							<div class="table-row__item">
+								<span class="hotel">Отель</span>
+								<span>Терминал F и E</span>
+							</div>
+						</div>
+						<div class="table-row">
+							<div class="table-row__item">
+								<span class="time">00:00</span>
+								<span class="time">00:05</span>
+							</div>
+							<div class="table-row__item">
+								<span class="time">06:50</span>
+								<span class="time">06:55</span>
+							</div>
+							<div class="table-row__item">
+								<span class="time">12:40</span>
+								<span class="time">12:45</span>
+							</div>
+							<div class="table-row__item">
+								<span class="time">18:30</span>
+								<span class="time">18:35</span>
+							</div>
+						</div>
+						<div class="table-row">
+							<div class="table-row__item">
+								<span class="time">00:00</span>
+								<span class="time">00:05</span>
+							</div>
+							<div class="table-row__item">
+								<span class="time">06:50</span>
+								<span class="time">06:55</span>
+							</div>
+							<div class="table-row__item">
+								<span class="time">12:40</span>
+								<span class="time">12:45</span>
+							</div>
+							<div class="table-row__item">
+								<span class="time">18:30</span>
+								<span class="time">18:35</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="video" class="our_hidden-block our_video">
+					<div class="our_video--inner">
+						<iframe class="iframe-video" src="https://www.youtube.com/embed/M2x7XFjLSzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+		<div class="triggers">
+			<div class="container">
+				<div class="col-item left-col-bg triggers__map-wrap">
+					
+				</div>
+				<div class="triggers-wrap col-item-2">
+					<div class="triggers-item">
+						<div class="triggers-item__num"><div class="triggers-item__num__inner">1</div></div>
+						<div class="triggers-item__content">
+							<p>От МКАДа едем по Ленинградскому шоссе в сторону области 5 к.м</p>
+							<a href="#" class="btn btn-small btn-opacity">Открыть схему</a>
+						</div>
+					</div>
+					<div class="triggers-item" style="background-image: url('img/trig2.jpg')">
+						<div class="triggers-item__num"><div class="triggers-item__num__inner">2</div></div>
+						<div class="triggers-item__content">
+							<p>Далее поворачиваем направо по указателю «ШЕРЕМЕТЬЕВО 2. Терминал A,D,E,F» на Международное шоссе.</p>
+
+						</div>
+					</div>
+					<div class="triggers-item" style="background-image: url('img/trig3.jpg')">
+						<div class="triggers-item__num"><div class="triggers-item__num__inner">3</div></div>
+						<div class="triggers-item__content">
+							<p>По Международному шоссе едем 3 км. до указателя «ОТЕЛЬ ШЕРАТОН ШЕРЕМЕТЬЕВО, Мелькисарово 1.4., База отдыха Огонёк 0.1»</p>
+
+						</div>
+					</div>
+					<div class="triggers-item">
+						<div class="triggers-item__num"><div class="triggers-item__num__inner">4</div></div>
+						<div class="triggers-item__content">
+							<p>После знака развилки, не уходя на эстакаду, держимся правой стороны и едем ещё 50 метров до поворота на территории бизнес-парка SKYPOINT-SHERATON. Вы на месте!</p>
+							<a href="#" class="btn btn-small btn-opacity">Открыть схему</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="our-plus">
+			<div class="section-text">
+				<div class="section-head">Преимущества</div>
+			</div>
+			<div class="container">
+				
+				<div class="col-item">
+					  <div class="our-plus__item">
+						<object class="our-plus__item_img" type="image/svg+xml" data="img/icons/plus1.svg">
+						   Your browser does not support SVG
+						</object>
+						<span class="our-plus__item_text">Бесплатная упаковка багажа</span>
+					  </div>
+					  <div class="our-plus__item">
+						<object class="our-plus__item_img" type="image/svg+xml" data="img/icons/plus3.svg">
+						   Your browser does not support SVG
+						</object>
+						<span class="our-plus__item_text">24 часа в сутки</span>
+					  </div>
+				</div>
+				<div class="col-item">
+					  <div class="our-plus__item">
+						<object class="our-plus__item_img" type="image/svg+xml" data="img/icons/plus2.svg">
+						   Your browser does not support SVG
+						</object>
+						<span class="our-plus__item_text">Договор ответственного хранения</span>
+					  </div>
+					  <div class="our-plus__item">
+						<object class="our-plus__item_img" type="image/svg+xml" data="img/icons/plus4.svg">
+						   Your browser does not support SVG
+						</object>
+						<span class="our-plus__item_text">Оплата банковской картой</span>
+					  </div>
+				</div>
+				<div class="col-item our_plus_banner">
+					<span class="our_plus_banner__text">Бесплатный трансфер</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="photos">
+			<div class="section-text">
+				<div class="section-head">Фотогалерея</div>
+			</div>
+			<div class="container">
+				<div class="photos__slider-wrap col-item-2">
+					<div class="photos__slider">
+						<div class="photos__slider-item" style="background-image: url(img/slide.jpg);"></div>
+						<div class="photos__slider-item" style="background-image: url(img/photo2.jpg);"></div>
+						<div class="photos__slider-item" style="background-image: url(img/photo1.jpg);"></div>
+					</div>
+				</div>
+				<div class="col-item photos-item-wrap">
+					<div class="photos-item" style="background-image: url('img/slide.jpg');"></div>
+					<div class="photos-item" style="background-image: url('img/photo2.jpg');"></div>
+					<div class="photos-item" style="background-image: url('img/photo1.jpg');"></div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="requirements">
+			<div class="container">
+				<div class="col-item left-col-bg car-bg car-bg-blue">
+					
+				</div>
+				<div class="col-item col-item__text minicart">
+					<span class="col-item__head">Для оформления автомобиля на стоянку требуется</span>
+					<div class="custom-ul">
+						<div class="custom-ul__item">водительское удостоверение;</div>
+						<div class="custom-ul__item">свидетельство о регистрации транспортного средства.</div>
+					</div>
+					<div class="col-item__text_p">Оплата производится банковской картой либо через кассовый аппарат на месте. Документы и ключи от машины остаются у Вас.
+					</div>
+					<div class="col-item__text_p">Стоянка представляет собой огороженную, охраняемую, оборудованную видеонаблюдением парковку.
+					</div>
+				</div>
+				<div class="col-item col-item__text minicart">
+					<span class="col-item__head">При получении автомобиля необходимо предъявить</span>
+					<div class="custom-ul">
+
+						<div class="custom-ul__item">водительское удостоверение;</div>
+						<div class="custom-ul__item">свидетельство о регистрации транспортного средства.</div>
+						<div class="custom-ul__item">чек</div>
+					</div>
+					<div class="col-item__text_p">При необходимости потребуется оплатить образовавшуюся задолженность.
+					</div>
+					<div class="col-item__text_p">Вы можете оставить свое авто от нескольких часов до нескольких месяцев.
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="airport">
+			<div class="container">
+				<div class="col-item col-item__text minicart ">
+					<span class="col-item__head">Парковка для автомобилей возле терминалов D(Д), E, F, B аэропорта Шереметьево</span>
+					<div class="col-item__text_p">Добираться в аэропорт на своей машине — удобно и недорого! Бизнес-парк SkyPoint предлагает услуги автостоянки для любых автомобилей рядом с терминалами D (Д), Е, F, B аэропорта Шереметьево.
+					</div>
+					<div class="col-item__text_p">Вы можете приехать в удобное для Вас время и оставить машину на стоянке на любой срок, причем имеется как наземный, так и подземный паркинг. Во время Вашего отсутствия авто будет находиться под круглосуточной охраной.</div>
+					<div class="col-item__text_p">Доставка клиента и встреча по прилету в Шереметьево осуществляются комфортабельными микроавтобусами MERSEDES SPRINTER c вместительным багажным отделением.</div>
+
+
+				</div>
+				<div class="col-item-2"></div>
+			</div>
+		</div>
+
+		<div class="advantages">
+			<div class="container">
+				<div class="col-item left-col-bg car-bg car-bg-purple"></div>
+				<div class="col-item-2 col-item__text bigcart">
+					<span class="col-item__head">Преимущества нашей стоянки, расположенной перед терминалами d (д), e, f, b аэропорта Шереметьево</span>
+					<div class="custom-ul">
+						<div class="custom-ul__item">Договор ответственного хранения автомобиля.</div>
+						<div class="custom-ul__item">Удобное расположение стоянки, отсутствие пробок на маршруте, парковка находится перед терминалами D (Д), Е, F, B аэропорта Шереметьево.</div>
+						<div class="custom-ul__item">Высокий уровень безопасности (постоянная охрана, видеонаблюдение).</div>
+						<div class="custom-ul__item">Доступная стоимость парковки: наземная платная долгосрочная стоянка для автомобилей рядом с терминалами D (Д), Е, F, B аэропорта Шереметьево обойдется в 200 рублей в сутки, тариф подземного паркинга составляет 400 рублей.</div>
+						<div class="custom-ul__item">Возможность оплаты банковской картой.</div>
+						<div class="custom-ul__item">Бесплатный трансфер от парковки к терминалам D (Д), Е, F, B аэропорта Шереметьево, стоимость которого включена в цену услуг стоянки. До терминалов D(Д), E, F он совершается каждые 10 минут, время в пути — не более 10 минут, до терминала B каждые 30 минут, время в пути — не более 15-20 минут</div>
+						<div class="custom-ul__item">Бесплатная упаковка багажа.</div>
+						<div class="custom-ul__item">Комплекс дополнительных услуг на парковке: автомойка, комната ожидания и пр. Недалеко от платной стоянки расположен отель Sheraton, где гости могут воспользоваться по доступной стоимости услугами ресторанов и лобби-бара.</div>
+					</div>
+					
+					<div class="col-item__text_p">Чтобы узнать, сколько стоит пользование долгосрочной стоянкой для машин возле терминалов D, (Д), Е, F, B аэропорта Шереметьево за весь интересующий период, а также забронировать место на платной парковке, обращайтесь по телефону +7 (495) 739-71-31.</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="route">
+			<div class="container">
+				<div class="section-text btn-center">
+					<a href="#" class="btn btn-blue-hov route__link--action btn-long">Проложить маршрут</a>
+				</div>
+				<div class="route__link-wrap">
+					<a class="route__link" href="#">Открыть в Яндекс-картах</a>
+					<a class="route__link" href="#">Открыть в Google-картах</a>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer-form">
+				<div class="container">
+					<div class="footer-form-wrap">
+
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="footer-top">
+					<nav class="footer-top__nav">
+						<a href="#" class="footer-top__nav--item">Паркинг</a>
+						<a href="#" class="footer-top__nav--item">Галерея</a>
+						<a href="#" class="footer-top__nav--item">Местоположение</a>
+						<a href="#" class="footer-top__nav--item">Аренда офисов</a>
+						<a href="#" class="footer-top__nav--item">О проекте</a>
+						<a href="#" class="footer-top__nav--item">Обратная связь</a>
+						<a href="#" class="footer-top__nav--item">Расписание трансфера</a>
+						<a href="#" class="footer-top__nav--item">Контакты</a>
+					</nav>
+					<div class="footer-top__contact">
+						<div class="header_icon-box">
+							<div class="header-top__link--place header_icon"></div>
+							<a href="#" class="header-top__link  header-top__link--with-before">г. Москва, Международное шоссе, 28Б, стр.5</a>
+						</div>
+						<div class="header_icon-box">
+							<div class="header-top__link--mail header_icon"></div>
+							<a href="#" class="header-top__link  header-top__link--with-before">kpp1@skypoint-park.ru</a>
+						</div>
+
+						<div class="header_icon-box">
+							<div class="header-top__link--phone header_icon"></div>
+							<a href="#" class="header-top__link  header-top__link--with-before">+7 (495) 739-71-31</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<span>© 2010 — 2020 «SKYPOINT»</span>
+					<div class="social">
+						<a href="#" class="social__item social__item-vk"></a>
+						<a href="#" class="social__item social__item-viber"></a>
+						<a href="#" class="social__item social__item-whatsapp"></a>
+						<a href="#" class="social__item social__item-telega"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="scrollTop"></div>
+	</div>
+
+	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="ds-comf/ds-form/js/dsforms.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+	<script src="libs/datepicker/jquery-ui.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
+
+
+
+
