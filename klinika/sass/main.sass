@@ -1,0 +1,1893 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+*
+	outline: none !important
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.2
+	font-family: $font
+	overflow-x: hidden 
+	color: $text
+	margin-left: auto
+	margin-right: auto
+	font-weight: 500
+
+.wrapper
+	overflow-x: hidden
+.container
+	max-width: 1220px
+	padding:
+		right: $gutter/2
+		left: $gutter/2
+	margin:
+		left: auto
+		right: auto
+
+
+.btn
+	width: 180px
+	height: 50px
+	border-radius: 25px
+	border: none
+	background-color: $accent
+	color: white
+	font-family: RobotoCon
+	font-weight: 500
+	text-transform: uppercase
+	font-size: 13px
+	cursor: pointer
+	display: flex
+	align-items: center
+	justify-content: center
+	&:hover
+		color: white
+		text-decoration: none
+.btn-center
+	margin-left: auto
+	margin-right: auto
+.opacity-btn
+	background: none
+	border: 2px solid $accent
+	color: $text
+
+.mobile-btn-hidden
+	width: 100%
+	display: none
+.button-mob
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	border: none
+	background-color: $accent
+	background-position: center
+	background-repeat: no-repeat
+.burger
+	position: relative
+	width: 27px
+	height: 21px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	display: none
+	.burger-item
+		width: 100%
+		height: 4px
+		background-color: #555555
+		border-radius: 3px
+.burger-active
+	position: relative
+	.burger-item
+		position: absolute
+		top: calc(50% - 2px)
+		transition: .3s
+		background-color: $accent
+		&:nth-child(2)
+			opacity: 0
+		&:nth-child(1)
+			transform: rotate(45deg)
+		&:nth-child(3)
+			transform: rotate(-45deg)
+
+.button-mob
+	display: none
+
+.header-bottom__nav--mobile
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	background-color: white
+	padding-top: 30px
+	padding-bottom: 30px
+	a
+		color: $text
+		font-weight: 700
+		font-size: 14px
+		text-transform: uppercase
+		margin-bottom: 20px
+
+.scrollTop
+	width: 73px
+	height: 73px
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url('../img/icons/scrollTop.svg')
+	background-color: #d0efef
+	border-radius: 50%
+	position: fixed
+	right: 10%
+	transition: .3s
+	bottom: -80px
+	cursor: pointer
+	z-index: 100
+
+.scrollTop__active
+	bottom: 170px
+.section-block
+	margin-bottom: 90px
+	margin-bottom: 47px
+.section-head
+	font-size: 25px
+	font-weight: 900
+	display: block
+	text-transform: uppercase
+	display: flex
+	justify-content: center
+	margin-bottom: 54px
+	text-align: center
+.section-description
+	font-weight: 600
+	text-align: center
+	width: 90%
+	margin: 0 auto
+	margin-bottom: 50px
+.section-text
+	text-align: center
+	margin-left: 85px
+	margin-right: 85px
+	font-weight: 600
+	line-height: 1.6
+	position: relative
+header
+	background-color: #fdfefe
+.header-top
+	padding-top: 24px
+	padding-bottom: 18px
+	border-bottom: 1px solid #dadada
+.header-top
+	.container
+		display: flex
+		justify-content: space-between
+.header-logo__textWrap
+	display: flex
+	flex-direction: column
+	width: 290px
+	margin-left: 20px
+.header-logo__image
+	width: 121px
+	height: 90px
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url('../img/icons/logo.svg')
+	background-size: 100%
+.header-logo
+	display: flex
+	align-items: center
+	text-decoration: none
+	color: $text
+	&:hover
+		text-decoration: none
+		color: $text
+.header-logo__textTop
+	font-weight: 700
+	text-transform: uppercase
+	font-size: 19px
+.header-logo__textBottom
+	font-size: 13px
+	text-transform: uppercase
+	line-height: 1.4
+.header-right
+	display: flex
+	justify-content: space-between
+	align-items: center
+	flex-grow: 1
+	margin-left: 5%
+
+
+.header-right__phone
+
+.header-right__phone--item
+	font-size: 19px
+	display: block
+	color: $text
+	&:hover
+		color: $text
+		text-decoration: none
+.header-right__phoneText
+	font-size: 12px
+	color: #919191
+.header-right__trigger
+	display: flex
+	justify-content: space-between
+	align-items: center
+.header-right__trigger--item
+	width: 42px
+	height: 42px
+	border-radius: 50%
+	background-color: #d0efef
+	background-position: center
+	background-repeat: no-repeat
+	margin-right: 12px
+	&:hover
+		border: 2px solid #d0efef
+		background-color: white
+	&:last-child
+		margin-right: 0
+
+.trigger-fb
+	background-image: url('../img/icons/fb.svg')
+.trigger-inst
+	background-image: url('../img/icons/inst.svg')
+.trigger-vk
+	background-image: url('../img/icons/vk.svg')
+.trigger-ok
+	background-image: url('../img/icons/ok.svg')
+
+.header-right__phone-wrapper
+	display: flex
+	align-items: center
+	justify-content: space-between
+	width: 60%
+.header-bottom
+	padding-top: 22px
+	padding-bottom: 22px
+	.container
+		position: relative
+.header-bottom__nav
+	display: flex
+	justify-content: center
+	align-items: center
+	a
+		font-family: RobotoCon
+		text-transform: uppercase
+		color: $text
+		text-decoration: none
+		font-size: 16px
+		font-weight: 600
+		margin-right: 46px
+		transition: .3s
+		&:last-child
+			margin-right: 0
+		&:hover
+			color: $accent
+			text-decoration: none
+.slick-arrow
+	position: absolute
+	z-index: 11
+	width: 73px
+	height: 73px
+	border-radius: 50%
+	background-position: center
+	background-repeat: no-repeat
+	cursor: pointer
+	background-color: #f4f5f6
+	top: calc(50% - 73px / 2)
+.slick-next
+	background-image: url('../img/icons/slideRight.svg')
+.slick-prev
+	background-image: url('../img/icons/slideLeft.svg')
+
+.main-screen
+	position: relative
+
+.main-slider
+	width: 100%
+	position: relative
+	max-width: 1920px
+	margin-left: auto
+	margin-right: auto
+	.slick-next
+		right: 143px
+	.slick-prev
+		left: 143px
+
+
+.no-webp
+	.main-slider__item
+		background-image: url('../img/mainbg.jpg')
+.webp
+	.main-slider__item
+		background-image: url('../img/webp/mainbg.webp')
+.main-slider__item
+	height: 500px
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	
+.main-form-wrapper
+	display: flex
+	justify-content: center
+	margin-top: -380px
+	position: relative
+	z-index: 20
+	pointer-events: none
+.main-form
+	width: 550px
+	height: 500px
+	background-image: url('../img/formbg.svg')
+	background-position: center
+	background-repeat: no-repeat
+	pointer-events: auto
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	text-align: center
+.main-form__head
+	font-size: 25px
+	font-weight: 900
+	text-transform: uppercase
+	margin-bottom: 7px
+.main-form__text
+	font-weight: 600
+	margin-bottom: 20px
+.main-form
+	input
+		width: 340px
+		background-color: #f4f5f6
+		border-radius: 5px
+		text-align: center
+		height: 50px
+		border: none
+		margin-bottom: 24px
+.main-form__conf
+	color: #919191
+	font-size: 13px
+	width: 250px
+	text-align: center
+	&:hover
+		color: #919191
+.main-form
+	.btn
+		margin-bottom: 20px
+.service-itemsWrapper
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+.service-item
+	width: calc(25% - 60px / 4)
+	min-height: 421px
+	border-radius: 10px
+	box-shadow: 0px 14px 59px 0px rgba(216, 220, 225, 0.55)
+	margin-bottom: 20px
+	padding-left: 24px
+	padding-right: 24px
+	padding-top: 18px
+	padding-bottom: 24px
+	font-family: RobotoCon
+	font-weight: 700
+	font-size: 22px
+	text-transform: uppercase
+	background-position: top left
+	background-repeat: no-repeat
+	position: relative
+	background-size: contain
+	&:nth-child(odd)
+		padding-top: 280px
+		.service-item_more
+			bottom: 36px
+			right: 31px
+	&:nth-child(even)
+		background-position: bottom left
+		.service-item_more
+			top: 102px
+			right: 31px
+
+.service-item_more
+	display: block
+	width: 42px
+	height: 42px
+	background-color: #d0efef
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url('../img/icons/right.svg')
+	border-radius: 50%
+	position: absolute
+
+.no-webp
+	.service-item-1
+		background-image: url('../img/serv1d.jpg')
+	.service-item-2
+		background-image: url('../img/serv2d.jpg')
+	.service-item-3
+		background-image: url('../img/serv3d.jpg')
+	.service-item-4
+		background-image: url('../img/serv4d.jpg')
+	.service-item-5
+		background-image: url('../img/serv5d.jpg')
+	.service-item-6
+		background-image: url('../img/serv6d.jpg')
+	.service-item-7
+		background-image: url('../img/serv7d.jpg')
+	.service-item-8
+		background-image: url('../img/serv8d.jpg')
+.webp
+	.service-item-1
+		background-image: url('../img/webp/serv1d.webp')
+	.service-item-2
+		background-image: url('../img/webp/serv2d.webp')
+	.service-item-3
+		background-image: url('../img/webp/serv3d.webp')
+	.service-item-4
+		background-image: url('../img/webp/serv4d.webp')
+	.service-item-5
+		background-image: url('../img/webp/serv5d.webp')
+	.service-item-6
+		background-image: url('../img/webp/serv6d.webp')
+	.service-item-7
+		background-image: url('../img/webp/serv7d.webp')
+	.service-item-8
+		background-image: url('../img/webp/serv8d.webp')
+
+
+.our-help_item
+	width: calc(100% / 3 - 40px / 3)
+	min-height: 450px
+	border: 2px solid #d0efef
+	border-radius: 10px
+	margin-bottom: 20px
+	background-image: url('../img/icons/bg.svg')
+	background-repeat: no-repeat
+	background-position: -20px -120px
+	padding-top: 50px
+	padding-left: 20px
+	padding-right: 20px
+	padding-bottom: 20px
+.our-help_itemsWrap
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+.our-help_item--icon
+	width: 108px
+	height: 108px
+	border-radius: 50%
+	background-color: white
+	background-position: center
+	background-repeat: no-repeat
+	box-shadow: 0px 14px 59px 0px rgba(216, 220, 225, 0.55)
+	margin-left: auto
+	margin-right: auto
+	margin-bottom: 40px
+.our-help_item--head
+	font-size: 18px
+	font-family: RobotoCon
+	font-weight: 700
+	text-transform: uppercase
+	display: flex
+	justify-content: center
+	margin-bottom: 20px
+.our-help_item--list
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+.our-help_item--list_item
+	font-weight: 600
+	margin-bottom: 7px
+	text-align: center
+.gift-wrapper
+	.main-form-wrapper
+		margin-top: -330px
+		.main-form
+			background-image: url('../img/formbg2.svg')
+.gift
+	width: 100%
+	height: 345px
+	background-position: center
+	background-size: cover
+	
+
+.webp
+	.gift-wrapper-1
+		.gift
+			background-image: url('../img/webp/gift.webp')
+	.gift-wrapper-2
+		.gift
+			background-image: url('../img/webp/bgf.webp')
+	.gift-wrapper-3
+		.gift	
+			background-image: url('../img/webp/fbg2.webp')
+
+.no-webp
+	.gift-wrapper-1
+		.gift
+			background-image: url('../img/gift.jpg')
+	.gift-wrapper-2
+		.gift
+			background-image: url('../img/bgf.jpg')
+	.gift-wrapper-3
+		.gift	
+			background-image: url('../img/fbg2.jpg')
+
+
+
+.steps-wrapper
+	display: flex
+	align-items: center
+	justify-content: space-between
+.steps_item
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 180px
+	text-align: center
+	margin-bottom: 40px
+	min-height: 229px
+.steps_arround
+	width: 144px
+	height: 144px
+	border: 2px solid #d0efef
+	border-radius: 50%
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-bottom: 15px
+.steps-arround_inner
+	width: 100px
+	height: 100px
+	border-radius: 50%
+	background-color: #d0efef
+	display: flex
+	align-items: center
+	justify-content: center
+	color: #2d9aa7
+	font-weight: 900
+	font-size: 33px
+.steps-item_head
+	font-size: 18px
+	font-family: RobotoCon
+	font-weight: 700
+	text-transform: uppercase
+	margin-bottom: 5px
+.steps-item_text
+	font-weight: 600
+
+.steps-arrow
+	width: 14px
+	height: 13px
+	background-image: url('../img/icons/right.svg')
+	background-position: center
+	background-repeat: no-repeat
+	margin-bottom: 90px
+.steps-arrow-rotate
+	background-image: url('../img/icons/rightrot.svg')
+
+.quotation
+	padding-top: 100px
+	padding-bottom: 150px
+	background-color: #f4f5f6
+	.section-head
+		margin-bottom: 25px
+.quotation-text
+	text-align: center
+	margin-left: 85px
+	margin-right: 85px
+	font-weight: 600
+	line-height: 1.6
+	position: relative
+	&:after
+		content: ''
+		display: block
+		width: 59px
+		height: 50px
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url('../img/icons/kav2.svg')
+		position: absolute
+		right: -10px
+		top: -100px
+	&:before
+		content: ''
+		display: block
+		width: 59px
+		height: 50px
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url('../img/icons/kav1.svg')
+		position: absolute
+		left: -10px
+		bottom: -100px
+
+
+.triggersUs-wrap
+	display: flex
+	justify-content: space-between
+.triggersUs-item
+	width: calc(25% - 15px)
+	border: 2px solid #d0efef
+	border-radius: 10px
+	padding-left: 15px
+	padding-right: 15px
+	padding-bottom: 30px
+	padding-top: 46px
+	text-align: center
+.triggersUs-item_around
+	width: 108px
+	height: 108px
+	border-radius: 50%
+	background-color: #d0efef
+	background-position: center
+	background-repeat: no-repeat
+	margin-left: auto
+	margin-right: auto
+	margin-bottom: 40px
+
+.triggersUs-item_text
+	font-weight: 600
+	line-height: 1.5
+.triggersUs-item_head
+	font-size: 19px
+	display: block
+	font-family: RobotoCon
+	text-transform: uppercase
+	font-weight: 700
+	margin-bottom: 18px
+
+
+.rewiews
+	.section-head
+		margin-bottom: 15px
+.news-slider
+.news-slider_item
+	margin-left: 10px
+	margin-right: 10px
+	opacity: 0
+	transition: .3s
+
+.rewiews-slider, .news-slider
+	margin-left: -10px
+	margin-right: -10px
+	.slick-active
+		box-shadow: 0px 14px 59px 0px rgba(216, 220, 225, 0.55)
+		opacity: 1
+	.slick-list
+		overflow: visible
+	.slick-next
+		right: -15%
+	.slick-prev
+		left: -15%
+.rewiews-slider-item
+	border-radius: 10px
+	padding-top: 36px
+	padding-bottom: 25px
+	padding-right: 45px
+	background-image: url('../img/rewiewbg.svg')
+	background-repeat: no-repeat
+	background-position: -190px -205px
+	margin-right: 10px
+	margin-left: 10px
+	margin-top: 40px
+	margin-bottom: 40px
+	transition: .4s
+	opacity: 0
+.rewiews-slider-item-inner
+	display: flex
+
+.rewiews-slider-item_left
+	width: 40%
+	display: flex
+	flex-direction: column
+	align-items: center
+.rewiews-slider-item_right
+	width: 60%
+	flex-grow: 1
+	font-weight: 500
+	line-height: 1.5
+	padding-left: 30px
+	padding-top: 10px
+.rewiews-slider-item__photo
+	width: 108px
+	height: 108px
+	border-radius: 50%
+	border: 16px solid white
+	box-shadow: 0px 14px 59px 0px rgba(216, 220, 225, 0.55)
+	background-position: center
+	background-repeat: no-repeat
+	margin-bottom: 15px
+.rewiews-slider-item__name
+	font-family: RobotoCon
+	text-transform: uppercase
+	font-size: 18px
+	font-weight: 700
+	margin-bottom: 3px
+	text-align: center
+.rewiews-slider-item__date
+	color: $accent
+	font-size: 15px
+	font-family: RobotoCon
+	font-weight: 700
+	text-align: center
+.garant
+	margin-bottom: 70px
+.garant-wrapper
+	display: flex
+	justify-content: space-between
+.garant-item
+	width: calc(25% - 40px / 3)
+	min-height: 348px
+	border: 2px solid #d0efef
+	border-radius: 10px
+	background-repeat: no-repeat
+	background-position: left -10px
+	padding-top: 198px
+	padding-left: 10px
+	padding-right: 10px
+.no-webp
+	.garant-item-1
+		background-image: url('../img/garant1d.jpg')
+	.garant-item-2
+		background-image: url('../img/garant2d.jpg')
+	.garant-item-3
+		background-image: url('../img/garant3d.jpg')
+	.garant-item-4
+		background-image: url('../img/garant4d.jpg')
+.webp
+	.garant-item-1
+		background-image: url('../img/webp/garant1d.webp')
+	.garant-item-2
+		background-image: url('../img/webp/garant2d.webp')
+	.garant-item-3
+		background-image: url('../img/webp/garant3d.webp')
+	.garant-item-4
+		background-image: url('../img/webp/garant4d.webp')
+
+.garant-item_head
+	font-family: RobotoCon
+	font-size: 18px
+	font-weight: 700
+	text-transform: uppercase
+	display: block
+	text-align: center
+	margin-bottom: 10px
+.garant-item_text
+	text-align: center
+	line-height: 1.6
+	font-weight: 600
+.contentBlock
+	.section-head
+		margin-bottom: 15px
+	.section-description
+		margin-bottom: 50px   
+		line-height: 1.5
+.contentBlock-big_photo
+	width: 100%
+	border-radius: 10px
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	height: 481px
+
+.no-webp
+	.contentBlock-big_photo-1
+		background-image: url('../img/bgbig.jpg')
+	.contentBlock-big_photo-2
+		background-image: url('../img/bgbig.jpg')
+.webp
+	.contentBlock-big_photo-1
+		background-image: url('../img/webp/bgbig.webp')
+	.contentBlock-big_photo-2
+		background-image: url('../img/webp/bgbig.webp')
+
+
+.jobOpenings
+
+.jobOpenings-wrapper
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+.jobOpenings-item
+	width: calc(50% - 10px)
+	display: block
+	height: 60px
+	border: 2px solid #d0efef
+	border-radius: 10px
+	margin-bottom: 20px
+	color: $text
+	font-family: RobotoCon
+	text-transform: uppercase
+	text-align: center
+	line-height: 58px
+	font-weight: 700
+	font-size: 18px
+	position: relative
+	&:after
+		content: ''
+		width:
+		height:
+		display: block
+		background-repeat: no-repeat
+		background-position: center
+		background-image: url('../img/icons/slideRight.svg')
+		width: 5px
+		height: 10px
+		right: 35px
+		position: absolute
+		top: calc(50% - 5px)
+	&:hover
+		color: $text
+
+.watcher-wrapper
+	display: flex
+.watcher
+	.contentBlock-big_photo
+		margin-bottom: 49px
+.watcher-item
+	width: calc(100% / 3)
+.watcher-item_top
+	height: 21px
+	width: 100%
+	background-color: #f4f5f6
+	overflow: hidden
+	position: relative
+	&:before
+		content: ''
+		display: block
+		width: 15px
+		height: 15px
+		background-color: #d0efef
+		border-radius: 50%
+		position: absolute
+		top: calc(50% - 15px / 2)
+	&:after
+		content: ''
+		display: block
+		width: 100%
+		height: 3px
+		background-color: #d0efef
+		position: absolute
+		top: calc(50% - 3px / 2)
+.watcher-item_top-1
+	&:after
+		left: 53px
+	&:before
+		left: 53px
+.watcher-item_top-3
+	&:after
+		left: auto
+		right: 53px
+.watcher-item__head
+	font-family: RobotoCon
+	font-size: 18px
+	font-weight: 700
+	text-transform: uppercase
+	margin-bottom: 10px
+	display: block
+.watcher-item_content
+	padding-top: 30px
+	padding-right: 80px
+
+.watcher-item_content-1
+	padding-left: 53px
+.watcher-item__text
+	line-height: 1.5
+
+.map
+	width: 100%
+	position: relative
+	height: 481px
+	margin-bottom: 20px
+	iframe
+		width: 100%
+		height: 100%
+.map-contact
+	width: 489px
+	height: 359px
+	border-radius: 5px
+	background-color: white
+	position: absolute
+	top: 61px
+	right: 24.5%
+	display: flex
+	justify-content: center
+	flex-direction: column
+	padding-left: 57px
+	span
+		display: block
+		font-family: RobotoCon
+		font-size: 18px
+		font-weight: 700
+.map-contact_item
+	margin-bottom: 25px
+.map-contact_item-head
+	text-transform: uppercase
+
+
+.freeCons
+	padding-top: 81px
+	padding-bottom: 87px
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+
+.no-webp
+	.freeCons
+		background-image: url('../img/footer.jpg')
+.webp
+	.freeCons
+		background-image: url('../img/webp/footer.webp')
+
+
+.wrapper-freeCons
+	display: flex
+	justify-content: flex-end
+.freeCons-right
+	width: 50%
+
+.freeCons-right_top
+	display: flex
+	flex-direction: column
+	margin-bottom: 30px
+	.section-head
+		display: block
+		text-align: left
+		margin-bottom: 30px
+.freeCons-callMe
+	font-size: 18px
+	font-weight: 700
+	font-family: RobotoCon
+	text-transform: uppercase
+	margin-bottom: 10px
+.freeCons-form
+	
+.freeCons-form-inner
+	display: flex
+.freeCons-wrapperInput
+	display: flex
+	flex-direction: column
+	width: 100%
+	margin-bottom: 20px
+	&:last-child
+		margin-bottom: 0
+.freeCons_form-left
+	width: 50%
+.freeCons_form-right
+	width: 50%
+	display: flex
+	flex-direction: column
+	padding-left: 20px
+	textarea
+		width: 100%
+		resize: none
+		border: none
+		border-radius: 5px
+		padding-left: 25px
+		padding-right: 25px
+		padding-bottom: 25px
+		padding-top: 20px
+		flex-grow: 1
+.label-input
+	margin-bottom: 5px
+.input
+	height: 50px
+	padding-left: 26px
+	border: none
+	background-color: white
+	border-radius: 5px
+	font-size: 14px
+
+.personalData
+	color: white
+	font-size: 13px
+	width: 233px
+	display: block
+	&:hover
+		color: white
+
+.form-bottom
+	margin-top: 26px
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.footer-nav
+	padding-top: 23px
+	padding-bottom: 23px
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+	flex-wrap: wrap
+	a
+		color: $text
+		font-size: 15px
+		font-weight: 700
+		text-transform: uppercase
+		font-family: RobotoCon
+		&:hover
+			color: $text
+.footer-bottom
+	padding-top: 37px
+	padding-bottom: 37px
+	border-top: 1px solid #dadada
+	.container	
+		display: flex
+		justify-content: space-between
+		align-items: center
+.footerLogo
+	font-weight: 900
+	color: $text
+	text-transform: uppercase
+	font-size: 19px
+	&:hover
+		color: $text
+		text-decoration: none
+.footer-logo_span
+	font-size: 13px
+.footer-bottom_logo
+	display: flex
+	flex-direction: column
+	margin-right: 15%
+.footer-logo_link
+	color: $accent
+	text-decoration: underline
+	font-size: 13px
+	&:hover
+		color: $accent
+.footer__trigger
+	display: flex
+.footer-bottom_left
+	display: flex
+	align-items: center
+	flex-grow: 1
+.footer__trigger--item
+	width: 42px
+	height: 42px
+	border-radius: 50%
+	background-color: #d0efef
+	background-position: center
+	background-repeat: no-repeat
+	margin-right: 12px
+.footer-phones
+	display: flex
+	justify-content: flex-end
+	flex-grow: 1
+.footer-phone
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-left: 15%
+	&:first-child
+		margin-left: 0
+.phone
+	font-size: 26px
+	font-family: RobotoCon
+.phone-text
+	font-size: 13px
+	font-family: RobotoCon
+	color: #919191
+
+.ourWorker
+	padding-bottom: 212px
+	margin-top: 80px
+.ourWorker-slider-container
+	max-width: 1350px
+
+.ourWorker-slider_item-wrapper	
+	opacity: 0
+	transition: .3s
+.ourWorker-slider_item
+	min-height: 466px
+	background-position: left top
+	background-repeat: no-repeat
+	border-radius: 10px
+	box-shadow: 0px 14px 59px 0px rgba(216, 220, 225, 0.55)
+	padding-top: 391px
+	padding-left: 45px
+	margin-right: 10px
+	margin-left: 10px
+	padding-right: 45px
+	background-size: contain
+
+.ourWorker-slider_item-flex
+	height: 100%
+	display: flex
+	align-items: center
+.ourWorker-slider-text
+	line-height: 1.5
+	margin-top: 10px
+	transition: .5s
+	max-height: 0
+	opacity: 0
+.ourWorker-slider
+	position: relative
+	.slick-active
+		opacity: 1
+	.slick-list
+		overflow: visible
+	.slick-center
+		.ourWorker-slider-text
+			max-height: 300px
+			opacity: 1
+			margin-bottom: 60px
+	.slick-arrow
+		top: auto
+		bottom: -130px
+	.slick-next
+		left: calc(50% - 73px / 2 + 50px)
+	.slick-prev
+		left: calc(50% - 73px / 2 - 50px)
+
+	
+.ourWorker-slider_item-name
+	font-family: RobotoCon
+	font-size: 18px
+	font-weight: 700
+	text-transform: uppercase
+	margin-bottom: 5px
+.ourWorker-slider_item-place
+	color: $accent
+	font-weight: 700
+	display: block
+	margin-top: 5px
+.news-slider_item
+	width: 50%
+	min-height: 312px
+	padding-left: 46px
+	padding-top: 62px
+	padding-bottom: 60px
+	box-shadow: 0px 14px 59px 0px rgba(216, 220, 225, 0.55)
+	border-radius: 10px
+	padding-right: 46px
+	background-repeat: no-repeat
+	background-image: url('../img/newsbg.svg')
+	background-position: 230px -230px
+.news-slider_item--head
+	font-family: RobotoCon
+	font-size: 18px
+	font-weight: 700
+	text-transform: uppercase
+	display: block
+	margin-bottom: 10px
+.news-slider_item--date
+	display: block
+	color: $accent
+	font-weight: 700
+	margin-bottom: 10px
+.news-slider_item--text
+	line-height: 1.5
+
+
+@media (max-width: 1639px)
+	.scrollTop
+		right: 5%
+	.rewiews-slider, .news-slider 
+		.slick-arrow
+			width: 40px
+			height: 40px
+		.slick-next
+			right: 0
+			top: -20px
+
+		.slick-prev
+			left: auto
+			right: 60px
+			top: -20px
+	.news-slider
+		.slick-arrow
+			top: -60px
+
+
+@media (max-width: 1541px)
+	.freeCons
+		position: relative
+	.scrollTop
+		position: absolute
+		right: 20px
+		top: 20px
+@media (max-width: 1100px)
+	.main-slider
+		.slick-next
+			right: 15px
+		.slick-prev
+			left: 15px	
+	.button-desc
+		display: none
+	.button-mob
+		display: block
+@media (max-width: 1000px)
+	.wrapper-freeCons
+		.freeCons-right
+			width: 590px
+	.footer-phones
+		flex-direction: column
+	.footer-phone
+		margin-left: 0
+		align-items: flex-end
+		.phone-text
+			text-align: center
+
+@media (max-width: 1054px)
+	.service-itemsWrapper
+		justify-content: flex-start
+	.service-item
+		width: calc(33% - 5px)
+		background-size: contain
+		margin-right: 12px
+		&:nth-child(3n + 3)
+			margin-right: 0
+	.webp
+		.service-item-1
+			background-image: url('../img/webp/serv1.webp')
+		.service-item-2
+			background-image: url('../img/webp/serv2.webp')
+		.service-item-3
+			background-image: url('../img/webp/serv3.webp')
+		.service-item-4
+			background-image: url('../img/webp/serv4.webp')
+		.service-item-5
+			background-image: url('../img/webp/serv5.webp')
+		.service-item-6
+			background-image: url('../img/webp/serv6.webp')
+		.service-item-7
+			background-image: url('../img/webp/serv7.webp')
+		.service-item-8
+			background-image: url('../img/webp/serv8.webp')
+
+	.no-webp
+		.service-item-1
+			background-image: url('../img/serv1.jpg')
+		.service-item-2
+			background-image: url('../img/serv2.jpg')
+		.service-item-3
+			background-image: url('../img/serv3.jpg')
+		.service-item-4
+			background-image: url('../img/serv4.jpg')
+		.service-item-5
+			background-image: url('../img/serv5.jpg')
+		.service-item-6
+			background-image: url('../img/serv6.jpg')
+		.service-item-7
+			background-image: url('../img/serv7.jpg')
+		.service-item-8
+			background-image: url('../img/serv8.jpg')
+
+
+@media (max-width: 1013px)
+	.steps-wrapper
+		flex-wrap: wrap
+	.ourWorker-slider_item
+		padding-top: 300px
+@media (max-width: 954px)
+	.header-right__trigger--item
+		margin-right: 5px
+	.header-right__phoneText
+		font-size: 11px
+	.header-right
+		margin-left: 3%
+	.header-logo__textBottom
+		font-size: 10px
+	.header-logo__textTop
+		font-size: 15px 
+	.header-logo__textWrap
+		width: 218px
+	.header-logo__image
+		width: 85px
+	.header-right__phone-wrapper
+		width: 50%
+	.header-bottom__nav
+		flex-wrap: wrap
+		a
+			font-size: 13px
+@media (max-width: 921px)
+	.service-itemsWrapper
+		justify-content: space-between
+	.service-item
+		width: calc(50% - 12px)
+		background-size: contain
+		margin-right: 0
+		&:nth-child(3n + 3)
+			margin-right: 0
+@media (max-width: 866px)
+	.our-help_item
+		width: calc(50% - 12px)
+	.triggersUs-wrap
+		flex-wrap: wrap
+	.triggersUs-item
+		width: calc(50% - 10px)
+		margin-bottom: 20px
+
+	.garant-wrapper
+		flex-wrap: wrap
+
+	.garant-item
+		width: calc(50% - 12px)
+		background-size: contain
+		margin-bottom: 23px
+	.no-webp
+		.garant-item-1
+			background-image: url('../img/garant1.jpg')
+		.garant-item-2
+			background-image: url('../img/garant2.jpg')
+		.garant-item-3
+			background-image: url('../img/garant3.jpg')
+		.garant-item-4
+			background-image: url('../img/garant4.jpg')
+	.webp
+		.garant-item-1
+			background-image: url('../img/webp/garant1.webp')
+		.garant-item-2
+			background-image: url('../img/webp/garant2.webp')
+		.garant-item-3
+			background-image: url('../img/webp/garant3.webp')
+		.garant-item-4
+			background-image: url('../img/webp/garant4.webp')
+	
+@media (max-width: 860px)
+	.rewiews-slider, .news-slider
+		.slick-arrow
+			width: 73px
+			height: 73px
+			top: calc(50% - 73px / 2)
+		.slick-next
+			right: 20px
+		.slick-prev
+			left: 20px
+	.rewiews-slider-item, .news-slider_item
+		margin-right: 110px
+		margin-left: 110px
+	.ourWorker-slider-text
+		opacity: 1 
+		max-height: none
+	.ourWorker-slider
+		.slick-center
+			.ourWorker-slider-text
+				max-height: none
+		.slick-arrow
+			bottom: -163px
+	.ourWorker-slider_item
+		padding-top: 360px
+		background-size: auto
+@media (max-width: 800px)
+	.header-right__phone-wrapper
+		width: auto
+		flex-grow: 1
+
+@media (max-width: 799px)
+	.steps-wrapper
+		justify-content: center
+@media (max-width: 768px)
+	.header-right
+		margin-left: 1%
+	
+	.header-bottom
+		border-bottom: 1px solid #dadada
+	
+	.steps_item
+		margin-right: 29px
+		margin-left: 29px
+	.quotation-text
+		margin-left: 10px
+		margin-right: 10px
+	.contentBlock-big_photo
+		height: 304px
+	.section-description
+		width: 100%
+		margin-bottom: 20px
+	.watcher-item_content
+		padding-right: 50px
+	.watcher-item_content-1
+		padding-left: 19px
+	.watcher-item_top-1
+		&:after
+			left: 19px
+		&:before
+			left: 19px
+	.watcher-item_top-3
+		&:after
+			right: 19px
+	.map-contact
+		right: calc(50% - 489px / 2)
+	.footer-bottom_logo
+		margin-right: 0
+	.footer-bottom_left
+		justify-content: space-between
+
+	.ourWorker-slider
+		.slick-list
+			padding: 0 !important
+		.ourWorker-slider_item
+			margin-left: 5px
+			margin-right: 5px
+			padding-left: 15px
+			padding-right: 10px
+			padding-bottom: 10px
+	.main-slider__item
+		background-position: -757px 0
+	.main-form-wrapper
+		margin-top: -327px
+	.gift-wrapper-2 
+		.gift
+			background-position: -105%
+	.gift-wrapper-3 
+		.gift
+			background-position: -133%
+	.freeCons
+		padding-top: 30px
+		padding-bottom: 30px
+	.footer-phone
+		align-items: center
+@media (max-width: 760px)
+	.header-right
+		flex-direction: column
+		align-items: flex-end
+	.header-right__trigger
+		margin-bottom: 10px
+	.header-right__phone
+		margin-right: 10px
+	.header-right__phone--item
+		font-size: 17px
+	.header-right__phoneText
+		font-size: 10px
+	.header-bottom__nav
+		display: none
+	.burger
+		display: flex
+
+
+@media (max-width: 692px)
+	.footer-bottom_left
+		flex-direction: column
+		align-items: flex-start
+	.footer-bottom_logo
+		margin-bottom: 10px
+	.footer-bottom
+		.container
+			align-items: flex-start
+
+
+@media (max-width: 662px)
+	.main-slider 
+		.main-slider__item
+			height: 300px
+			background-position: center
+	.main-form-wrapper
+		margin-top: -160px
+	.main-slider
+		.slick-arrow
+			width: 48px
+			height: 48px
+
+
+@media (max-width: 640px)
+	.footer-nav
+		justify-content: flex-start
+		a
+			margin-left: 10px
+			margin-right: 10px
+			margin-bottom: 5px
+
+@media (max-width: 624px)
+	.rewiews-slider-item
+		padding-right: 20px
+		padding-left: 20px
+	.rewiews-slider-item-inner
+		flex-direction: column
+	.rewiews-slider-item_left
+		width: 100%
+	.rewiews-slider-item_right
+		width: 100%
+		padding-left: 0
+@media (max-width: 618px)
+	.freeCons-right
+		width: 100%
+@media (max-width: 598px)
+	.watcher-wrapper
+		flex-direction: column
+	.watcher-item
+		width: 100%
+	.watcher-item_top
+		&:after
+			left: 9px
+		&:before
+			left: 9px
+	.watcher-item_content
+		padding-top: 10px
+		padding-left: 10px
+
+@media (max-width: 554px)
+	.freeCons-form-inner
+		flex-direction: column
+	.freeCons_form-right
+		padding-left: 0
+		width: 100%
+		textarea
+			height: 240px
+	.freeCons_form-left
+		width: 100%
+		margin-bottom: 20px
+
+		
+
+@media (max-width: 540px)
+	.map-contact
+		width: 100%
+		right: 0
+	.news-slider_item
+		margin-left: 0
+		margin-right: 0
+	.news-slider
+		padding-bottom: 50px
+		.slick-arrow
+			top: auto
+			bottom: -20px
+		.slick-prev
+			width: 43px
+			height: 43px
+			left: calc(50% - 43px / 2 - 30px)
+		.slick-next
+			width: 43px
+			height: 43px
+			left: calc(50% - 43px / 2 + 30px)
+			
+@media (max-width: 539px)
+	.steps-wrapper
+		flex-direction: column
+	.steps-arrow
+		display: none
+	.steps_item
+		margin-left: 0
+		margin-right: 0
+		flex-direction: row
+		align-items: center
+		width: 100%
+		margin-bottom: 5px
+		justify-content: center
+		min-height: auto
+	.steps_arround
+		width: 82px
+		height: 82px
+		margin-right: 10px
+	.steps-arround_inner
+		width: 56px
+		height: 56px
+		font-size: 18px
+	.steps-item_text
+		width: 175px
+
+@media (max-width: 560px)
+	.header-logo__textBottom
+		display: none
+	.our-help_item
+		width: 100%
+	.garant-item
+		padding-top: 128px
+		min-height: auto
+	.header-logo
+		width: 80px
+		flex-direction: column
+	.header-logo__textWrap
+		text-align: center
+		margin-left: 0
+
+	.scrollTop
+		width: 46px
+		height: 46px
+@media (max-width: 536px)
+	.ourWorker
+		padding-bottom: 100px
+	.ourWorker-slider
+		.slick-arrow
+			width: 43px
+			height: 43px
+			bottom: -70px
+		.slick-next
+			left: calc(50% - 43px / 2 + 50px)
+		.slick-prev
+			left: calc(50% - 43px / 2 - 50px)
+	.section-text
+		margin-left: 0
+		margin-right: 0
+
+@media (max-width: 510px)
+	.service-item
+		width: 100%
+		&:nth-child(odd)
+			background-position: left -40px
+		&:nth-child(even)
+			background-position: left 160%
+			
+
+
+@media (max-width: 504px)
+	.rewiews-slider-item
+		margin-right: 30px
+		margin-left: 30px
+	.rewiews-slider 
+		.slick-arrow
+			width: 48px
+			height: 48px
+			top: 24%
+		.slick-next
+			right: 10px
+		.slick-prev
+			left: 10px
+
+@media (max-width: 456px)
+	.footer-bottom
+		.container
+			flex-direction: column
+			align-items: center
+	.footer-bottom_left
+		align-items: center
+		text-align: center
+	.footer-phone
+		align-items: center
+	.footerLogo
+		margin-bottom: 5px
+	.footer-logo_link
+		margin-top: 10px
+	.footer-phones
+		margin-top: 20px
+@media (max-width: 449px)
+	.ourWorker-slider_item
+		background-size: 100%
+@media (max-width: 472px)
+	.main-form
+		background-size: 501px
+		input
+			width: 290px
+	.main-form__text
+		width: 280px
+	.service-item
+		&:nth-child(odd)
+			background-position: left top
+		&:nth-child(even)
+			background-position: left bottom
+	.section-head
+		font-size: 22px
+	.quotation-text
+		&:before
+			width: 38px
+			height: 32px
+			background-size: 100%
+			bottom: -50px
+		&:after
+			width: 38px
+			height: 32px
+			background-size: 100%
+
+	.triggersUs-item
+		width: 100%
+
+	.jobOpenings-wrapper
+		flex-wrap: wrap
+	.jobOpenings-item
+		width: 100%
+@media (max-width: 454px)
+	.form-bottom
+		flex-direction: column
+	.personalData
+		text-align: center
+		width: 100%
+		margin-bottom: 15px
+@media (max-width: 444px)
+	.garant-item
+		width: 100%
+		padding-top: 20px
+		padding-bottom: 20px
+		padding-left: 125px
+		background-position: left top
+	.no-webp
+		.garant-item-1
+			background-image: url('../img/garant1m.jpg')
+		.garant-item-2
+			background-image: url('../img/garant2m.jpg')
+		.garant-item-3
+			background-image: url('../img/garant3m.jpg')
+		.garant-item-4
+			background-image: url('../img/garant4m.jpg')
+	.webp
+		.garant-item-1
+			background-image: url('../img/webp/garant1m.webp')
+		.garant-item-2
+			background-image: url('../img/webp/garant2m.webp')
+		.garant-item-3
+			background-image: url('../img/webp/garant3m.webp')
+		.garant-item-4
+			background-image: url('../img/webp/garant4m.webp')
+
+	.garant-item_head
+		text-align: left
+	.garant-item_text
+		text-align: left
+		font-size: 14px
+	.map-contact
+		padding-left: 22px
+		padding-right: 22px
+		height: auto
+		min-height: 292px
+		top: calc(50% - 292px / 2)
+@media (max-width: 412px)
+	.freeCons-right_top
+		.section-head
+			width: 70%
+@media (max-width: 372px)
+	.contentBlock-big_photo
+		height: 157px
+
+@media (max-width: 360px)
+	.ourWorker-slider_item
+		padding-top: 320px
+@media (max-width: 320px)
+
+	.no-webp
+		.service-item-1
+			background-image: url('../img/serv1d.jpg')
+		.service-item-2
+			background-image: url('../img/serv2d.jpg')
+		.service-item-3
+			background-image: url('../img/serv3d.jpg')
+		.service-item-4
+			background-image: url('../img/serv4d.jpg')
+		.service-item-5
+			background-image: url('../img/serv5d.jpg')
+		.service-item-6
+			background-image: url('../img/serv6d.jpg')
+		.service-item-7
+			background-image: url('../img/serv7d.jpg')
+		.service-item-8
+			background-image: url('../img/serv8d.jpg')
+	.webp
+		.service-item-1
+			background-image: url('../img/webp/serv1d.webp')
+		.service-item-2
+			background-image: url('../img/webp/serv2d.webp')
+		.service-item-3
+			background-image: url('../img/webp/serv3d.webp')
+		.service-item-4
+			background-image: url('../img/webp/serv4d.webp')
+		.service-item-5
+			background-image: url('../img/webp/serv5d.webp')
+		.service-item-6
+			background-image: url('../img/webp/serv6d.webp')
+		.service-item-7
+			background-image: url('../img/webp/serv7d.webp')
+		.service-item-8
+			background-image: url('../img/webp/serv8d.webp')
+
+	.watcher-item_content
+		padding-right: 10px
+	.footer-nav
+		padding-bottom: 3px
+		a
+			width: 50%
+			margin-left: 0
+			margin-right: 0
+			margin-bottom: 20px
+
+	.rewiews-slider
+		.slick-arrow
+				top: calc(50% - 24px)
+	.rewiews-slider-item_right
+		padding-left: 20px
+		padding-right: 20px
+		p
+			font-size: 14px
+
+	.ourWorker-slider, .triggersUs-wrap
+		.slick-prev
+			left: calc(50% - 43px / 2 - 30px)
+		.slick-next
+			left: calc(50% - 43px / 2 + 30px)
+	
+	.triggersUs-wrap
+		margin-bottom: 100px
+		.slick-arrow
+			width: 43px
+			height: 43px
+			top: auto
+			bottom: -50px
+
+	.news-slider_item--text
+		font-size: 14px
+	.news-slider
+		margin-left: 0
+		margin-right: 0
+	.news-slider_item
+		background-position: 100px -200px
+
+	.service-itemsWrapper
+		.service-item
+			display: none
+			&:nth-child(1)
+				display: block
+			&:nth-child(2)
+				display: block
+			&:nth-child(3)
+				display: block
+
+	.service-itemsWrapper
+		&:not(.service-itemsWrapper__active)
+			.service-item
+				&:nth-child(n + 4)
+					background: none 
+
+
+	.service-itemsWrapper__active
+		.service-item
+			display: block
+	.mobile-btn-hidden
+		display: block
+	.our-help_itemsWrap
+		.our-help_item
+			display: none
+			&:nth-child(1)
+				display: block
+			&:nth-child(2)
+				display: block
+			&:nth-child(3)
+				display: block
+	.our-help_itemsWrap__active
+		.our-help_item
+			display: block
+	.triggersUs-wrap
+		display: block
+	
+	.main-screen
+		.main-form
+			height: 414px
+		.main-form-wrapper
+			margin-top: -126px
+
+	.garant-item-3
+		background-position: -10px
+	.garant-item-4
+		background-position: -10px
+	.section-head
+		margin-bottom: 25px
+	.gift-wrapper
+		margin-bottom: 0
+	.quotation
+		padding-top: 40px
+		padding-bottom: 40px
+		.section-head
+			margin-bottom: 10px
+
+	.rewiews
+		.section-head
+			margin-bottom: 0
+	.watcher-item_top
+		&:after
+			width: 86%
+	.news-slider_item
+		padding-left: 20px
+		padding-right: 20px
+		padding-top: 60px
+		padding-bottom: 0px
+	.map-contact
+		width: 300px
+		right: 10px
+	.footer__trigger--item
+		margin-right: 8px
+		&:last-child 
+			margin-right: 0
+	.header-bottom
+		border-bottom: 0

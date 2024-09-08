@@ -1,0 +1,684 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+*
+	outline: none !important
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.2
+	font-family: $font
+	overflow-x: hidden 
+	color: $text
+	margin-left: auto
+	margin-right: auto
+	font-weight: 500
+	background-color: #fff
+
+
+
+.mobile-sidebar-open
+	width: 60px
+	height: 60px
+	background-color: #1c1b1b
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 5
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url('../img/icons/mobileop.svg')
+	display: none
+#fp-nav 
+	ul
+		li
+			a
+				span
+					width: 14px !important
+					height: 14px !important
+					margin: 0 !important
+					background-color: transparent 
+					border: 4px solid white
+					&:hover
+						margin: 0 !important
+						width: 14px 
+						height: 14px 
+			a.active
+				span
+					background-color: white
+#fp-nav.fp-right
+	right: 77px 
+.btn				
+	width: 180px
+	height: 50px
+	background: none
+	border: 2px solid white
+	border-radius: 3px
+	text-transform: uppercase
+	font-size: 12px
+	font-weight: 700
+	transition: background-color .3s, color .3s
+	&:hover
+		background-color: white
+		color: #1c1b1b
+a.btn
+	display: flex
+	align-items: center
+	justify-content: center
+	color: white
+	&:hover
+		color: #1c1b1b
+		text-decoration: none
+
+.btn-accent
+	background-color: $accent
+	height: 50px
+	&:hover
+		background-color: white
+		border: 2px solid $accent
+
+
+.btn-long
+	width: 100%
+
+
+
+.close-sidebar
+	position: absolute
+	width: 18px
+	height: 18px
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url('../img/icons/close.svg')
+	cursor: pointer
+	left: 35px
+	top: 57px
+	
+
+.hidden-sidebar
+	width: 352px
+	height: 100vh
+	background-color: white
+	position: fixed
+	z-index: 101
+	right: 0
+	top: 0
+	transition: transform .3s
+	transform: translateX(352px)
+
+.hidden-sidebar--active
+	transform: translateX(0)
+.menu-nav
+	display: flex
+	flex-direction: column
+	padding-left: 91px
+	padding-top: 53px
+
+.hidden-sidebar__content
+	padding-left: 91px
+	padding-top: 56px
+
+.sidebar-head
+	text-transform: uppercase
+	font-size: 15px
+
+
+.menu-nav__item
+	color: $text
+	font-size: 
+	text-transform: uppercase
+	font-weight: 500
+	font-size: 15px
+	transition: color .3s
+	margin-bottom: 10px
+	&:hover
+		color: $accent
+		text-decoration: none
+
+.mask
+	width: 100vw
+	height: 100vh
+	position: fixed
+	left: 0
+	top: 0
+	background-color: rgba(#000, 0.3) 
+	z-index: 100
+	pointer-events: none
+	opacity: 0
+	transition: opacity .3s
+.mask-active
+	pointer-events: auto
+	opacity: 1
+.top-menu
+	position: fixed
+	top: 26px
+	right: 74px
+	z-index: 5
+.sidebar-top
+	display: flex
+	align-items: center
+	flex-direction: column
+.sidebar__logo-wrap
+	display: flex
+	flex-direction: column
+	align-items: center
+	.sidebar__logo__text
+		color: white
+		text-decoration: none
+	&:hover
+		color: white
+		text-decoration: none
+
+
+.top-menu
+	display: flex
+	align-items: center
+
+.top-menu__item
+	cursor: pointer
+	background-position: center
+	background-repeat: no-repeat
+	margin-right: 5px
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	transition: background-color .3s
+	&:last-child
+		margin-right: 0
+	&:hover
+		background-color: #f4b579
+
+.top-menu__item-lk
+	background-image: url('../img/icons/lk.svg')
+
+.top-menu__item-search
+	background-image: url('../img/icons/search.svg')
+
+.top-menu__item-shop
+	background-image: url('../img/icons/shop.svg')
+	position: relative
+
+.top-menu__item-burger-wrapper
+	width: 50px
+	height: 50px
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: background-color .3s
+	border-radius: 50%
+	&:hover
+		background-color: #f4b579
+
+.item-shop_current-god
+	position: absolute
+	right: 5px
+	top: 5px
+	width: 18px
+	height: 18px
+	background-color: #dc4444
+	color: white
+	font-size: 10px
+	border-radius: 50%
+	display: flex
+	align-items: center
+	justify-content: center
+.sidebar__logo
+	width: 189px
+	height: 85px
+	background-image: url('../img/logo.png')
+	background-position: center
+	background-repeat: no-repeat
+	background-size: contain
+
+
+.lk-wrap
+	display: flex
+	flex-direction: column
+	a
+		color: $text
+		font-size: 15px
+		text-transform: uppercase
+		margin-bottom: 20px
+		&:hover
+			color: $text
+			text-decoration: none
+
+
+.search-form
+	padding-left: 33px
+	padding-top: 48px
+	display: flex
+	align-items: center
+	position: relative
+	.close-sidebar
+		width: 11px
+		height: 11px
+		background-image: url('../img/icons/cartDel.svg')
+		left: auto
+		top: auto
+		right: 30px
+.search-form__input
+	width: 209px
+	border: none
+	border-bottom: 1px solid #bababa
+	text-transform: uppercase
+	color: $text
+	font-size: 15px
+	padding-bottom: 3px
+	&::-webkit-input-placeholder
+		color: $text
+
+.search-form__btn
+	width: 21px
+	height: 22px
+	background-image: url('../img/icons/searchBtn.svg')
+	background-position: center
+	background-repeat: no-repeat
+	border: none
+	background-color: white
+	margin-left: 26px
+
+.mini-cart-item__del
+	width: 11px 
+	height: 11px
+	position: absolute
+	right: 0
+	top: 0
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url('../img/icons/cartDel.svg')
+	cursor: pointer
+.mini-cart-wrapper
+	padding-left: 33px
+	padding-right: 33px
+	margin-top: 49px
+.mini-cart-item
+	display: flex
+	position: relative
+	margin-bottom: 34px
+.mini-cart-item__head
+	color: $text
+	text-decoration: underline
+	font-weight: 700
+	display: block
+	margin-top: -4px
+	margin-bottom: 10px
+	&:hover
+		color: $text
+.mini-cart-item__img
+	width: 96px
+	height: 96px
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	margin-right: 13px
+
+.mini-cart-item__color-wrap
+	display: flex
+	align-items: center
+	margin-bottom: 8px
+.mini-cart-item__color
+	width: 20px
+	height: 20px
+	margin-right: 12px
+.mini-cart-item-count
+	font-weight: 700
+	margin-bottom: 6px
+.mini-cart-item-price__digit
+	font-weight: 900
+	font-size: 20px
+.top-menu__item-burger
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	height: 18px
+	width: 20px
+.burger-item
+	width: 100%
+	height: 4px
+	background-color: white
+	border-radius: 3px
+
+.sidebar__logo__text
+	text-transform: uppercase
+	font-weight: 300
+	letter-spacing: 2px
+	padding-top: 8px
+	border-top: 1px solid #626262
+	margin-top: 10px
+
+.sidebar
+	position: fixed
+	background-color: #1c1b1b
+	height: 100vh
+	width: 336px
+	z-index: 5
+	padding-top: 26px
+	display: flex
+	align-items: flex-start
+	flex-direction: column
+	color: #fff
+	padding-left: 70px
+	justify-content: space-between
+	padding-bottom: 28px
+
+.mobile-sidebar-close
+	position: absolute
+	width: 21px
+	height: 22px
+	right: 14px 
+	top: 18px
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url('../img/icons/sidebarClose.svg')
+	display: none
+
+.section
+	background-position: center
+	background-repeat: no-repeat
+	background-size: contain
+	padding-left: 336px
+
+.section-content__head
+	font-size: 30px
+	font-weight: 900
+	width: 400px
+	margin-bottom: 20px
+
+.section-content__text
+	font-size: 15px 
+	font-weight: 300
+	width: 420px
+	line-height: 1.4
+	margin-bottom: 25px
+.section-1
+	.fp-controlArrow.fp-next
+		border-color: transparent
+		width: 13px
+		height: 21px
+		background-image: url('../img/icons/next.svg')
+		background-position: center
+		background-repeat: no-repeat
+		border-width: 0px
+		top: auto
+		right: 78px
+		bottom: 97px
+	
+.section-1
+	.fp-controlArrow.fp-prev
+		border-color: transparent
+		width: 13px
+		height: 21px
+		background-image: url('../img/icons/prev.svg')
+		background-position: center
+		background-repeat: no-repeat
+		border-width: 0px
+		top: auto
+		left: auto
+		right: 130px
+		bottom: 97px
+
+
+.slide
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+.slide-content-wrapper
+	width: 100%
+	height: 100%
+	display: flex
+	align-items: flex-end
+	color: white
+.slide-content
+	display: flex
+	flex-direction: column	
+	padding-bottom: 86px
+	padding-left: 76px
+.sidebar-city
+	margin-top: 20px
+	position: relative
+	padding-left: 25px
+	a
+		color: white
+		text-decoration: underline
+		&:hover
+			color: white
+
+	&:before
+		content: ''
+		display: block
+		background-position: center
+		background-repeat: no-repeat
+		width: 15px
+		height: 18px
+		background-image: url('../img/icons/place.svg')
+		position: absolute
+		left: 0
+
+
+.slide-content-head-small
+	font-size: 15px
+	text-transform: uppercase
+	font-weight: 700
+
+.slide-content-head
+	font-size: 30px
+	font-weight: 900
+	text-transform: uppercase
+	margin-bottom: 20px
+.sidebar-nav
+	display: flex
+	flex-direction: column
+	.sidebar-nav__item
+		color: white
+		font-size: 15px
+		text-transform: uppercase
+		margin-bottom: 20px
+		transition: transform .3s, color .3s
+		&:last-child
+			margin-bottom: 0
+
+		&:hover
+			color: white
+			text-decoration: none
+			transform: translateX(30px)
+			color: $accent
+
+
+
+.sidebar-bottom
+	display: flex
+	flex-direction: column
+	
+
+
+.sidebar_phone
+	display: flex
+	flex-direction: column
+	margin-bottom: 37px
+	
+.sidebar_phone-link
+	color: white
+	text-decoration: none
+	font-size: 18px
+	font-weight: 700
+	margin-bottom: 5px
+	&:hover
+		color: white
+		text-decoration: none
+
+
+.sidebar_phone-button
+	color: #ff6541
+	text-decoration: underline
+	&:hover
+		color: #ff6541
+
+
+
+.social-wrapper
+	display: flex
+	margin-bottom: 29px
+.social-item
+	display: block
+	width: 35px
+	height: 35px
+	border-radius: 50%
+	background-color: #343434
+	margin-right: 8px
+	background-position: center
+	background-repeat: no-repeat
+	transition: background-color .3s, border .3s
+	border: 2px solid #343434
+	&:last-child
+		margin-right: 0
+
+	&:hover
+		background-color: #1C1B1B
+		border: 2px solid white
+
+
+.social-item-fb
+	background-image: url('../img/icons/social/fb.svg')
+.social-item-inst
+	background-image: url('../img/icons/social/inst.svg')
+
+.social-item-vk
+	background-image: url('../img/icons/social/vk.svg')
+
+.social-item-od
+	background-image: url('../img/icons/social/od.svg')
+
+
+.sidebar-small-text
+	font-weight: 300
+	font-size: 12px
+	color: #656565
+	width: 200px
+
+
+.section-content
+	width: 100%
+	height: 100%
+	display: flex
+.section-content__left
+	width: 45%
+	height: 100%
+	display: flex
+	align-items: flex-end
+	padding-left: 77px
+	padding-bottom: 87px
+.section-content__image
+	width: 55%
+	height: 100%
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+
+
+@media (max-width: 1530px)
+	.sidebar
+		transition: transform .3s
+		transform: translateX(-336px)
+		z-index: 101
+	.sidebar-active
+		transform: translateX(0px)
+	.section
+		padding-left: 0
+
+	.mobile-sidebar-open
+		display: block
+	.mobile-sidebar-close
+		display: block
+	.top-menu
+		top: 19px
+		right: 11px
+	#fp-nav.fp-right
+		right: 21px
+
+	.slide-content
+		padding-left: 19px
+		padding-bottom: 19px
+	.section-content__left
+		padding-left: 19px
+		padding-bottom: 19px
+
+	.section-content
+		position: relative
+	.section-content__left
+		height: auto
+		background-color: white
+		position: absolute
+		bottom: 0
+		padding-top: 20px
+		padding-bottom: 20px
+		padding-right: 20px
+	.section-content__image
+		width: 100%
+	.section-content__text
+		width: auto
+	.section-content__head
+		width: auto
+	
+	.section-1 
+		.fp-controlArrow.fp-prev
+			right: 80px
+			bottom: 39px
+	.section-1 
+		.fp-controlArrow.fp-next
+			right: 22px
+			bottom: 39px
+
+@media (max-width: 919px)
+	.section-content__head
+		font-size: 20px
+
+
+@media (max-width: 626px)
+	.section-content__text
+		display: none
+	.section-content__left
+		width: 254px
+
+@media (max-width: 430px)
+	.top-menu__item-burger-wrapper
+		width: 30px
+		height: 30px
+	.top-menu__item
+		width: 30px
+		height: 30px
+	.top-menu__item-burger
+		width: 20px
+		height: 18px
+
+	.item-shop_current-god
+		top: 0px
+		right: -3px
+@media (max-width: 360px)
+	.sidebar
+		width: 100%
+		transform: translateX(-360px)
+	.sidebar-active
+		transform: translateX(0)
+
+	.hidden-sidebar
+		width: 100%
+		transform: translateX(360px)
+	.hidden-sidebar--active
+		transform: translateX(0px)

@@ -1,0 +1,319 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+
+a
+	transition: color .3s
+	&:hover
+		color: $accent
+		text-decoration: none
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+*
+	outline: none !important
+
+
+.btn
+	width: 261px
+	height: 51px
+	border-radius: 15px
+	display: flex
+	align-items: center
+	justify-content: center
+	background-color: $accent
+	border: 3px solid transparent
+	transition: border-color .3s, background-color .3s
+	&:hover
+		color: white
+		border-color: white
+		background-color: transparent
+
+
+.slick-list
+	overflow: visible
+.slick-slide
+	transition: opacity .3s
+	opacity: 0
+	pointer-events: none
+.slick-slide.slick-active
+	opacity: 1
+	pointer-events: auto
+
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 24px
+	font-family: $font
+	overflow-x: hidden
+	color: #fff
+	margin-left: auto
+	margin-right: auto
+	font-weight: 300
+	background-color: #0d0d0d
+
+a
+	color: #fff
+
+
+.container
+	max-width: 1310px
+	padding:
+		right: 15px
+		left: 15px
+	margin:
+		left: auto
+		right: auto
+
+.menu
+	display: flex
+	justify-content: flex-end
+	padding-top: 30px
+	padding-bottom: 30px	
+	a
+		margin-right: 30px
+		&:last-child
+			margin-right: 0
+
+
+.main
+	padding-top: 150px
+	.container
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+
+.main__left
+	width: 50%
+	h1
+		font-weight: 900
+		font-size: 45px
+		line-height: 1.2
+		color: white
+		margin-bottom: 50px
+
+
+
+.head
+	font-size: 45px
+	font-weight: 900
+	margin-bottom: 45px
+	line-height: 1.2
+
+
+.technology
+	margin-top: 150px
+	.head
+		margin-bottom: 100px
+.technology__item-head
+	font-size: 43px
+	color: $accent
+	font-weight: 400
+	margin-bottom: 10px
+	line-height: 1.2
+
+.technology__item-text
+	font-size: 16px
+
+.technology-content
+	display: flex
+	flex-wrap: wrap
+
+.technology__item
+	width: calc(100% / 4 - 60px / 4)
+	margin-right: 20px
+	margin-bottom: 86px
+	&:nth-child(4n + 4)
+		margin-right: 0
+
+
+
+.text-accent
+	color: $accent
+	font-weight: 600
+
+
+
+.portf
+	margin-top: 100px
+
+.portf__content
+	display: flex
+	flex-wrap: wrap
+
+
+.portf__content
+	a
+		width: calc(100% / 4 - 60px / 4)
+		min-height: 140px
+		margin-right: 20px
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-bottom: 20px
+		background-color: #0F0F0F
+		transition: background-color .3s, color .3s
+		text-align: center
+		&:nth-child(4n + 4)
+			margin-right: 0
+		&:hover
+			background-color: $accent
+			color: #FFF
+
+
+.portf
+	margin-bottom: 60px
+
+.contact__content
+	display: flex
+	padding-bottom: 50px
+	flex-wrap: wrap
+.contact__item-head
+	font-size: 20px
+	font-weight: 500
+	margin-bottom: 5px
+
+.contact__item
+	width: 20%
+	a
+		font-size: 15px
+@media (max-width: 1250px)
+	.main__left
+		width: calc(100% - 404px)
+
+
+@media (max-width: 1050px)
+	.main
+		padding-top: 20px
+		.container
+			flex-wrap: wrap
+
+	.main__left
+		width: 100%
+		order: 2
+	.main__right
+		width: 100%
+		order: 1
+		display: flex
+		justify-content: center
+
+
+	.main__left
+		padding-top: 50px
+		h1
+			text-align: center
+			margin-bottom: 25px
+		.btn
+			margin-left: auto
+			margin-right: auto
+
+	.technology__item
+		width: calc(100% / 3 - 40px / 3)
+		&:nth-child(3n + 3)
+			margin-right: 0px
+		&:nth-child(4n + 4)
+			margin-right: 20px
+
+	.portf__content 
+		a
+			width: calc(100% / 3 - 40px / 3)
+			&:nth-child(4n + 4)
+				margin-right: 20px
+			&:nth-child(3n + 3)
+				margin-right: 0
+
+	.contact__item
+		width: 25%
+		margin-bottom: 30px
+
+@media (max-width: 800px)
+	.head
+		text-align: center
+	.technology 
+		margin-top: 70px
+		.head
+			margin-bottom: 40px
+
+	.text-block
+		margin-top: 50px
+		.head
+			margin-bottom: 20px
+	.head
+		font-size: 28px
+		margin-bottom: 40px
+	.main__right
+		img
+			width: 50%
+
+	.main__left
+		h1
+			font-size: 28px
+
+
+	.technology__item
+		width: calc(50% - 10px)
+		&:nth-child(3n + 3)
+			margin-right: 20px
+		&:nth-child(2n + 2)
+			margin-right: 0
+
+	.technology__item-head
+		font-size: 27px
+		
+	.contact__content
+		justify-content: center
+	.contact__item
+		width: 30%
+		text-align: center
+
+@media (max-width: 670px)
+	.contact__item
+		width: 50%
+@media (max-width: 600px)
+	.portf__content 
+		a
+			width: calc(50% - 10px)
+			&:nth-child(3n + 3)
+				margin-right: 20px
+			&:nth-child(2n + 2)
+				margin-right: 0
+@media (max-width: 480px)
+	.technology__item
+		margin-right: 0 !important
+		width: 100%
+		margin-bottom: 42px
+
+@media (max-width: 420px)
+	.main__right 
+		img
+			width: 69%
+
+	.menu
+		justify-content: center
+		font-size: 14px
+	.main__left 
+		h1
+			font-size: 20px
+
+	.portf__content 
+		a
+			width: 100%
+			margin-right: 0 !important
+
+	.contact__item
+		width: 100%
