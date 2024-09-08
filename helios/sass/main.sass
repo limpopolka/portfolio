@@ -1,0 +1,573 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+*
+	outline: none !important
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.2
+	font-family: $font
+	overflow-x: hidden 
+	color: $text
+	margin-left: auto
+	margin-right: auto
+	font-weight: 300
+.scrollTop
+	position: fixed
+	z-index: 4
+	right: 81px
+	bottom: 222px
+	width: 72px
+	height: 72px
+	box-shadow: 9px 12px 51px rgba(195, 205, 211, 0.44)
+	background-color: white
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url('../img/icons/top.svg')
+	border-radius: 50%
+	cursor: pointer
+	opacity: 0
+	pointer-events: none
+	transition: opacity .3s
+.scrollTop__active
+	opacity: 1
+	pointer-events: auto
+
+.mask
+	position: fixed
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	z-index: 999
+	background-color: rgba(#424341, .91)
+	transition: opacity .3s
+	opacity: 0
+	pointer-events: none
+.mask--active
+	opacity: 1
+	pointer-events: auto
+.mask-search
+	display: flex
+	justify-content: center
+	padding-top: 196px
+.mask-search-input
+	width: 830px
+	height: 54px
+	border-radius: 3px
+	background-color: #ffffff
+	border: none
+	font-size: 14px
+	padding-left: 33px
+	padding-right: 50px
+.close-search-mask
+	width: 16px
+	height: 16px
+	background-image: url('../img/icons/close.svg')
+	background-position: center
+	background-repeat: no-repeat
+	margin-left: auto
+	margin-bottom: 15px
+	cursor: pointer
+.search-btn
+	display: block
+	width: 21px
+	height: 21px
+	background: none
+	border: none
+	cursor: pointer
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url('../img/icons/searchg.svg')
+.wrap-mask-input
+	position: relative
+.search-btn
+	position: absolute
+	top: calc(50% - 21px / 2)
+	right: 24px
+.container
+	max-width: 1030px
+	padding:
+		right: 15px
+		left: 15px
+	margin:
+		left: auto
+		right: auto
+
+.btn
+	width: 202px
+	height: 54px
+	display: flex
+	align-items: center
+	justify-content: center
+	color: white
+	text-transform: uppercase
+	font-size: 14px
+	font-weight: 700
+	background-color: $accent
+	border-radius: 3px
+	transition: background-color .3s
+	&:hover
+		color: white
+		text-decoration: none
+		background-color: $accent2
+.btn-opacity
+	background: none
+	border: 1px solid $accent
+	&:hover
+		background-color: $accent
+
+.btn-center
+	margin-left: auto
+	margin-right: auto
+	margin-top: 30px
+.section-head
+	font-size: 24px
+	font-weight: 700
+	
+.link-top
+	position: relative
+.submenu-wrap
+	position: absolute
+	left: -35px
+	padding-top: 7px
+	opacity: 0
+	pointer-events: none
+	transition: opacity .3s
+.submenu
+	display: flex
+	flex-direction: column
+	background-color: white
+	box-shadow: 0 8px 24px rgba(87, 87, 87, 0.23)
+	border-radius: 4px
+	width: 286px
+	padding: 35px
+	a
+		font-weight: 400
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+
+.header__nav-item-have-child 
+	position: relative
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		width: 10px
+		height: 10px
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url('../img/icons/bottom.svg')
+		right: -15px
+		top: calc(50% - 5px)
+		transition: background-image .3s
+	&:hover 
+		.submenu-wrap
+			opacity: 1
+			pointer-events: auto
+		&:after
+			background-image: url('../img/icons/topg.svg')
+
+.header__top, .header__bottom
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+.header__top
+	padding-top: 20px
+	padding-bottom: 20px
+.header__logo
+	display: block
+	display: flex
+	color: #5a79a9
+	align-items: center
+	&:hover
+		color: #5a79a9
+		text-decoration: none
+
+.header__logo-img
+	width: 131px
+	height: 31px
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	background-image: url('../img/icons/logo.svg')
+
+.header__logo-text
+	line-height: 1.1
+	margin-left: 15px
+.header__logo-text-item
+	display: block
+	&:nth-child(2)
+		font-weight: 700
+		font-size: 18px
+	&:nth-child(1)
+		font-size: 14px
+
+.header-phone
+	color: #616161
+	&:hover
+		color: #616161
+		text-decoration: none
+.header__get-call
+	color: $accent
+	&:hover
+		color: #616161
+		text-decoration: underline
+
+.header__search-btn
+	width: 20px
+	height: 21px
+	cursor: pointer
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url('../img/icons/search.svg')
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		display: block
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url('../img/icons/searchg.svg')
+		transition: opacity .3s
+		opacity: 0
+	&:hover
+		&:after
+			opacity: 1
+
+.header__bottom-left
+	font-size: 14px
+	color: #616161
+
+.header__nav
+	display: flex
+.header__nav-item
+	margin-right: 33px
+	font-weight: 700
+	font-size: 14px
+	&:last-child
+		margin-right: 0
+	a
+		color: $text
+		transition: color .2s
+		&:hover
+			color: $accent
+			text-decoration: none
+
+
+.main-screen
+	height: 768px
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url('../img/mainbg.jpg')
+
+.main-screen__content-wrap
+	height: 64%
+.main-screen__content
+	width: 432px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	height: 100%
+	.btn
+		width: 238px
+.main-screen__head
+	font-weight: 700
+	text-transform: uppercase
+	font-size: 29px
+	width: 350px
+	margin-bottom: 20px
+
+.main-screen__subhead
+	font-size: $fonth
+	font-weight: 700
+	margin-bottom: 30px
+
+.main-screen__text
+	color: #616161
+	margin-bottom: 51px
+	line-height: 24px
+
+
+.triggers
+	position: relative
+	top: -60px
+.triggers-wrap
+	display: flex
+	justify-content: space-between
+	margin-top: 39px
+	
+.triggers-item
+	span
+		display: block
+		width: 167px
+	object
+		margin-bottom: 10px
+
+.our-service
+	height: 1126px
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url('../img/screentoo.svg')
+	padding-top: 159px
+	.section-head
+		margin-bottom: 45px
+
+.our-service__wrap
+	display: flex
+	flex-wrap: wrap
+
+.our-service__item
+	width: 238px
+	height: 323px
+	margin-right: 16px
+	position: relative
+	margin-bottom: 21px 
+	&:hover
+		text-decoration: none
+		.our-service__item-text--bold
+			color: $text
+			text-decoration: none
+		.our-service__item-text--light
+			color: #b0b0b0
+			text-decoration: none
+		.our-service__item-text
+			background-color: $accent2
+			.our-service__item-text--bold, .our-service__item-text--light
+				color: white
+				text-decoration: none
+	&:nth-child(3)
+		margin-right: 0
+	&:nth-child(7)
+		margin-right: 0
+.our-service__item-bg
+	width: 100%
+	height: 268px
+	background-position: center
+	background-repeat: no-repeat
+	border-radius: 3px
+
+.our-service__item-text
+	width: 197px
+	height: 96px 
+	border-radius: 4px
+	background-color: white
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	position: absolute
+	left: 20px
+	transition: background-color .3s
+	bottom: 0px
+
+.our-service__item-text--bold
+	font-weight: 700
+	font-size: 16px
+	margin-bottom: 5px
+	text-align: center
+	color: $text
+	padding-left: 10px
+	padding-right: 10px
+		
+.our-service__item-text--light
+	font-size: 12px
+	color: #b0b0b0
+
+
+
+.our-service__item--long
+	width: 492px
+	.our-service__item-bg
+		position: static
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 100%
+	.our-service__item-text
+		position: static
+		width: 324px
+		height: 96px
+		background-color: rgba(#fff, .8)
+	.our-service__item-text--bold
+		width: 220px
+
+.text-block
+	text-align: center
+	padding-top: 30px
+	padding-bottom: 80px
+.text-head
+	margin-bottom: 30px
+.text
+	line-height: 24px
+	color: #616161
+	width: 1020px
+	margin-left: auto
+	margin-right: auto
+
+footer
+	background-color: #3a3935
+	padding-top: 86px
+	padding-bottom: 90px
+	background-position: right bottom
+	background-repeat: no-repeat
+	background-image: url('../img/footbg.svg')
+	.container	
+		display: flex
+
+
+.foot-form-wrap
+	width: 43%
+	border-right: 1px solid #6b6a68
+	padding-right: 101px
+	form
+		width: 322px
+.form-head
+	font-weight: 700
+	font-size: 24px
+	color: #fff
+	text-align: center
+	margin-bottom: 6px
+.wrap-input
+	width: 100%
+	position: relative
+	.btn
+		border: none
+		margin-top: 20px
+		margin-left: auto
+		margin-right: auto
+	label
+		position: absolute
+		font-size: 14px
+		color: #949494
+		transform: translate(20px, 17px) 
+		pointer-events: none
+		transition: font-size .3s, transform .3s
+.wrap-input--active
+	.input
+		background-color: white
+		border-radius: 3px
+		border-bottom: none
+		padding-left: 5px
+		color: $text
+	label
+		font-size: 12px
+		transform: translate(5px, 3px) 
+.input
+	width: 100%
+	border: none
+	background-color: rgba(#fff, 0)
+	border-bottom: 2px solid #ccc
+	height: 50px
+	margin-bottom: 20px
+	color: white
+	padding-left: 5 px
+	font-size: 14px
+	transition: border-radius .3s, border .3s, background-color .3s
+
+
+
+.form__bottom-text
+	color: #a09e98
+	font-weight: 400
+	font-size: 12px
+	text-align: center
+	margin-top: 35px
+	a
+		color: inherit
+		text-decoration: underline
+
+		&:hover
+			color: inherit
+.foot-right
+	padding-top: 13px
+	padding-bottom: 13px
+	padding-left: 85px
+
+
+.foot-right__nav
+	width: 221px
+.foot-right__nav-item
+	color: white
+	transition: color .3s
+	display: block
+	font-size: 14px
+	margin-bottom: 10px
+	&:hover
+		color: $accent
+		text-decoration: none
+
+	&:last-child
+		margin-bottom: 0
+
+.foot-right
+	display: flex
+	justify-content: space-between
+	width: 57%
+.footer-right__inf
+	width: 196px
+	color: white
+	font-size: 14px
+
+.inf-text-adres
+	span
+		&:first-child
+			display: block
+			margin-bottom: 7px
+
+.inf-text-num__row
+	display: flex
+	justify-content: space-between
+
+.inf-text-num
+	margin-top: 30px
+	margin-bottom: 30px
+.num-before
+	&:before
+		content: 'тел./факс'
+		color: #a09e98
+		font-size: 10px
+		margin-right: 6px
+
+.foot-mail
+	color: $accent
+	margin-top: 25px
+	margin-bottom: 30px
+	display: block
+	&:hover
+		color: white
+		text-decoration: none
+
+.foot-small-text
+	font-size: 12px
+	color: #a09e98
+
+.foot-small-text-link
+	text-decoration: underline
+	&:hover
+		color: inherit
+
+.foot-link-wrap
+	margin-top: 20px

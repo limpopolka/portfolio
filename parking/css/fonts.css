@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'ArialRoundedMTProCyr';
+    src: url('../fonts/ArialRoundedMTProCyr.eot');
+    src: url('../fonts/ArialRoundedMTProCyr.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ArialRoundedMTProCyr.woff2') format('woff2'),
+        url('../fonts/ArialRoundedMTProCyr.woff') format('woff'),
+        url('../fonts/ArialRoundedMTProCyr.otf') format('otf'),
+        url('../fonts/ArialRoundedMTProCyr.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArialRoundedMTProCyr';
+    src: url('../fonts/ArialRoundedMTProCyr-Bold.eot');
+    src: url('../fonts/ArialRoundedMTProCyr-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ArialRoundedMTProCyr-Bold.woff2') format('woff2'),
+         url('../fonts/ArialRoundedMTProCyr-Bold.otf') format('otf'),
+        url('../fonts/ArialRoundedMTProCyr-Bold.woff') format('woff'),
+        url('../fonts/ArialRoundedMTProCyr-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

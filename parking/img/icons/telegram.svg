@@ -1,0 +1,16 @@
+<svg id="telegram.svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #64a9dc;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Прямоугольник_9" data-name="Прямоугольник 9" class="cls-1" width="24" height="24" rx="3" ry="3"/>
+  <path id="Фигура_33" data-name="Фигура 33" class="cls-2" d="M1482.5,6457.18l-0.28,3.88a0.992,0.992,0,0,0,.78-0.37l1.85-1.77,3.85,2.81a0.838,0.838,0,0,0,1.39-.65l2.53-11.81h0c0.22-1.04-.38-1.45-1.06-1.2l-14.85,5.68c-1.01.39-1,.96-0.17,1.21l3.79,1.18,8.82-5.51c0.41-.27.79-0.12,0.48,0.15Z" transform="translate(-1473 -6443)"/>
+</svg>

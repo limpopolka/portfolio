@@ -1,0 +1,1907 @@
+@import vars
+@import _fonts
+@import _libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+*
+	outline: none !important
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: $font
+	overflow-x: hidden
+	color: $text
+	margin-left: auto
+	margin-right: auto
+
+.wrapper-cal-icon
+	position: relative
+	width: 100%
+	.cal-icon
+		display: block
+		width: 19px
+		height: 18px
+		background-image: url('../img/icons/cal.svg')
+		background-repeat: no-repeat
+		background-position: center
+		position: absolute
+		right: 4px
+		top: 4px
+		height: 42px
+		width: 36px
+		background-color: white
+	input
+		width: 100%
+		&:placeholder
+			content: 'fasfasas'
+.small-head
+	font-size: 20px
+	font-family: $fhead
+	text-transform: uppercase
+.cart-header
+	font-size: 25px
+	font-family: $fhead
+.cart-text
+	line-height: 1.2
+.container
+	max-width: 1420px
+	padding:
+		right: $gutter/2
+		left: $gutter/2
+	margin:
+		left: auto
+		right: auto
+textarea
+	width: 100%
+	min-height: 150px
+	border: 4px solid #f1ebd3
+	padding-left: 10px
+	padding-right: 10px
+	padding-bottom: 10px
+	padding-top: 10px
+	resize: none
+.wrapper-input
+	display: flex
+	flex-direction: column
+	margin-top: 20px
+	.label-input
+	input
+		height: 50px
+		background-color: white
+		border: 4px solid #f1ebd3
+		padding-left: 18px
+		&:placeholder
+			color #a6a6a6
+	.checkbox 
+		display: none
+	.castom-checkbox
+		display: block
+		width: 25px
+		height: 25px
+		background-color: white
+		border: 4px solid #f1ebd3	
+	.checkbox 
+		&:checked + .castom-checkbox
+			background-image: url('../img/icons/ok.svg')
+			background-position: center
+			background-repeat: no-repeat
+	label
+.checkbox-wrapper
+	display: flex
+	flex-direction: row
+	align-items: center
+	line-height: 1.2
+	margin-bottom: 12px
+	a
+		color: $text
+		text-decoration: underline
+	.castom-checkbox
+		margin-right: 10px
+
+
+.modal-complain
+	width: 651px
+	padding-left: 76px
+	padding-right: 76px
+	padding-bottom: 20px
+	padding-top: 20px
+	background-image: url('../img/bg2.png')
+	.sale-popup-image
+		margin-top: 27px
+	.compain-form-top
+		display: flex
+		textarea
+			height: 239px
+			resize: none
+			
+	.compain-form-left
+		width: 50%
+		margin-right: 20px
+	.compain-form-right
+		width: 50%
+	.compain-form-bottom
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-top: 10px
+.modal-head
+	font-family: $fhead
+	font-size: 25px
+	text-align: center
+	display: block
+	width: 100%
+	line-height: 1.2
+
+.pagination-item__underline
+	border-bottom: 2px solid #C1B8B2
+	&:hover
+		text-decoration: none
+.menu-mask, .mobile-menu_mask
+	width: 100vw
+	height: 100vh
+	background-color: rgba(0,0,0, .4)
+	position: fixed
+	z-index: 999
+	opacity: 0
+	pointer-events: none
+	transition: .4s
+
+.menu-mask_active, .mobile-menu_mask__active
+	opacity: 1
+	pointer-events: auto
+
+.menu
+	width: 100%
+	background-image: url('../img/bg2.png')
+	.container
+		padding-left: 164px
+		padding-top: 19px
+.menu-top
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
+.menu-close
+	width: 17px
+	height: 17px
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url('../img/icons/close.svg')
+	cursor: pointer
+	position: relative
+	&:after
+		content: ''
+		display: block
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background-image: url('../img/icons/closered.svg')
+		background-position: center
+		transition: .2s
+		opacity: 0
+		background-repeat: no-repeat
+	&:hover
+		&:after
+			opacity: 1
+
+
+
+//sale-popup
+.sale-popup
+	width: 651px
+	padding-left: 73px
+	padding-right: 73px
+	padding-bottom: 53px
+	padding-top: 30px
+	background-image: url('../img/bg2.png')
+	ul
+		padding-left: 37px
+		margin-top: 30px
+		li
+			list-style-type: none
+			display: flex
+			align-items: flex-start
+			font-size: 16px
+			position: relative
+			line-height: 1.2
+			margin-bottom: 20px
+			&:before
+				content: ''
+				display: block
+				width: 20px
+				height: 19px
+				background-image: url('../img/icons/star.svg')
+				background-position: center
+				background-repeat: no-repeat
+				background-size: 100%
+				position: absolute
+				left: -37px
+	.sale-popup_price
+		text-align: center
+		span
+			font-family: $fhead
+			font-size: 33px
+		.price-text
+			font-size: 26px
+	.btn
+		margin-left: auto
+		margin-right: auto
+.RED-STALIN-STAR
+	width: 100%
+	height: 47px
+	background-image: url('../img/icons/star.svg')
+	background-size: 47px
+	background-position: center
+	background-repeat: no-repeat
+.sale-popup_head-desc
+	line-height: 1
+	margin-top: 10px
+.sale-popup_head
+	font-size: 25px
+	font-family: $fhead
+	display: block
+	text-align: center
+.sale-popup_desc
+	font-size: 17px
+	font-family: $fhead
+	display: block
+	text-align: center
+.sale-popup-image
+	width: 100%
+	height: 320px
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+//custom slect
+.custom-select
+	position: relative
+.custom-select_current-value
+	width: 100%
+	height: 50px
+	padding-left: 18px
+	display: flex
+	align-items: center
+	border: 4px solid #f1ebd3
+	border-bottom: 2px solid #f1ebd3
+	line-height: 1
+	position: relative
+	&:after
+		content: ''
+		display: block
+		width: 10px
+		height: 5px
+		background-image: url('../img/icons/triangle.svg')
+		position: absolute
+		right: 14px
+.wrapper-options
+	width: 100%
+	top: 50px
+	position: absolute
+	background-color: white
+	display: none
+.wrapper-options_active
+	display: block
+
+	.custom-select_option
+		width: 100%
+		height: 50px
+		padding-left: 18px
+		display: flex
+		align-items: center
+		border: 4px solid #f1ebd3
+		position: relative
+		border-top: 2px solid #f1ebd3
+		border-bottom: 2px solid #f1ebd3
+		line-height: 1
+.mobile-menu
+	background-image: url('../img/bg2.png')
+	.container
+		padding-left: 165px
+		padding-top: 19px
+
+.mobile-menu_center
+	display: flex
+	flex-direction: column
+	padding-top: 20px
+	padding-left: 39px
+	padding-bottom: 30px
+.mobile-menu--item
+	font-family: $fhead
+	font-size: 20px
+	text-decoration: none
+	color: $text
+.mobile-menu--item_action
+	display: flex
+	align-items: center
+	&:after
+		content: ''
+		margin-left: 10px
+		display: block
+		width: 14px
+		height: 8px
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url('../img/icons/top.svg')
+		background-size: 70%
+		transform: rotate(180deg)
+		transition: .3s
+.mobile-menu--item-afterRotate
+	&:after
+		transform: rotate(0deg)
+.menu-tab
+	display: none
+	padding-left: 25px
+	margin-top: 5px
+	a
+		display: block
+		color: $text
+		margin-bottom: 8px
+
+.menu-navigation
+	nav
+		display: flex
+		flex-direction: column
+		padding-bottom: 15px
+		padding-top: 5px
+		a
+			color: $text
+			text-decoration: none
+			display: flex
+			align-items: center
+			height: 40px
+			width: 100%
+			transition: .4s
+			padding-left: 40px
+			&:hover
+				background-color: #f6f5f3
+.btn
+	width: 200px
+	height: 55px
+	background-color: $accent
+	color: white
+	font-family: $fhead
+	font-size: 17px
+	border: none
+	cursor: pointer
+	display: flex
+	justify-content: center
+	align-items: center
+	border-radius: 3px
+	overflow: hidden
+	object
+		margin-right: 10px
+		pointer-events: none
+	span
+		position: relative
+		display: block
+		&:after
+			content: ''
+			display: block
+			width: 100%
+			height: 21px
+			position: absolute
+			background-color: #ba0000
+			bottom: -15px
+			transform: skew(40deg)
+			left: 10px
+			transition: .4s
+	&:hover
+		span
+			&:after
+				opacity: 0
+.btn-gold
+	background-color: #d9c094
+	span
+		&:after
+			background-color: #d4ba8c
+
+.text-section
+	.section-head
+		font-size: 30px
+		font-family: $fhead
+	.section-p
+		width: 682px
+		line-height: 1.4
+
+.wrapper
+	background-image: url('../img/bg1.jpg')
+.gamburger
+	width: 25px
+	margin-right: 13px
+.gamburger-line
+	width: 100%
+	background-color: $accent
+	height: 4px
+	margin-bottom: 3px
+	&:last-child
+		margin-bottom: 0
+.serviceButton
+	display: flex
+	align-items: center
+	cursor: pointer
+	font-family: $fhead
+	font-size: 20px
+
+
+.mobile-menu__action
+	display: none
+
+
+.small-text
+	font-family: $font
+	font-size: 14px
+
+.dots
+	display: flex
+	padding-left: 0
+	margin-top: 25px
+	margin-left: 10px
+	li
+		list-style-type: none
+		width: 20px
+		height: 20px
+		border: 4px solid white
+		margin-right: 10px
+		transition: .3s
+		cursor: pointer
+	.slick-active
+		border: 4px solid $accent
+		background-color: $accent
+	button
+		display: none
+.pagination
+	width: 100%
+	height: 42px
+	background-color: #fff
+	margin-bottom: 20px
+	.container
+		display: flex
+		height: 100%
+		align-items: center
+.pagination-item
+	color: #c1b8b2
+	font-size: 17px
+	font-family: $fhead
+	margin-right: 29px
+	&:hover
+		color: #c1b8b2
+
+.long-text
+	.long-text_head
+		font-family: $fhead
+		font-size: 30px
+		display: block
+		margin-bottom: 5px
+	.long-text_p
+		font-size: 16px
+		line-height: 1.4
+//header
+header
+	font-family: $fhead
+	display: flex !important
+	.haeder_bottom-phone
+		margin-right: 24px
+.header-logo
+	width: 184px
+	height: 157px
+	background-image: url('../img/logo.png')
+	background-position: center left
+	background-repeat: no-repeat
+	display: block
+
+.header-logo-mobile
+	display: none
+	width: 57px
+	height: 55px
+	background-size: 100%
+	background-position: center
+	background-repeat: no-repeat
+
+.header-content
+	width: 100%
+
+
+//header-top 
+.header-content_top
+	padding-top: 19px
+	padding-bottom: 20px
+	font-size: 20px
+	border-bottom: 1px solid black
+	display: flex
+	justify-content: space-between
+.header_top--nav
+	a
+		margin-right: 47px
+		color: $text
+		&:last-child
+			margin-right: 0
+		&:hover
+			color: $text
+
+.haeder_top--right
+
+.header-top-lkButton
+	display: flex
+	align-items: center
+	a
+		color: $text
+		margin-left: 10px
+		display: flex
+		align-items: center
+.icon-lk
+	width: 16px
+	height: 16px
+	display: block
+	background-position: center
+	background-repeat: no-repeat
+	margin-right: 10px
+	background-image: url('../img/icons/lk.svg')
+
+.icon-lk-mobile
+	display: none !important
+
+//header-bottom
+.header-wrapper-triggers
+	display: flex
+	justify-content: space-between
+	align-items: center
+	width: 77%
+.haeder-content_bottom
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding-top: 10px 
+	padding-bottom: 10px
+
+.header_bottom--trigger
+	display: flex
+	align-items: center
+	text-decoration: none
+	&:hover
+		text-decoration: none
+		.header-trigger_link
+			color: $accent
+			&:after
+				width: 0
+		.header--trigger_image
+			background-color: white
+
+
+	.header-trigger_link	
+.header--trigger_image
+	width: 51px
+	height: 51px
+	border: 2px solid white
+	border-radius: 50%
+	background-repeat: no-repeat
+	background-position: center
+	margin-right: 10px
+	transition: .4s
+.header-trigger_link
+	font-size: 17px
+	color: $text
+	position: relative
+	transition: .4s
+	&:hover
+		text-decoration: none
+	&:after
+		content: ''
+		position: absolute
+		width: 100%
+		height: 2px
+		background-color: $text
+		left: 0
+		bottom: 0
+		transition: .4s
+
+.haeder_bottom-phone
+	display: flex
+	flex-direction: column
+	line-height: 1.2
+
+
+.header-phone
+	font-size: 23px
+	font-family: $fhead
+
+//mainscreen
+.mainScreen
+	margin-bottom: 40px
+	.container
+		display: flex
+.mainScreen-slider
+	width: 65%
+	position: relative
+	.slickArrow
+		width: 58px
+		height: 58px
+		border: 2px solid white
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		cursor: pointer
+		transition: .3s 
+		position: absolute
+		top: calc(50% - 58px / 2)
+		z-index: 2
+		&:hover
+			background-color: white
+			&:after
+				opacity: 1
+	.slickNext
+		right: 20px
+		background-image: url('../img/icons/right.svg')
+		background-position: center
+		background-repeat: no-repeat
+		&:after
+			content: ''
+			display: block
+			width: 56px
+			height: 56px	
+			background-image: url('../img/icons/rightred.svg')
+			background-position: center
+			background-repeat: no-repeat
+			position: absolute
+			transition: .3s
+			opacity: 0
+			top: 0
+			left: 0
+			border-radius: 50%
+
+	.slickPrev
+		left: 20px
+		background-image: url('../img/icons/left.svg')
+		background-position: center
+		background-repeat: no-repeat
+		&:after
+			content: ''
+			display: block
+			width: 56px
+			height: 56px	
+			background-repeat: no-repeat
+			background-image: url('../img/icons/leftred.svg')
+			background-position: center
+			position: absolute
+			transition: .3s
+			opacity: 0
+			top: 0
+			left: 0
+			border-radius: 50%
+
+.mainScreen-slider-item
+	width: 100%
+	height: 569px
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	border-radius: 3px
+	
+.mainScreen-slider-item--inner
+	width: 100%
+	height: 100%
+	display: flex
+	align-items: flex-end
+	padding-left: 30px
+	padding-bottom: 20px
+
+.mainScreen--slideText
+	color: white
+	font-family: $fhead
+	background: #5d736d
+	display: inline
+	font-size: 48px
+	line-height: 1
+	padding-left: 10px
+	padding-right: 20px
+#hidden-contactForm
+	width: 455px
+	.mainScreen-form
+		width: 100%
+		margin-left: 0
+		form
+			padding: 0
+.mainScreen-form
+	width: 45%
+	margin-left: 20px
+	form
+		width: 100%
+		padding-top: 50px
+		padding-left: 52px
+		padding-right: 52px
+		padding-bottom: 67px
+		background-color: white
+
+//our-service
+
+.ourService
+	.text-section
+		margin-bottom: 30px
+.ourService-itemsWrapper
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+.ourService-item
+	width: calc(100% / 3 - 10px)
+	height: 250px
+	border-radius: 3px
+	background-image: url('../img/mask.png')
+	background-repeat: no-repeat
+	color: white
+	font-family: $fhead
+	overflow: hidden
+	cursor: pointer
+	margin-top: 16px 
+	position: relative
+.ourService-item--mask
+	width: 100%
+	height: 100%
+	position: absolute
+	background-repeat: no-repeat
+	background-position: bottom right
+	background-position: 105% 100%
+	transition: .7s
+	&:hover
+		background-position: 110% 100%
+#service-mask-1
+
+#service-mask-2
+#service-mask-3
+#service-mask-4
+
+#service-mask-5
+	
+#service-mask-6
+
+
+.ourService-item--wrapperText
+	line-height: 1.2
+	margin-left: 41px
+	margin-top: 25px
+.ourService-item_head
+	font-size: 26px
+.ourService-item_links
+	display: flex
+	a
+		color: white
+		font-size: 17px
+		position: relative
+		text-decoration: none
+		margin-right: 10px
+		&:after
+			content: ''
+			position: absolute
+			width: 100%
+			height: 2px
+			background-color: white
+			left: 0
+			bottom: -3px
+			transition: .4s
+		&:hover
+			color: white
+			text-decoration: none
+			&:after
+				width: 0px	
+
+
+.internetSlider
+	margin-top: 50px
+	.text-section
+		margin-bottom: 30px
+	.container
+		position: relative
+		.more_about-wrapper
+			display: flex
+			justify-content: flex-end
+			.more_about-internet
+				color: $text
+				text-decoration: none
+				font-family: $fhead
+				cursor: pointer
+				display: block
+				position: relative
+				bottom: 41px
+				&:after
+					content: ''
+					position: absolute
+					width: 100%
+					height: 2px
+					background-color: $text
+					left: 0
+					bottom: 0px
+					transition: .4s
+					width: 306px
+				&:hover
+					&:after
+						width: 0px	
+.internetSlider-wrapper
+	margin: 0 -10px
+
+.internetSlider
+	margin-bottom: 30px
+.internetSlider-item
+		padding-top: 20px
+		padding-bottom: 25px
+		padding-left: 35px
+		padding-right: 15px
+		background-color: white
+		background-image: url('../img/bg2.png')
+		margin-right: 20px
+		margin: 0 10px
+		ul
+			padding-left: 37px
+			margin-top: 30px
+			li
+				list-style-type: none
+				display: flex
+				align-items: center
+				font-size: 15px
+				position: relative
+				line-height: 1.2
+				margin-bottom: 20px
+				&:before
+					content: ''
+					display: block
+					width: 29px
+					height: 26px
+					background-image: url('../img/icons/star.svg')
+					background-position: center
+					background-repeat: no-repeat
+					position: absolute
+					left: -37px
+
+.internetSlider-item__inner
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+
+.internetSlider-price
+	font-size: 26px
+	font-family: $fhead
+	margin-bottom: 15px
+
+	.price-num
+		font-size: 33px
+.moreDetails
+	color: $text
+	text-decoration: none
+	font-family: $fhead
+	font-size: 17px
+	position: relative
+	width: 73px
+	margin-top: 10px
+	&:hover
+		text-decoration: none
+		color: $text
+	&:after
+		content: ''
+		position: absolute
+		width: 100%
+		height: 2px
+		background-color: $text
+		left: 0
+		bottom: 0px
+		transition: .4s
+
+	&:hover
+		&:after
+			width: 0px	
+
+.banner
+	margin-bottom: 50px
+.banner-wrapper
+	width: 100%
+	padding-top: 55px
+	padding-bottom: 60px
+	background-color: #b9424c
+	background-image: url('../img/mask.png')
+	border-radius: 3px
+	padding-left: 64px
+	color: white
+	font-family: $fhead
+	font-size: 27px
+	line-height: 1.2
+	background-image: url('../img/VOLOKNO.png')
+	background-repeat: no-repeat
+	background-position: 70% 120%
+	span
+		display: block
+		width: 512px
+	
+.sale
+	margin-bottom: 50px
+	.text-section
+		margin-bottom: 30px
+
+.sale-slider
+	margin: 0 -10px
+.sale-slider_item
+	width: 335px
+	background-color: #fff
+	background-image: url('../img/mask.png')
+	border-radius: 3px
+	padding: 
+		top: 40px
+		bottom: 40px
+	margin: 0 10px
+
+.sale-slider_item_long
+	transition: .4s
+	.sale-item-text
+		transition: .4s
+	&:hover
+		.sale-item-text
+			transition: .4s
+			height: 300px
+			.sale-mask
+				opacity: 0
+				pointer-events: none
+
+.sale-slider_item--inner
+	position: relative
+.sale-name-wrapper
+	line-height: 1.1
+	padding-left: 37px
+	min-height: 93px
+.sale-name
+	font-family: $fhead
+	font-size: 23px
+.sale-marker
+	position: absolute
+	top: 6px
+	right: 0px
+	width: 108px
+	height: 26px
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: 17px
+	text-transform: uppercase
+	color: white
+	font-family: $fhead
+	line-height: 0
+	background-image: url('../img/icons/bggreen.svg')
+	background-position: center
+	background-repeat: no-repeat
+.sale-image
+	width: 100%
+	height: 184px
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	
+
+.sale-item-bottom
+	padding-top: 27px
+	padding-left: 30px
+	padding-right: 30px
+.sale-item-text
+	width: 100%
+	line-height: 1.2
+	height: 157px
+	overflow: hidden
+
+
+.sale-item-text
+	position: relative
+.sale-mask
+	width: 100%
+	height: 120px
+	position: absolute
+	background-image: url('../img/text-mask.png')
+	background-position: center
+	bottom: 0px
+	left: 0px
+	opacity: 1
+.sale-header-timer
+	margin-top: 12px
+	margin-bottom: 5px
+	display: block
+.timer
+	display: flex
+	width: 209px
+	padding-left: 0
+	
+	li
+		list-style-type: none
+	.timer-num
+		width: 30px
+		height: 36px
+		background-color: #e8e8e8
+		display: flex
+		justify-content: center
+		align-items: center
+		font-family: $fhead
+		margin-right: 3px
+		border-radius: 5px
+	.days, .hours, .minutes
+		display: flex
+		margin-right: 10px
+	.days_ref, .hours_ref, .minutes_ref
+		font-size: 12px
+		width: 67px
+		text-align: center
+.our-map--map
+	margin-top: 20px
+
+
+
+.map-wrapper
+	position: relative
+	margin-bottom: 60px
+	.our-map--filter_wrapper
+		position: absolute
+		top: 27%
+		width: 334px
+		padding-top: 33px
+		padding-left: 37px
+		padding-right: 37px
+		padding-bottom: 39px
+		background-color: white
+		background-image: url('../img/mask.png')
+		input
+			width: 100%
+			height: 45px 
+			border: none
+			background-color: #f4f4f4
+			padding-left: 19px
+			font-size: 13px
+			font-weight: 600
+			color: #808080
+
+
+.map-head-filter
+	font-size: 13px
+	color: #363636
+	font-weight: 600
+	margin-top: 25px
+	display: block
+	margin-bottom: 5px
+
+.wrapper-map-checkbox
+	padding-left: 20px
+.map-filter-item
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: space-between
+	position: relative
+.map-filter-custom
+	width: 40px
+	height: 24px
+	border-radius: 15px
+	background-color: #e8e8e8
+	cursor: pointer
+	transition: .4s
+	position: relative
+	&:after
+		content: ''
+		width: 20px
+		height: 20px
+		display: block
+		border-radius: 50%
+		position: absolute
+		left: 3px
+		top: 2px
+		background-color: #fff
+		transition: .4s
+
+.map-filter-input
+	display: none
+	&:checked + .map-filter-custom
+		background-color: $accent
+		&:after
+			left: 17px
+
+.map-filter-text
+	font-size: 13px
+	&:before
+		content: ''
+		position: absolute
+		left: -22px
+		display: block
+		width: 8px
+		height: 8px
+		border-radius: 50%
+		top: 8px
+
+#map-filter-item-1
+	&:before
+		background-color: #f3d1b1
+#map-filter-item-2
+	&:before
+		background-color: #a8bbe1
+#map-filter-item-3
+	&:before
+		background-color: #6b8bca
+
+
+
+.ourOffer
+	margin-bottom: 60px
+	.text-section
+		margin-bottom: 60px
+.ourOffer-slider
+	margin: 0 -10px
+.ourOffer-item
+	padding-left: 50px
+	padding-right: 50px
+	padding-top: 30px
+	padding-bottom: 50px
+	overflow: hidden
+	background-color: #fff
+	border-radius: 3px
+	width: 689px
+	background-repeat: no-repeat
+	background-position: 120% 48%
+	min-height: 375px
+	margin: 0 10px
+	height: 100%
+
+.ourOffer-bottom
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	min-height: 255px
+.ourOffer-ul
+	padding-left: 20px
+	li
+		list-style-type: none
+		line-height: 1.3
+		margin-bottom: 6px
+		position: relative
+
+		&:before
+			content: ''
+			width: 12px
+			height: 11px
+			display: block
+			background-image: url('../img/icons/star.svg')
+			background-position: center
+			background-repeat: no-repeat
+			background-size: 100%
+			margin-right: 10px
+			margin-top: 5px
+			position: absolute
+			left: -20px
+
+.contact-form
+
+.contact-form_container
+	max-width: 1660px
+	margin-right: auto
+	display: flex
+	align-items: flex-start
+	position: relative
+	padding:
+		right: $gutter/2
+
+.scrollTop
+	width: 60px
+	height: 60px
+	border-radius: 50%
+	background-color: white
+	display: flex
+	justify-content: center
+	align-items: center
+	position: absolute
+	right: -100px
+	cursor: pointer
+	top: calc(50% - 30px)
+	background-image: url('../img/icons/top.svg')
+	background-position: center
+	background-repeat: no-repeat
+
+
+
+footer
+	padding-top: 72px
+.footer-top
+	display: flex
+	justify-content: space-between
+.footer-logo
+	width: 87px
+	height: 84px
+	background-image: url('../img/logo.png')
+	background-repeat: no-repeat
+	background-position: center
+	background-size: 100%
+	margin-right: 20px
+.footer-nav
+	display: flex
+	height: 180px
+	.nav-col
+		display: flex
+		flex-direction: column
+		margin-right: 100px
+		a
+			color: $text
+
+.footer-wrapper_trigger
+	font-family: $fhead
+	flex-grow: 1
+	.header_bottom--trigger
+		margin-bottom: 20px
+		max-width: 250px
+.footer-wrapper-phone
+	
+	.wrapper-phone-text
+		display: flex
+		flex-direction: column
+		text-align: center
+		line-height: 1.2
+		margin-top: 20px
+		margin-bottom: 20px
+
+
+.footer-cards-wrapper
+	display: flex
+	justify-content: space-between
+	.footer-card-item
+		width: 62px
+		height: 32px
+		background-position: center
+		background-repeat: no-repeat
+		background-color: #fff
+
+
+.footer-bottom
+	background-color: white
+	width: 100%
+	height: 70px
+	margin-top: 30px
+	.container	
+		display: flex
+		justify-content: space-between
+		height: 100%
+		align-items: center
+		a
+			color: $accent
+			margin-left: 20px
+
+
+
+
+.techSupport-block
+	padding-top: 85px
+	padding-bottom: 85px
+	padding-left: 119px
+	background-color: white
+	background-image: url('../img/bg2.png')
+	position: relative
+	margin-top: 60px
+	margin-bottom: 66px
+.techSupport-text
+	margin-top: 40px
+.techSupport-block_image
+	position: absolute
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url('../img/redman.png')
+	width: 715px
+	height: 512px
+	right: 91px
+	bottom: 0
+.techSupport_head
+	font-size: 25px
+	font-family: $fhead
+.techSupport_p
+	font-size: 20px
+	width: 460px
+	line-height: 1.4
+	margin-top: 10px
+.techSupport-trigger_item
+	display: flex
+	align-items: center
+	margin-bottom: 20px
+.techSupport-trigger_item--text
+	display: flex
+	flex-direction: column
+	line-height: 1.2
+	margin-left: 11px
+
+.techSupport-trigger-top
+	font-size: 16px
+.techSupport-trigger-bottom
+	font-size: 17px
+	font-family: $fhead
+.techSupport-trigger_item--image
+	width: 55px
+	height: 55px
+	border: 2px solid $accent
+	background-position: center
+	background-repeat: no-repeat
+	border-radius: 50%
+.techSupport-form
+	.mainScreen-form
+		width: 100%
+.techSupport-form-container
+	display: flex
+	.wrapper-inputs
+		width: 50%
+.techSupport-inputs_right
+	margin-left: 20px
+	padding-top: 20px
+	.wrapper-options
+		position: static
+		.custom-select
+			cursor: pointer
+	.custom-select_current-value
+		padding-right: 30px
+
+.input-file
+
+	input
+		border: none
+		outline: 0
+		opacity: 0
+		pointer-events: none
+		user-select: none
+		height: 0 !important
+		width: 0 !important
+	label
+		display: flex
+		justify-content: flex-end
+		.chose-file
+			color: #c50101
+			font-size: 16px
+			cursor: pointer
+			text-decoration: underline
+		input
+			padding-left: 0
+
+
+
+@media (max-width: 1750px)
+	.scrollTop
+		display: none
+	.contact-form_container
+		max-width: 1420px
+		padding:
+			right: $gutter/2
+			left: $gutter/2
+		margin:
+			left: auto
+			right: auto
+@media (max-width: 1379px)
+	.cart-header
+		font-size: 21px
+	.mainScreen-form
+		form
+			padding-bottom: 68px
+	.ourOffer-item
+		background-image: none !important
+
+@media (max-width: 1373px)
+	.techSupport-block
+		overflow: hidden
+	.techSupport-block_image
+		width: 40%
+		background-size: 100%
+		bottom: 0
+		height: 387px
+		background-position: center bottom
+		right: 0px
+
+@media (max-width: 1264px)
+	.techSupport-form
+		.contact-form_container
+			flex-direction: column
+			.mainScreen-form
+				margin-left: 0
+				margin-top: 20px
+@media (max-width: 1223px)
+	//header
+	.header-content_top
+		font-size: 17px
+		align-items: center
+
+	.serviceButton
+		font-size: 17px
+	//contact
+	.contact-form_container
+		.mainScreen-form 
+			width: 76%
+	.techSupport-form
+		.mainScreen-form 
+			width: 100%
+
+@media (max-width: 1175px)
+	.haeder_bottom-phone
+		.small-text
+			display: none
+
+@media (max-width: 1129px)
+	.header--trigger_image
+		width: 37px
+		height: 37px
+		background-size: 46%
+	.mainScreen-form
+		width: 50%	
+	.mainScreen-slider
+		width: 50%
+	.mainScreen--slideText
+		font-size: 34px	
+
+
+@media (max-width: 1161px)
+	.banner-wrapper
+		background-position: 95% 120%
+@media (max-width: 1081px)
+	.header-wrapper-triggers
+		flex-wrap: wrap
+		.header_bottom--trigger
+			flex-basis: 50%
+			margin-bottom: 10px
+		.haeder_bottom-phone
+			flex-basis: 50%
+			margin-right: 0
+			margin-bottom: 10px
+		#header-trigger-1
+			order: 1
+		#header-trigger-2
+			order: 3
+		#header-trigger-3
+			order: 2
+		#header-trigger-4
+			order: 4
+	.header_top--nav
+		display: none
+	.mobile-menu__action
+		display: flex
+	.menu__action
+		display: none
+	.footer-wrapper_trigger
+		flex-grow: 0
+@media (max-width: 1009px)
+	.footer-top
+		flex-wrap: wrap
+	.footer-wrapper-phone
+		flex-basis: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+	.footer-card-item
+		margin-left: 10px
+
+	.ourService-item
+		width: calc(100% / 2 - 5px)
+
+
+@media (max-width: 977px)
+	.techSupport-block
+		padding-left: 34px
+		padding-top: 34px
+		padding-bottom: 34px
+
+@media (max-width: 949px)
+	.banner-wrapper
+		background-position: 120% 120%
+		span
+			width: 416px
+
+	.techSupport-block_image
+		width: 50%
+		right: -10%
+
+@media (max-width: 891px)
+	.mainScreen
+		.container
+			flex-direction: column
+	.contact-form_container
+		flex-direction: column
+		iframe
+			height: 344px
+		.mainScreen-form
+			width: 100%
+	.mainScreen-form
+		margin-left: 0
+		width: 100%
+		margin-top: 30px
+		form
+			flex-direction: row
+			flex-wrap: wrap
+			.wrapper-inputs
+				display: flex
+				flex-wrap: wrap
+				justify-content: space-between
+			.wrapper-input
+				width: 49%
+			.checkbox-wrapper
+				margin-bottom: 0
+				display: flex
+				align-items: flex-end
+			.btn
+				margin-left: auto
+				margin-right: auto
+				margin-top: 30px
+					
+	.mainScreen-slider
+		width: 100%	
+	#hidden-contactForm
+		.mainScreen-form
+			form
+				.wrapper-inputs
+					display: block
+					.wrapper-input
+						width: 100%
+	.techSupport-form
+		.mainScreen-form 
+			form
+				flex-wrap: nowrap
+				.wrapper-input
+					width: 100%
+				.custom-select
+					width: 100%
+
+
+@media (max-width: 817px)
+	.techSupport-block_image
+		background-size: 90%
+
+
+@media (max-width: 768px)
+	.dots
+		justify-content: center		
+	.internetSlider 
+		.container 
+			.more_about-wrapper 
+				.more_about-internet
+					width: 100%
+					text-align: center
+					bottom: 0px
+					&:after
+						left: calc(50% - 306px / 2)
+	.mainScreen-slider-item
+		height: 439px
+	header
+		.header--trigger_image
+			border: none
+
+	.ourService-item--mask
+		&:hover
+			background-position: 60px 100%
+	#service-mask-1
+		background-position: 100px 100%
+	#service-mask-2
+		background-position: 100px 100%
+	#service-mask-3
+		background-position: 100px 100%
+	#service-mask-4
+		background-position: 60px 100%
+	#service-mask-5
+		background-position: 130% 100%
+	#service-mask-6
+		background-position: 140% 100%
+	.mainScreen-form
+		form
+		.techSupport-inputs_right
+			display: none !important
+			
+	.techSupport-form-container 
+		.wrapper-inputs
+			width: 100%
+	.techSupport-form
+		.mainScreen-form
+			form 
+				.wrapper-input
+					width: 48%
+					&:nth-child(2)
+						margin-left: 2%
+	.techSupport_p
+		width: 397px
+	.techSupport-block_image
+		background-size: 100%
+		width: 61%
+		right: -21%
+
+@media (max-width: 728px)
+	.small-head
+		display: block
+		text-align: center
+	.header--trigger_image
+		display: none
+	.text-section
+		text-align: center
+		.section-p
+			width: 100%
+			text-align: left
+	#hidden-contactForm
+		padding-top: 20px 	
+	.ourService-item
+		width: 100%
+	.ourService-item--mask
+		background-position: 105% 100% !important
+	#header-trigger-1
+		display: none
+	#header-trigger-2
+		display: none
+	.header-wrapper-triggers
+		flex-direction: column
+		align-items: flex-start
+
+	.footer-bottom
+		height: auto
+		padding-top: 20px
+		padding-bottom: 20px
+		.container
+			flex-direction: column
+			align-items: center
+			.footer-right
+				display: flex
+				flex-direction: column
+				align-items: center
+				a
+					margin-left: 0
+
+	.techSupport-block
+		display: flex
+		flex-direction: column
+		padding-bottom: 0
+	.techSupport-block--content
+		padding-right: 20px
+	.techSupport-block_image
+		position: static
+		width: 100%
+		background-position: bottom center
+		background-size: 70%
+	.techSupport_head
+		width: 100%
+		display: block
+	.techSupport_p
+		width: 100%
+	.techSupport-trigger_item
+
+	footer
+		padding-top: 28px
+	.footer-logo
+		width: 100%
+		height: 86px
+		background-size: 77px
+		margin-bottom: 20px
+		margin-right: 0
+
+
+
+@media (max-width: 651px)
+	.mainScreen-form 
+		form 
+			.wrapper-inputs
+				display: block
+				.wrapper-input
+					width: 100%
+			.btn
+				margin-left: 0
+				margin-right: 0
+	.techSupport-form
+		.mainScreen-form
+			form 
+				.wrapper-input
+					&:nth-child(2)
+						margin-left: 0
+	.techSupport-block_image
+		background-size: 90%
+@media (max-width: 608px)
+	.footer-nav	
+		width: 100%
+		justify-content: center
+		.nav-col
+			margin-right: 30px
+			&:nth-child(2)
+				margin-right: 0
+	.footer-wrapper_trigger
+		width: 191px
+		margin-left: auto
+		margin-right: auto
+		.header--trigger_image
+			display: block
+	.footer-wrapper-phone
+		flex-direction: column
+
+@media (max-width: 571px)
+	.btn
+		object
+			display: none
+
+
+@media (max-width: 553px)
+	.banner-wrapper
+		padding-top: 0px
+		padding-bottom: 0px
+		height: 261px
+		display: flex
+		align-items: flex-end
+		background-position: 120% 300%
+		padding-bottom: 20px
+		padding-right: 20px
+		padding-left: 20px
+		span
+			width: 100%
+			font-size: 20px
+
+	.sale-popup
+		padding-left: 20px
+		padding-right: 20px
+		padding-bottom: 20px
+		padding-top: 20px
+	.modal-complain
+		padding-left: 20px
+		padding-right: 20px
+		.modal-head
+			font-size: 18px
+		.sale-popup-image
+			height: 200px
+		.compain-form-top
+			flex-direction: column
+		.compain-form-left
+			width: 100%
+		.compain-form-right
+			width: 100%
+		.compain-form-bottom
+			flex-direction: column
+@media (max-width: 503px)
+	.header-logo
+		display: none
+	.header-logo-mobile
+		display: block
+	.header_top--left
+		display: flex
+		align-items: center
+	.header-logo-mobile
+		margin-right: 15px
+	.mobile-menu
+		.container
+			padding-left: 82px
+			padding-top: 33px
+
+@media (max-width: 478px)
+	.techSupport-trigger_item--image
+		position: absolute
+	.techSupport-trigger_item--text
+		margin-left: 70px
+
+@media (max-width: 472px)
+	.map-wrapper
+		display: flex
+		flex-direction: column-reverse
+		.container
+			margin-left: 0
+			margin-right: 0
+		.our-map--filter_wrapper
+			position: static
+			width: 100%
+	.header-phone
+		font-size: 18px
+	.text-section
+		.section-head
+			line-height: 1.2
+			display: block
+			margin-bottom: 10px
+	.techSupport-block_image
+		width: 100%
+		background-size: 100%
+		position: relative
+	.custom-select_current-value
+		font-size: 12px
+		padding-left: 5px
+		padding-right: 65px
+	.wrapper-options_active 
+		.custom-select_option
+			font-size: 12px
+			padding-left: 5px
+			padding-right: 15px
+
+@media (max-width: 418px)
+	.techSupport-block_image
+		height: 300px
+@media (max-width: 400px)
+	form
+		.cart-header
+			width: 100%
+			display: block
+			text-align: center
+			font-size: 25px
+			line-height: 1.2
+	.mainScreen-form 
+		form
+			padding-left: 20px
+			padding-right: 20px
+			padding-top: 20px
+			padding-bottom: 20px
+			.btn
+				margin-left: auto
+				margin-right: auto
+			.checkbox-wrapper
+				label
+					font-size: 14px
+	.sale-popup
+		.sale-popup-image
+			height: 180px
+
+	.footer-left
+		text-align: center
+	#service-mask-1
+		background-size: 250px
+	#service-mask-2
+		background-size: 250px
+	#service-mask-3
+		background-size: 250px
+	#service-mask-4
+		background-size: 250px
+	#service-mask-5
+		background-size: 180px
+	#service-mask-6
+		background-size: 150px
+
+
+@media (max-width: 352px)
+	.techSupport-block_image
+		height: 252px
+
+@media (max-width: 320px)
+	.mainScreen-slider
+		display: none
+	.header-top-lkButton
+		a
+			font-size: 14px
+
+	header
+		.icon-lk-desk 
+			display: none !important
+		.icon-lk-mobile
+			display: block !important
+	.internetSlider-item 
+		padding-right: 20px
+		ul 
+			padding-left: 25px
+			li
+				align-items: flex-start
+				&:before
+					width: 12px
+					height: 11px
+					background-size: 100%
+					left: -23px
+					top: 3px
+	.mainScreen-inner-page
+		.mainScreen-form
+			display: none
+
+	.sale-item-text
+		height: 120px
+	.sale-slider_item
+		.btn
+			margin-left: auto
+			margin-right: auto
+			width: 100%
+		.sale-header-timer
+			text-align: center
+		.timer
+			margin-left: auto
+			margin-right: auto
+	.techSupport-block_image
+		width: 125%
+	footer
+		.btn
+			width: 240px
+
+	.custom-select_current-value
+		padding-right: 10px

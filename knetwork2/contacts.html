@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title></title>
+
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+
+<body>
+
+	
+	<div style="display: none;" class="modal-complain" id = "complain">
+		<span class="modal-head">Недовольны нашей работой? <br>Знаете, как ее улучшить? Напишите нам об этом!</span>
+		<div class="sale-popup-image" style="background-image: url('img/compain.jpg');"></div>
+		<form action="">
+			<div class="compain-form-top">
+				<div class="compain-form-left">
+					<div class="wrapper-input">
+						<span class="label-input">Ваше имя:</span>
+						<input type="text" placeholder="Как к вам обращаться?">
+					</div>
+					<div class="wrapper-input">
+						<span class="label-input">Ваш E-mail:*</span>
+						<input type="text" placeholder="mail@mail.ru">
+					</div>
+					<div class="wrapper-input">
+						<span class="label-input">Телефон:</span>
+						<input type="text" placeholder="+7 ( ___ ) ___ - __ - __">
+					</div>	
+					
+				</div>
+				<div class="compain-form-right">
+					<div class="wrapper-input"> 
+						<span class="label-input">Ваше сообщение:<span style="color: red">*</span></span>
+						<textarea></textarea>
+					</div>
+				</div>
+			</div>
+			
+			<div class="compain-form-bottom">
+				<div class="wrapper-input checkbox-wrapper">
+					<input type="checkbox" id="Termsofuse4" class="checkbox">
+					<label for="Termsofuse4" class="castom-checkbox"></label>
+					<label for="Termsofuse4">Принимаю условия <br><a href="#">пользовательского соглашения</a></label>
+				</div>
+				<button class="btn">Отправить</button>
+			</div>
+		</form>
+	</div>
+	<div style="display: none;" class="sale-popup" id="sale-popup-1">
+		<div class="RED-STALIN-STAR">
+		</div>
+		<div class="sale-popup_head-desc">
+			<h3 class="sale-popup_head">Стартовый</h3>
+			<p class="sale-popup_desc">Тариф для рассудительных и экономных! </p>
+		</div>
+		<div class="sale-popup-image" style="background-image: url('img/salepopup.jpg')">
+			
+		</div>
+		<ul>
+			<li>Тариф Стартовый включает в себя интернет на скорости до 20 Мб/с. </li>
+			<li>При технической необходимости мы предоставляем Абоненту оборудование -приемо-передающее устройство GEPON, в безвозмездную аренду, на время действия договора. </li>
+			<li>У нас есть для Вас удобная услуга! Если Вам необходимо отправиться в отпуск, или на время уехать по делам, а интернет уже оплачен,  Вы можете воспользоваться услугой добровольной блокировки акаунта с сохранением денежных средств на лицевом счете интернет, сроком до 30 дней! </li>
+			<li>Переподключение с других оптоволоконных операторов, БЕСПЛАТНО!!! </li>
+			<li>Определиться какой тариф выгоднее именно Вам, поможет статья.</li>
+			<li>Внимание! на данный тариф есть действующая акция.</li>
+		</ul>
+
+		<div class="sale-popup_price">
+			<span class="price-digit">500 р</span>
+			<span class="price-text">/мес.</span>
+		</div>	
+		<button class="btn"><span>Оформить заявку</span></button>
+		
+	</div>
+
+	<div style="display: none;" id="hidden-contactForm" >
+		<div class="mainScreen-form">
+			<form action="#">
+				<span class="cart-header">Заказать звонок</span>
+				<div class="wrapper-inputs">
+					<div class="wrapper-input">
+						<span class="label-input">Ваше имя:</span>
+						<input type="text" placeholder="Как к вам обращаться?">
+					</div>
+					<div class="wrapper-input">
+						<span class="label-input">Телефон:</span>
+						<input type="text" placeholder="+7 ( ___ ) ___ - __ - __">
+					</div>
+					<div class="wrapper-input">
+						<span class="label-input">Дата подключения:</span>
+						<input type="text" placeholder="Желаемая дата">
+					</div>
+					<div class="wrapper-input">
+						<div class="custom-select">
+							<div class="custom-select_current-value">
+								<span>Выберите тему Вашего обращения</span>
+							</div>
+							<div class="wrapper-options">
+								<div class="custom-select_option">
+									<span data-option-value='1' >я новый пользователь - необходима консультация по подключению</span>
+								</div>
+								<div class="custom-select_option">
+									<span data-option-value='2' >я действующий абонент - необходима помощь специалиста</span>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="wrapper-input checkbox-wrapper">
+						<input type="checkbox" id="Termsofuse3" class="checkbox">
+						<label for="Termsofuse3" class="castom-checkbox"></label>
+						<label for="Termsofuse3">Принимаю условия <br><a href="#">пользовательского соглашения</a></label>
+					</div>
+				</div>	
+				<button class="btn"><span>Перезвонить мне</span></button>
+			</form>
+		</div>
+	</div>
+	
+	<div class="menu-mask">
+		<div class="menu">
+			<div class="container">
+				<div class="menu-top">
+					<div class="serviceButton menu__action">
+						<div class="gamburger">
+							<div class="gamburger-line"></div>
+							<div class="gamburger-line"></div>
+							<div class="gamburger-line"></div>
+						</div>
+						<span>Услуги</span>
+					</div>
+
+					<div class="menu-close">
+						
+					</div>
+				</div>
+				<div class="menu-navigation">
+					<nav>
+						<a href="#">Интернет в дом</a>
+						<a href="#">Интернет в офис</a>
+						<a href="#">Телефония</a>
+						<a href="#">Видеонаблюдение</a>
+						<a href="#">Кондиционеры</a>
+						<a href="#">Телевидение</a>
+						<a href="#">Охрана</a>
+					</nav>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<div class="mobile-menu_mask">
+		<div class="mobile-menu">
+			<div class="container">
+				<div class="mobile-menu_top">
+					<div class="serviceButton mobile-menu__action">
+						<div class="gamburger">
+							<div class="gamburger-line"></div>
+							<div class="gamburger-line"></div>
+							<div class="gamburger-line"></div>
+						</div>
+						<span>Меню</span>
+					</div>
+				</div>
+				<div class="mobile-menu_center">
+					<div class="wrapper-menu-tab">
+						<span class="mobile-menu--item mobile-menu--item_action">Услуги</span>
+						<div class="menu-tab">
+							<a href="#">Интернет в дом</a>
+							<a href="#">Интернет в офис</a>
+							<a href="#">Телефония</a>
+							<a href="#">Видеонаблюдение</a>
+							<a href="#">Кондиционеры</a>
+							<a href="#">Телевидение</a>
+							<a href="#">Охрана</a>
+						</div>
+					</div>
+					<a href="#" class="mobile-menu--item">О компании</a>
+					<a href="#" class="mobile-menu--item">FAQ</a>
+					<a href="#" class="mobile-menu--item">Техподдержка</a>
+					<a href="#" class="mobile-menu--item">Тарифы</a>
+					<a href="#" class="mobile-menu--item">Оплата</a>
+					<a href="#" class="mobile-menu--item">Контакты</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="wrapper">
+		<div class="container">
+			<header>
+				<a href="index.html" class="header-logo">
+					
+				</a>
+				<div class="header-content">
+					<div class="header-content_top">
+						<div class="header_top--left">
+							<div class="header-logo-mobile" style="background-image: url('img/logo.png')">
+								
+							</div>
+							<div class="serviceButton menu__action">
+								<div class="gamburger">
+									<div class="gamburger-line"></div>
+									<div class="gamburger-line"></div>
+									<div class="gamburger-line"></div>
+								</div>
+								<span>Услуги</span>
+							</div>
+							<div class="serviceButton mobile-menu__action">
+								<div class="gamburger">
+									<div class="gamburger-line"></div>
+									<div class="gamburger-line"></div>
+									<div class="gamburger-line"></div>
+								</div>
+								<span>Меню</span>
+							</div>
+						</div>
+						<nav class="header_top--nav">                                             
+							<a href="about_us.html">О компании </a>
+							<a href="faq.html">FAQ</a>
+							<a href="techSupport.html">Техподдержка</a>
+							<a href="service.html">Тарифы</a>
+							<a href="payment.html">Оплата</a>
+							<a href="contacts.html">Контакты</a>
+						</nav>
+						<div class="haeder_top--right">
+							<div class="header-top-lkButton">
+								<a href="" class="icon-lk icon-lk-mobile"></a>
+								<a href="#" class="icon-lk-desk"><div class="icon-lk"></div>Личный кабинет</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="haeder-content_bottom">
+
+						<div class="header-wrapper-triggers">
+							
+						
+							<a href="#" class="header_bottom--trigger" id="header-trigger-1">
+								<div class="header--trigger_image" style="background-image: url('img/icons/speed.svg')">
+									
+								</div>
+								<span href="#" class="header-trigger_link">Проверить скорость</span>
+							</a>
+							<a href="javascript:;" data-fancybox data-src="#complain" class="header_bottom--trigger" id="header-trigger-2">
+								<div class="header--trigger_image" style="background-image: url('img/icons/stalin.svg')">
+									
+								</div>
+								<span class="header-trigger_link">Пожаловаться</span>
+							</a>
+							<a href="#" class="header_bottom--trigger" id="header-trigger-3">
+								<div class="header--trigger_image" style="background-image: url('img/icons/mail.svg')">
+									
+								</div>
+								<span class="header-trigger_link">k-net@bk.ru</span>
+							</a>
+
+							<div class="haeder_bottom-phone" id="header-trigger-4">
+								<span class="small-text">Техподдержка:</span>
+								<span class="header-phone">+7 495 565-39-40</span>
+								<span class="small-text">(Круглосуточно)</span>
+							</div>
+						</div>
+						<button data-fancybox="contactForm" data-src="#hidden-contactForm" data-touch="false" class="btn"><object data="img/icons/phone.svg" type="image/svg+xml"></object> <span>Заказать звонок</span></button>
+					</div>
+				</div>
+			</header>
+		</div>
+		
+		<div class="pagination">
+			<div class="container">
+				<a class="pagination-item pagination-item__underline" href="#">Гланая</a>
+				<a class="pagination-item pagination-item__underline" href="#">О компании</a>
+				<a class="pagination-item" href="#">Контакты</a>
+			</div>
+		</div>
+		
+
+		<div class="contacts">
+			
+		
+		<div class="container">
+			<div class="long-text">
+				<span class="long-text_head">
+					Контакты
+				</span>
+			</div>	
+
+			<div class="contacts-wrapper">
+				<div class="contacts-item">
+					<div class="contacts-item__string">
+						<div class="contacts-item__string--img" style="background-image: url('img/icons/flag.svg')">	
+						</div>
+						<div class="contacts-item__string--text">
+							<span class="contacts-item__string--text-head">Адрес:</span>
+							<span class="contacts-item__string--text-value">г. Москва, поселение Московский,дер. Саларьево, ул. Московская д.10, оф. 21</span>
+						</div>
+					</div>
+					<div class="contacts-item__string">
+						<div class="contacts-item__string--img" style="background-image: url('img/icons/phonered.svg')">	
+						</div>
+						<div class="contacts-item__string--text">
+							<span class="contacts-item__string--text-head">Многоканальные телефоны службы поддержки:</span>
+							<span class="contacts-item__string--text-value">+7 (495) 565-39-40 (Круглосуточно)</span>
+						</div>
+					</div>
+					<div class="contacts-item__string">
+						<div class="contacts-item__string--img" style="background-image: url('img/icons/redmail.svg')">	
+						</div>
+						<div class="contacts-item__string--text">
+							<span class="contacts-item__string--text-head">E-mail: </span>
+							<span class="contacts-item__string--text-value">k-net@bk.ru</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="contacts-item">
+					<div class="contacts-item__string">
+						<div class="contacts-item__string--img" style="background-image: url('img/icons/rekv.svg')">	
+						</div>
+						<div class="contacts-item__string--text">
+							<span class="contacts-item__string--text-head">Реквизиты организации:</span>
+							<span class="contacts-item__string--text-value">ИНН/КПП 7713777314/772801001</span>
+							<span class="contacts-item__string--text-value">ОГРН 1137746909772</span>
+						</div>
+					</div>
+					<div class="contacts-item__string">
+						<div class="contacts-item__string--img" style="background-image: url('img/icons/place.svg')">	
+						</div>
+						<div class="contacts-item__string--text">
+							<span class="contacts-item__string--text-head">Юридический адрес:</span>
+							<span class="contacts-item__string--text-value">г. Москва, ул. Инессы Арманд,<br> д.4, к.2, кв.101</span>
+						</div>
+					</div>
+					<div class="contacts-item__string">
+						<div class="contacts-item__string--img" style="background-image: url('img/icons/stalin.svg')">	
+						</div>
+						<div class="contacts-item__string--text">
+							<span class="contacts-item__string--text-head">Генеральный директор:</span>
+							<span class="contacts-item__string--text-value">Берцинский Алексей Дингирович</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="contacts-item">
+					<div class="contacts-item__string">
+						<div class="contacts-item__string--img" style="background-image: url('img/icons/carts.svg')">	
+						</div>
+						<div class="contacts-item__string--text">
+							<span class="contacts-item__string--text-head">Банковские реквизиты:</span>
+							<span class="contacts-item__string--text-value"><span style="color: #a0a0a0;">К/С </span>30101810400000000225</span>
+							<span class="contacts-item__string--text-value"><span style="color: #a0a0a0;">Р/С</span> 40702810938110019827</span>
+							<span class="contacts-item__string--text-value"><span style="color: #a0a0a0;">ОГРН</span> 1137746909772</span>
+							<span class="contacts-item__string--text-value"><span style="color: #a0a0a0;">ИНН</span> 7713777314</span>
+							<span class="contacts-item__string--text-value"><span style="color: #a0a0a0;">КПП</span> 772801001</span>
+							<span class="contacts-item__string--text-value"><span style="color: #a0a0a0;">БИК</span> 044525225</span>
+							<span class="contacts-item__string--text-value"><span style="color: #a0a0a0;">ОКПО</span> 18714875</span>
+							<span class="contacts-item__string--text-value"><span style="color: #a0a0a0;">ОКАТО</span> 45293598000</span>
+							<span class="contacts-item__string--text-value"><span style="color: #a0a0a0;">ОКТМО</span> 45910000</span>
+							<span class="contacts-item__string--text-value"><span style="color: #a0a0a0;">ОКОГУ</span> 4210014</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>	
+		<div class="contact-form">
+			<div class="contact-form_container">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d38663.608314719335!2d41.442305!3d52.723611149999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1571644424775!5m2!1sru!2sru" width="100%" height="568px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				<div class="mainScreen-form">
+					<form action="#">
+						<span class="cart-header">Оставьте заявку прямо сейчас</span>
+
+						<div class="wrapper-inputs">
+							<div class="wrapper-input">
+								<span class="label-input">Ваше имя:</span>
+								<input type="text" placeholder="Как к вам обращаться?">
+							</div>
+							<div class="wrapper-input">
+								<span class="label-input">Ваш e-mail:<span style="color: red">*</span></span>
+								<input type="text" placeholder="mail@mail.ru">
+							</div>
+							<div class="wrapper-input">
+								<span class="label-input">Вопрос:<span style="color: red">*</span></span>
+								<input type="text" placeholder="">
+							</div>
+
+							<div class="wrapper-input checkbox-wrapper">
+								<input type="checkbox" id="Termsofuse2" class="checkbox">
+								<label for="Termsofuse2" class="castom-checkbox"></label>
+								<label for="Termsofuse">Принимаю условия <br><a href="#">пользовательского соглашения</a></label>
+							</div>
+						</div>
+						
+						<button class="btn btn-gold"><span>Отправить</span></button>
+					</form>
+				</div>
+
+				<div class="scrollTop"></div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="footer-top">
+					<div class="footer-logo">
+						
+					</div>
+					<nav class="footer-nav">
+						<div class="nav-col">
+							<a href="#">О компании</a>
+							<a href="#">FAQ</a>
+							<a href="#">Техподдержка</a>
+							<a href="#">Тарифы</a>
+							<a href="#">Оплата</a>
+							<a href="#">Контакты</a>
+						</div>
+						<div class="nav-col">
+							<a href="#">Интернет в дом</a>
+							<a href="#">Интернет в офис</a>
+							<a href="#">Телефония</a>
+							<a href="#">Видеонаблюдение</a>
+							<a href="#">Кондиционеры</a>
+							<a href="#">Телевидение</a>
+							<a href="#">Охрана</a>
+						</div>	
+					</nav>
+
+					<div class="footer-wrapper_trigger">
+						<a href="#" class="header_bottom--trigger">
+							<div class="header--trigger_image" style="background-image: url('img/icons/speed.svg')">
+								
+							</div>
+							<span href="#" class="header-trigger_link">Проверить скорость</span>
+						</a>
+						<a href="javascript:;" data-fancybox data-src="#complain" class="header_bottom--trigger" >
+							<div class="header--trigger_image" style="background-image: url('img/icons/stalin.svg')">
+								
+							</div>
+							<span class="header-trigger_link">Пожаловаться</span>
+						</a>
+						<a href="#" class="header_bottom--trigger">
+							<div class="header--trigger_image" style="background-image: url('img/icons/mail.svg')">
+								
+							</div>
+							<span class="header-trigger_link">k-net@bk.ru</span>
+						</a>
+					</div>
+
+					<div class="footer-wrapper-phone">
+						<button class="btn"><object data="img/icons/phone.svg" type="image/svg+xml"></object> <span>Заказать звонок</span></button>
+						<div class="wrapper-phone-text">
+							<span class="small-text">Техподдержка:</span>
+							<span class="header-phone">+7 495 565-39-40</span>
+							<span class="small-text">(Круглосуточно)</span>
+						</div>
+						<div class="footer-cards-wrapper">
+							<div class="footer-card-item" style="background-image: url('img/icons/visa.png')">
+								
+							</div>
+							<div class="footer-card-item" style="background-image: url('img/icons/master.png')">
+								
+							</div>
+							<div class="footer-card-item" style="background-image: url('img/icons/mir.png')">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="footer-left">
+						<span>© 2008-2019 ООО "К-НЕТ" Все права защищены</span>
+					</div>
+					<div class="footer-right">
+						<a href="#">Политика конфиденциальности</a>
+						<a href="#">Карта сайта</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/countDown/countDown.js"></script>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

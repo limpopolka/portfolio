@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Simple Starter</title>
+	<meta name="description" content="Simple Starter Description">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/preview.jpg">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header>
+			<div class="header-top">
+				<div class="container-fluid">
+							<div class="header-top__place">
+								<span>Ваш город: Москва</span>
+							</div>
+							<a href="#" class="header-top__lang">English version</a>
+							<div class="header-top__menu">
+								<a class="header-top__menu__nav-item" href="#">Календарь мероприятий</a>
+								<a class="header-top__menu__nav-item" href="#">Рейтинги вузов</a>
+								<a class="header-top__menu__nav-item" href="#">Учебным учреждениям</a>
+							</div>
+							<a href="#" class="header-top__phone">8 800 1234 567</a>
+							<a class="header-top__btn" href="#">Закзать звонок</a>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="container-fluid">
+					
+					<div class="header-bottom__left">
+
+						<div class="burger">
+						
+						</div>
+						<a class="header__logo" href="#"></a>
+
+						<nav class="header-bottom__nav"> 
+							<a class="header-bottom__nav-item" href="#">О компании</a>
+							<a class="header-bottom__nav-item" href="#">Студентам</a>
+							<a class="header-bottom__nav-item" href="#">Абитуриентам</a>
+							<a class="header-bottom__nav-item" href="#">Статьи</a>
+							<a class="header-bottom__nav-item" href="#">Отзывы</a>
+							<a class="header-bottom__nav-item" href="#">Контакты</a>
+						</nav>
+					</div>
+
+					<div class="header-bottom__right">
+						<div class="header-bottom__search">
+
+						</div>
+						<div class="header-bottom__compar">
+							<div class="header-bottom__compar__num">2</div>
+						</div>
+						<div class="header-bottom__login">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="header__menu">
+				<div class="container-fluid">
+					<a class="header__menu-item" href="#">Вузы</a>
+					<a class="header__menu-item" href="#">Колледжи</a>
+					<a class="header__menu-item" href="#">Повышение квалификации</a>
+					<a class="header__menu-item" href="#">Курсы переподготовки</a>
+					<a class="header__menu-item" href="#">Специальности</a>
+				</div>
+				
+			</nav>
+		</header>
+		
+		<div class="inner-page">
+			<div class="page__screen">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="page__screen-content col-xl-9">
+							<div class="page__screen__top">
+								<div class="page__screen__head-wrap">
+									<div class="page__screen__pag">
+										<a class="page__screen__pag-link" href="#">Главная</a>
+										<a class="page__screen__pag-link page__screen__pag-link--curent" href="#">Личный кабинет</a>
+									</div>
+									<h1 class="page__screen-head">Личный кабинет</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tabs">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="tabs-container">
+							<a class="tabs__item" href="#">
+								<span>О нас</span> 
+							</a>
+							<a class="tabs__item" href="#">
+								<span>Сотрудники</span> 
+							</a>
+							<a class="tabs__item" href="#">
+								<span>Отзывы</span> 
+							</a>
+							<a class="tabs__item" href="#">
+								<span>Новости</span> 
+							</a>
+							<a class="tabs__item" href="#">
+								<span>Вакансии</span> 
+							</a>
+							<a class="tabs__item" href="#">
+								<span>Филиалы</span> 
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+				<div class="page-content">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="lk-tabs">
+								<div class="lk-tabs__left">
+									<div class="lk-small-image">
+										<img src="images/woman.png" alt="">
+									</div>
+									<div class="section-tabs ">
+										<div class="section-tabs__item section-tabs__item--active">Профиль</div>
+										<div class="section-tabs__item section-tabs__item-around">Мои вопросы</div>
+										<div class="section-tabs__item">Мои отзывы</div>
+									</div>
+								</div>
+								<a href="#" class="btn btn-fluid">Оставить заявку на поступление</a>
+							</div>
+						</div>
+
+
+						<div class="lk lk-profile">
+							<div class="row">
+								<div class="head-24px">Мой профиль</div>
+								
+								<div class="lk__avatar">
+									<div class="lk__avatar-img-wrap">
+										<img src="images/lkwoman.png" alt="">
+									</div>
+									<div class="lk__avatar__content">
+										<div class="lk__avatar-upload">
+											<input id="upload-avatar" type="file">
+											<label class="upload-avatar__label" for="upload-avatar">
+												<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M6.375 4.44577H8.10703V12.3747C8.10703 12.4778 8.19141 12.5622 8.29453 12.5622H9.70078C9.80391 12.5622 9.88828 12.4778 9.88828 12.3747V4.44577H11.625C11.782 4.44577 11.8687 4.2653 11.7727 4.14342L9.14766 0.819988C9.13012 0.797578 9.10771 0.779453 9.08212 0.766989C9.05654 0.754525 9.02846 0.748047 9 0.748047C8.97154 0.748047 8.94346 0.754525 8.91788 0.766989C8.89229 0.779453 8.86988 0.797578 8.85234 0.819988L6.22734 4.14108C6.13125 4.2653 6.21797 4.44577 6.375 4.44577ZM17.5781 11.6715H16.1719C16.0688 11.6715 15.9844 11.7559 15.9844 11.859V15.4684H2.01562V11.859C2.01562 11.7559 1.93125 11.6715 1.82812 11.6715H0.421875C0.31875 11.6715 0.234375 11.7559 0.234375 11.859V16.4997C0.234375 16.9145 0.569531 17.2497 0.984375 17.2497H17.0156C17.4305 17.2497 17.7656 16.9145 17.7656 16.4997V11.859C17.7656 11.7559 17.6812 11.6715 17.5781 11.6715Z" fill="#256FFF"/>
+												</svg>												
+												<span>Загрузить новый аватар</span>
+											</label>
+										</div>
+										<div class="lk__avatar-del">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M16 1.6L14.4 0L8 6.4L1.6 0L0 1.6L6.4 8L0 14.4L1.6 16L8 9.6L14.4 16L16 14.4L9.6 8L16 1.6Z" fill="#256FFF"/>
+												</svg>
+											<span>Удалить аватар</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="lk__inputs-wrap">
+									<div class="input-row">
+										<div class="input-wrap">
+											<label class="input-label" for="name">Имя</label>
+											<input class="input" placeholder="Введите ваше имя" id="name" type="text">
+										</div>
+										<div class="input-wrap">
+											<label class="input-label" for="name">Фамилия</label>
+											<input id="famale" class="input" placeholder="Введите вашу фамилию" id="name" type="text">
+										</div>
+									</div>
+									<div class="input-row">
+										<div class="input-wrap">
+											<label class="input-label">Пол</label>
+											<div class="lk-select-wrap">
+												<select id="male">
+													<option value="">Женский</option>
+													<option value="">Мужской</option>
+												</select>
+											</div>
+											
+										</div>
+										<div class="input-wrap input-datapicker-wrap">
+											<label class="input-label">День рождения</label>
+											<input placeholder="21 декабря 1998" class="input input-datapicker" id="datepicker" class="input" type="text">
+										</div>
+									</div>
+									<div class="input-row">
+										<div class="input-wrap">
+											<label class="input-label" for="name">Телефон</label>
+											<input class="input" placeholder="+7 999 123 45 67" id="name" type="text">
+										</div>
+										<div class="input-wrap">
+											<label class="input-label" for="name">E-mail</label>
+											<input id="famale" class="input" placeholder="ingaaaa@mail.ru" id="name" type="text">
+										</div>
+									</div>
+									<div class="lk__wrap-btn">
+										<button class="btn" >Сохранить изменения</button>
+										<button class="btn btn-opacity" >Сбросить изменения</button>
+									</div>
+								</div>
+
+								<div class="lk__password">
+									<div class="head-24px">Пароль и безопасность</div>
+									<button class="btn">Изменить пароль</button>
+								</div>
+							</div>
+						</div>	
+
+						
+					</div>
+				</div>
+			</div>
+		<footer class="section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="main-form-wrap">
+						<form class="main-form" action="">
+							<div class="section-head section-head--white">Остались вопросы? Мы ответим!</div>	
+							<div class="form__content">
+								<div class="input-row">
+									<input class="input" type="text" placeholder="Имя">
+									<input class="input" type="text" placeholder="Телефон">
+								</div>
+								<textarea class="textarea" placeholder="Комментарий (необязательно)" name="" id=""></textarea>
+								<div class="from__content-bottom">
+									<span class="from__content__pers">Нажимая на кнопку «Отправить», вы соглашетесь
+										с нашей политикой обработки персональных данных.</span>
+										<button class="btn btn-black">Отправить</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="footer-logo-wrap">
+						<a class="footer-logo__item" href="#">
+							<img src="images/LOGOsmall.svg" alt="logo">
+						</a>
+
+						<div class="footer__social">
+							<a style="background-image: url('images/vk.svg');" class="footer__social__item" href="#"></a>
+							<a style="background-image: url('images/fb.svg');" class="footer__social__item" href="#"></a>
+							<a style="background-image: url('images/youtube.svg');" class="footer__social__item" href="#"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row justify-content-between">
+					<div class="footer__col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+						<span class="footer__col-head">Учебные заведения</span>
+						<a class="footer__col__link" href="#">Вузы</a>
+						<a class="footer__col__link" href="#">Колледжи</a>
+						<a class="footer__col__link" href="#">Повышение квалификации</a>
+						<a class="footer__col__link" href="#">Курсы переподготовки</a>
+						<a class="footer__col__link" href="#">Специальности</a>
+						<a class="footer__col__link" href="#">Учебным заведениям</a>
+					</div>
+					<div class="footer__col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+						<span class="footer__col-head">Полезная информация</span>
+						<a class="footer__col__link" href="#">Студентам</a>
+						<a class="footer__col__link" href="#">Абитуриентам</a>
+						<a class="footer__col__link" href="#">Статьи</a>
+						<a class="footer__col__link" href="#">Отзывы</a>
+						<a class="footer__col__link" href="#">Календарь мероприятий</a>
+						<a class="footer__col__link" href="#">Рейтинги вузов</a>
+					</div>
+
+					<div class="footer__col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+						<span class="footer__col-head">Сервисы</span>
+						<a class="footer__col__link" href="#">Тест на профориентацию</a>
+						<a class="footer__col__link" href="#">Калькулятор ЕГЭ</a>
+					</div>
+					
+					<div class="footer__col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+						<span class="footer__col-head">О нас</span>
+						<a class="footer__col__link" href="#">О компании</a>
+						<a class="footer__col__link" href="#">Новости</a>
+						<a class="footer__col__link" href="#">Специальные предложения</a>
+						<a class="footer__col__link" href="#">Контакты</a>
+					</div>
+
+					<div class="footer__col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+						<span class="footer__col-head">Контакты</span>
+						<a class="footer__col__link" href="#">mail@domain.com</a>
+						<a class="footer__col__phone" href="#">8 800 1234 567</a>
+						<a class="footer__col__btn" href="#">Закзать звонок</a>
+					</div>
+
+				</div>
+
+				<div class="footer__bottom">
+					<span>2021. Образовательный портал</span>
+					<a class="footer__bottom-link" href="#">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

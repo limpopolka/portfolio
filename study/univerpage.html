@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Simple Starter</title>
+	<meta name="description" content="Simple Starter Description">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/preview.jpg">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+	<link rel="stylesheet" href="libs/circular/jQuery-plugin-progressbar.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header>
+			<div class="header-top">
+				<div class="container-fluid">
+							<div class="header-top__place">
+								<span>Ваш город: Москва</span>
+							</div>
+							<a href="#" class="header-top__lang">English version</a>
+							<div class="header-top__menu">
+								<a class="header-top__menu__nav-item" href="#">Календарь мероприятий</a>
+								<a class="header-top__menu__nav-item" href="#">Рейтинги вузов</a>
+								<a class="header-top__menu__nav-item" href="#">Учебным учреждениям</a>
+							</div>
+							<a href="#" class="header-top__phone">8 800 1234 567</a>
+							<a class="header-top__btn" href="#">Закзать звонок</a>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="container-fluid">
+					
+					<div class="header-bottom__left">
+
+						<div class="burger">
+						
+						</div>
+						<a class="header__logo" href="#"></a>
+
+						<nav class="header-bottom__nav"> 
+							<a class="header-bottom__nav-item" href="#">О компании</a>
+							<a class="header-bottom__nav-item" href="#">Студентам</a>
+							<a class="header-bottom__nav-item" href="#">Абитуриентам</a>
+							<a class="header-bottom__nav-item" href="#">Статьи</a>
+							<a class="header-bottom__nav-item" href="#">Отзывы</a>
+							<a class="header-bottom__nav-item" href="#">Контакты</a>
+						</nav>
+					</div>
+
+					<div class="header-bottom__right">
+						<div class="header-bottom__search">
+
+						</div>
+						<div class="header-bottom__compar">
+							<div class="header-bottom__compar__num">2</div>
+						</div>
+						<div class="header-bottom__login">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="header__menu">
+				<div class="container-fluid">
+					<a class="header__menu-item" href="#">Вузы</a>
+					<a class="header__menu-item" href="#">Колледжи</a>
+					<a class="header__menu-item" href="#">Повышение квалификации</a>
+					<a class="header__menu-item" href="#">Курсы переподготовки</a>
+					<a class="header__menu-item" href="#">Специальности</a>
+				</div>
+				
+			</nav>
+		</header>
+
+		<div class="inner-page">
+			<div style="background-image: url('images/Group 1433.png');" class="page__screen">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="page__screen-content col-xl-9">
+							<div class="page__screen__top">
+								<div class="page__screen__head-wrap">
+									<div class="page__screen__pag">
+										<a class="page__screen__pag-link" href="#">Главная</a>
+										<a class="page__screen__pag-link" href="#">Колледжи</a>
+										<a class="page__screen__pag-link page__screen__pag-link--curent" href="#">РАНХиГС</a>
+									</div>
+									<h1 class="page__screen-head">Колледж Архитектуры, Дизайна <br> и Реинжиниринга № 26</h1>
+									<div class="main-screen__triggers__left">
+										<div class="main-screen__triggers">
+											<a class="main-screen__triggers-item main-screen__triggers-item__place" href="#">Москва</a>
+											<a class="main-screen__triggers-item" href="#">Государственный</a>
+											<a class="main-screen__triggers-item" href="#">Лицензированный</a>
+											<a class="main-screen__triggers-item" href="#">Аккредитованный</a>
+											<a class="main-screen__triggers-item" href="#">Бюджетные места</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tabs">
+					<div class="container-fluid">
+						<div class="row">
+								<div class="tabs-container">
+									<a class="tabs__item" href="#">
+										<span>Условия поступления</span> 
+									</a>
+									<a class="tabs__item" href="#">
+										<span>О программе</span> 
+									</a>
+									<a class="tabs__item" href="#">
+										<span>Параметры программы</span> 
+									</a>
+									<a class="tabs__item" href="#">
+										<span>Отзывы</span> 
+									</a>
+									<a class="tabs__item" href="#">
+										<span>Вопросы</span> 
+									</a>
+								</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="page-content">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="page-content__main col-12 col-lg-9">
+								<div class="section-head">Общая информация</div>	
+								<div class="head-24px">Основные показатели</div>
+								<div class="progress-row">
+									<div class="progress__item">
+										<div class="progress__item__left">
+											<div class="progress-bar" data-percent="88.4" data-duration="500" data-color="#EEEEEE,#256FFF"></div>
+										</div>
+										<div class="progress__item__right">
+											<div class="progress__item__percent">88.4</div>
+											<div class="progress__item__text">средний проходной балл</div>
+										</div>
+									</div>
+									<div class="progress__item">
+										<div class="progress__item__left">
+											<div class="progress-bar" data-percent="20" data-duration="500" data-color="#EEEEEE,#FF5925"></div>
+										</div>
+										<div class="progress__item__right">
+											<div class="progress__item__percent">200</div>
+											<div class="progress__item__text">бюджетных мест</div>
+										</div>
+									</div>
+									<div class="progress__item">
+										<div class="progress__item__left">
+											<div class="progress-bar" data-percent="35" data-duration="500" data-color="#EEEEEE,#256FFF"></div>
+										</div>
+										<div class="progress__item__right">
+											<div class="progress__item__percent">282 000</div>
+											<div class="progress__item__text">средняя стоимость за год</div>
+										</div>
+									</div>
+									<div class="progress__item">
+										<div class="progress__item__left">
+											<div class="progress-bar" data-percent="40" data-duration="500" data-color="#EEEEEE,#256FFF"></div>
+										</div>
+										<div class="progress__item__right">
+											<div class="progress__item__percent">5 000</div>
+											<div class="progress__item__text">учащихся</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="text-block univer-rait">
+									<div class="head-24px">Колледж Архитектуры, Дизайна и Реинжиниринга № 26 в рейтингах</div>
+
+									<div class="univer-rait-wrap">
+										<div class="univer-rait__item">
+											<div class="univer-rait__item-left">
+												<img src="images/cooll.png" alt="">
+												<span class="univer-rait__item-name">QS World University Rankings 2021</span>
+											</div>
+											
+											<div class="univer-rait__item-right">
+												<div class="rait__item__col">
+													<div class="rait__item__col-name">В рейтинге</div>
+													<div class="rait__item__col-value">801-1000</div>
+												</div>
+												<div class="rait__item__col">
+													<div class="rait__item__col-name">В РФ</div>
+													<div class="rait__item__col-value">23</div>
+												</div>
+											</div>
+										</div>
+										<div class="univer-rait__item">
+											<div class="univer-rait__item-left">
+												<img src="images/cooll.png" alt="">
+												<span class="univer-rait__item-name">QS World University Rankings 2021</span>
+											</div>
+											
+											<div class="univer-rait__item-right">
+												<div class="rait__item__col">
+													<div class="rait__item__col-name">В рейтинге</div>
+													<div class="rait__item__col-value">801-1000</div>
+												</div>
+												<div class="rait__item__col">
+													<div class="rait__item__col-name">В РФ</div>
+													<div class="rait__item__col-value">23</div>
+												</div>
+											</div>
+										</div>
+										<div class="univer-rait__item">
+											<div class="univer-rait__item-left">
+												<img src="images/cooll.png" alt="">
+												<span class="univer-rait__item-name">QS World University Rankings 2021</span>
+											</div>
+											
+											<div class="univer-rait__item-right">
+												<div class="rait__item__col">
+													<div class="rait__item__col-name">В рейтинге</div>
+													<div class="rait__item__col-value">801-1000</div>
+												</div>
+												<div class="rait__item__col">
+													<div class="rait__item__col-name">В РФ</div>
+													<div class="rait__item__col-value">23</div>
+												</div>
+											</div>
+										</div>
+										<div class="univer-rait__item">
+											<div class="univer-rait__item-left">
+												<img src="images/cooll.png" alt="">
+												<span class="univer-rait__item-name">QS World University Rankings 2021</span>
+											</div>
+											
+											<div class="univer-rait__item-right">
+												<div class="rait__item__col">
+													<div class="rait__item__col-name">В рейтинге</div>
+													<div class="rait__item__col-value">801-1000</div>
+												</div>
+												<div class="rait__item__col">
+													<div class="rait__item__col-name">В РФ</div>
+													<div class="rait__item__col-value">23</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="head-24px">Об учебном заведении</div>
+								<div class="about-slider">
+									<div class="about-slider__item">
+										<img src="images/aboutslider.jpg" alt="">
+									</div>
+									<div class="about-slider__item">
+										<img src="images/aboutslider.jpg" alt="">
+									</div>
+									<div class="about-slider__item">
+										<img src="images/aboutslider.jpg" alt="">
+									</div>
+									<div class="about-slider__item">
+										<img src="images/aboutslider.jpg" alt="">
+									</div>
+									<div class="about-slider__item">
+										<img src="images/aboutslider.jpg" alt="">
+									</div>
+									<div class="about-slider__item">
+										<img src="images/aboutslider.jpg" alt="">
+									</div>
+								</div>
+								
+								<div class="text-block">
+									<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor diam magna nisl arcu leo. Velit cursus in orci consectetur. Tincidunt risus nisl ut suspendisse scelerisque. Vulputate at eget sit sed sagittis. </p><br>
+									<p class="text">Blandit sed viverra aliquam convallis libero, id sed dui. Id viverra justo tellus ipsum, purus imperdiet amet, aenean facilisis. Proin molestie elit est eget amet egestas malesuada adipiscing dictumst. Nisl pulvinar facilisis quis et feugiat pellentesque consectetur. Quam pharetra, donec curabitur ultricies felis tincidunt in quam.
+									</p>
+								</div>
+
+								<div class="text-block">
+									<div class="head-24px">Лицензия и аккредитация</div>
+									<div class="accreditation-wrap">
+										<div class="accreditation__item">
+											<div class="accreditation__item-img">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M16.5 10.5C15.3133 10.5 14.1533 10.8519 13.1666 11.5112C12.1799 12.1705 11.4109 13.1075 10.9567 14.2039C10.5026 15.3003 10.3838 16.5067 10.6153 17.6705C10.8468 18.8344 11.4182 19.9035 12.2574 20.7426C13.0965 21.5818 14.1656 22.1532 15.3295 22.3847C16.4933 22.6162 17.6997 22.4974 18.7961 22.0433C19.8925 21.5892 20.8295 20.8201 21.4888 19.8334C22.1481 18.8467 22.5 17.6867 22.5 16.5C22.498 14.9093 21.8652 13.3843 20.7405 12.2596C19.6157 11.1348 18.0907 10.502 16.5 10.5ZM20.9325 15.75H19.467C19.3696 14.6192 19.0597 13.5169 18.5535 12.501C19.1748 12.8211 19.7131 13.2812 20.126 13.8451C20.5389 14.4089 20.815 15.0611 20.9325 15.75ZM15.042 15.75C15.1799 14.3946 15.6839 13.1022 16.5 12.0112C17.3165 13.1021 17.8207 14.3945 17.9588 15.75H15.042ZM17.9595 17.25C17.8213 18.6056 17.3168 19.898 16.5 20.9888C15.6836 19.8979 15.1793 18.6055 15.0413 17.25H17.9595ZM14.4465 12.501C13.9403 13.5169 13.6304 14.6192 13.533 15.75H12.0675C12.185 15.0611 12.4611 14.4089 12.874 13.8451C13.2869 13.2812 13.8252 12.8211 14.4465 12.501ZM12.0675 17.25H13.5323C13.6296 18.3808 13.9396 19.4831 14.4458 20.499C13.8246 20.1789 13.2864 19.7187 12.8737 19.1548C12.4609 18.5909 12.185 17.9388 12.0675 17.25ZM18.5535 20.499C19.0598 19.4831 19.3697 18.3808 19.467 17.25H20.9325C20.815 17.9389 20.5389 18.5911 20.1261 19.155C19.7132 19.7189 19.1748 20.179 18.5535 20.499Z" fill="#256FFF"/>
+													<path d="M4.5 10.5H9V12H4.5V10.5Z" fill="#256FFF"/>
+													<path d="M4.5 4.5H13.5V6H4.5V4.5Z" fill="#256FFF"/>
+													<path d="M4.5 7.5H13.5V9H4.5V7.5Z" fill="#256FFF"/>
+													<path d="M4.5 18H9V19.5H4.5V18Z" fill="#256FFF"/>
+													<path d="M9 22.5H3C2.6023 22.4996 2.221 22.3414 1.93978 22.0602C1.65856 21.779 1.5004 21.3977 1.5 21V3C1.5004 2.6023 1.65856 2.221 1.93978 1.93978C2.221 1.65856 2.6023 1.5004 3 1.5H15C15.3977 1.5004 15.779 1.65856 16.0602 1.93978C16.3414 2.221 16.4996 2.6023 16.5 3V9H15V3H3V21H9V22.5Z" fill="#256FFF"/>
+												</svg>
+											</div>
+											<div class="accreditation__item-content">
+												<div class="accreditation__item-content-head">Лицензия №</div>
+												<div class="accreditation__item-content-num">90Л01 0009904 рег. № 2787</div>
+												<div class="accreditation__item-content-date">Дата выдачи 07.12.2018</div>
+											</div>
+										</div>
+										<div class="accreditation__item">
+											<div class="accreditation__item-img">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M16.5 10.5C15.3133 10.5 14.1533 10.8519 13.1666 11.5112C12.1799 12.1705 11.4109 13.1075 10.9567 14.2039C10.5026 15.3003 10.3838 16.5067 10.6153 17.6705C10.8468 18.8344 11.4182 19.9035 12.2574 20.7426C13.0965 21.5818 14.1656 22.1532 15.3295 22.3847C16.4933 22.6162 17.6997 22.4974 18.7961 22.0433C19.8925 21.5892 20.8295 20.8201 21.4888 19.8334C22.1481 18.8467 22.5 17.6867 22.5 16.5C22.498 14.9093 21.8652 13.3843 20.7405 12.2596C19.6157 11.1348 18.0907 10.502 16.5 10.5ZM20.9325 15.75H19.467C19.3696 14.6192 19.0597 13.5169 18.5535 12.501C19.1748 12.8211 19.7131 13.2812 20.126 13.8451C20.5389 14.4089 20.815 15.0611 20.9325 15.75ZM15.042 15.75C15.1799 14.3946 15.6839 13.1022 16.5 12.0112C17.3165 13.1021 17.8207 14.3945 17.9588 15.75H15.042ZM17.9595 17.25C17.8213 18.6056 17.3168 19.898 16.5 20.9888C15.6836 19.8979 15.1793 18.6055 15.0413 17.25H17.9595ZM14.4465 12.501C13.9403 13.5169 13.6304 14.6192 13.533 15.75H12.0675C12.185 15.0611 12.4611 14.4089 12.874 13.8451C13.2869 13.2812 13.8252 12.8211 14.4465 12.501ZM12.0675 17.25H13.5323C13.6296 18.3808 13.9396 19.4831 14.4458 20.499C13.8246 20.1789 13.2864 19.7187 12.8737 19.1548C12.4609 18.5909 12.185 17.9388 12.0675 17.25ZM18.5535 20.499C19.0598 19.4831 19.3697 18.3808 19.467 17.25H20.9325C20.815 17.9389 20.5389 18.5911 20.1261 19.155C19.7132 19.7189 19.1748 20.179 18.5535 20.499Z" fill="#256FFF"/>
+													<path d="M4.5 10.5H9V12H4.5V10.5Z" fill="#256FFF"/>
+													<path d="M4.5 4.5H13.5V6H4.5V4.5Z" fill="#256FFF"/>
+													<path d="M4.5 7.5H13.5V9H4.5V7.5Z" fill="#256FFF"/>
+													<path d="M4.5 18H9V19.5H4.5V18Z" fill="#256FFF"/>
+													<path d="M9 22.5H3C2.6023 22.4996 2.221 22.3414 1.93978 22.0602C1.65856 21.779 1.5004 21.3977 1.5 21V3C1.5004 2.6023 1.65856 2.221 1.93978 1.93978C2.221 1.65856 2.6023 1.5004 3 1.5H15C15.3977 1.5004 15.779 1.65856 16.0602 1.93978C16.3414 2.221 16.4996 2.6023 16.5 3V9H15V3H3V21H9V22.5Z" fill="#256FFF"/>
+												</svg>
+											</div>
+											<div class="accreditation__item-content">
+												<div class="accreditation__item-content-head">Лицензия №</div>
+												<div class="accreditation__item-content-num">90Л01 0009904 рег. № 2787</div>
+												<div class="accreditation__item-content-date">Дата выдачи 07.12.2018</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="text-block">
+									<div class="section-head">Направления подготовки</div>
+									<div class="section-tabs ">
+										<div class="section-tabs__item section-tabs__item--active">На базе 9 классов</div>
+										<div class="section-tabs__item">На базе 11 классов</div>
+									</div>
+									<div class="ways-preparation">
+										<a href="#" class="ways-preparation__item">
+											<div class="ways-preparation__item__left">
+													<svg class="ways-preparation__item__left-img" width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_223_2720)">
+														<path d="M54.3998 16.0001H29.8665C29.2777 16.0001 28.7998 15.5222 28.7998 14.9334V9.60011C28.7998 9.01131 29.2777 8.53345 29.8665 8.53345H54.3998C54.9886 8.53345 55.4665 9.01131 55.4665 9.60011V14.9334C55.4665 15.5222 54.9886 16.0001 54.3998 16.0001ZM30.9331 13.8668H53.3331V10.6668H30.9331V13.8668Z" fill="#256FFF"/>
+														<path d="M42.6665 26.6666H29.8665C29.2777 26.6666 28.7998 26.1888 28.7998 25.6V19.2C28.7998 18.6112 29.2777 18.1333 29.8665 18.1333H42.6665C43.2553 18.1333 43.7331 18.6112 43.7331 19.2V25.6C43.7331 26.1888 43.2553 26.6666 42.6665 26.6666ZM30.9331 24.5333H41.5998V20.2666H30.9331V24.5333Z" fill="#256FFF"/>
+														<path d="M50.1331 36.2667H29.8665C29.2777 36.2667 28.7998 35.7888 28.7998 35.2V29.8667C28.7998 29.2779 29.2777 28.8 29.8665 28.8H50.1331C50.7219 28.8 51.1998 29.2779 51.1998 29.8667V35.2C51.1998 35.7888 50.7219 36.2667 50.1331 36.2667ZM30.9331 34.1334H49.0665V30.9334H30.9331V34.1334Z" fill="#256FFF"/>
+														<path d="M20.2665 30.9334H11.7332C11.1444 30.9334 10.6665 30.4555 10.6665 29.8667C10.6665 29.2779 11.1444 28.8 11.7332 28.8H20.2665C20.8553 28.8 21.3332 29.2779 21.3332 29.8667C21.3332 30.4555 20.8553 30.9334 20.2665 30.9334Z" fill="#256FFF"/>
+														<path d="M15.9998 35.2H11.7332C11.1444 35.2 10.6665 34.7221 10.6665 34.1333C10.6665 33.5445 11.1444 33.0667 11.7332 33.0667H15.9998C16.5886 33.0667 17.0665 33.5445 17.0665 34.1333C17.0665 34.7221 16.5886 35.2 15.9998 35.2Z" fill="#256FFF"/>
+														<path d="M20.2665 21.3333H11.7332C11.1444 21.3333 10.6665 20.8554 10.6665 20.2666C10.6665 19.6778 11.1444 19.2 11.7332 19.2H20.2665C20.8553 19.2 21.3332 19.6778 21.3332 20.2666C21.3332 20.8554 20.8553 21.3333 20.2665 21.3333Z" fill="#256FFF"/>
+														<path d="M15.9998 25.5999H11.7332C11.1444 25.5999 10.6665 25.122 10.6665 24.5332C10.6665 23.9444 11.1444 23.4666 11.7332 23.4666H15.9998C16.5886 23.4666 17.0665 23.9444 17.0665 24.5332C17.0665 25.122 16.5886 25.5999 15.9998 25.5999Z" fill="#256FFF"/>
+														<path d="M20.2665 11.7332H11.7332C11.1444 11.7332 10.6665 11.2553 10.6665 10.6665C10.6665 10.0777 11.1444 9.59985 11.7332 9.59985H20.2665C20.8553 9.59985 21.3332 10.0777 21.3332 10.6665C21.3332 11.2553 20.8553 11.7332 20.2665 11.7332Z" fill="#256FFF"/>
+														<path d="M15.9998 16H11.7332C11.1444 16 10.6665 15.5222 10.6665 14.9334C10.6665 14.3446 11.1444 13.8667 11.7332 13.8667H15.9998C16.5886 13.8667 17.0665 14.3446 17.0665 14.9334C17.0665 15.5222 16.5886 16 15.9998 16Z" fill="#256FFF"/>
+														<path d="M55.4668 46.9334H8.53346C7.94466 46.9334 7.4668 46.4556 7.4668 45.8668V41.6001C7.4668 41.0113 7.94466 40.5334 8.53346 40.5334H55.4668C56.0556 40.5334 56.5335 41.0113 56.5335 41.6001V45.8668C56.5335 46.4556 56.0556 46.9334 55.4668 46.9334ZM9.60013 44.8001H54.4001V42.6668H9.60013V44.8001Z" fill="#256FFF"/>
+														<path d="M60.8 44.8H55.4666C54.8778 44.8 54.4 44.3221 54.4 43.7333V42.6666H9.59997V43.7333C9.59997 44.3221 9.1221 44.8 8.5333 44.8H3.19997C2.61117 44.8 2.1333 44.3221 2.1333 43.7333V3.19997C2.1333 2.61117 2.61117 2.1333 3.19997 2.1333H60.8C61.3888 2.1333 61.8666 2.61117 61.8666 3.19997V43.7333C61.8666 44.3221 61.3888 44.8 60.8 44.8ZM56.5333 42.6666H59.7333V4.26663H4.26663V42.6666H7.46663V41.6C7.46663 41.0112 7.9445 40.5333 8.5333 40.5333H55.4666C56.0554 40.5333 56.5333 41.0112 56.5333 41.6V42.6666Z" fill="#256FFF"/>
+														<path d="M62.9333 4.26664H1.06667C0.477867 4.26664 0 3.78877 0 3.19997C0 2.61117 0.477867 2.1333 1.06667 2.1333H62.9333C63.5221 2.1333 64 2.61117 64 3.19997C64 3.78877 63.5221 4.26664 62.9333 4.26664Z" fill="#256FFF"/>
+														<path d="M31.9998 6.4C31.411 6.4 30.9331 5.92213 30.9331 5.33333V1.06667C30.9331 0.477867 31.411 0 31.9998 0C32.5886 0 33.0664 0.477867 33.0664 1.06667V5.33333C33.0664 5.92213 32.5886 6.4 31.9998 6.4Z" fill="#256FFF"/>
+														<path d="M33.0667 55.4667C32.4779 55.4667 32 54.9888 32 54.4V45.8667C32 45.2779 32.4779 44.8 33.0667 44.8C33.6555 44.8 34.1333 45.2779 34.1333 45.8667V54.4C34.1333 54.9888 33.6555 55.4667 33.0667 55.4667Z" fill="#256FFF"/>
+														<path d="M33.0667 63.9999C30.1259 63.9999 27.7334 61.6074 27.7334 58.6666C27.7334 55.7258 30.1259 53.3333 33.0667 53.3333C36.0075 53.3333 38.4001 55.7258 38.4001 58.6666C38.4001 61.6074 36.0075 63.9999 33.0667 63.9999ZM33.0667 55.4666C31.3025 55.4666 29.8667 56.9023 29.8667 58.6666C29.8667 60.4309 31.3025 61.8666 33.0667 61.8666C34.831 61.8666 36.2667 60.4309 36.2667 58.6666C36.2667 56.9023 34.831 55.4666 33.0667 55.4666Z" fill="#256FFF"/>
+														</g>
+														<defs>
+														<clipPath id="clip0_223_2720">
+														<rect width="64" height="64" fill="white"/>
+														</clipPath>
+														</defs>
+													</svg>
+													<div class="ways-preparation__item-text">
+														<div class="ways-preparation-head">Управление и менеджмент</div>
+														<div class="ways-preparation-text__bottom">
+															<span class="ways-preparation-text">23 345 учебных мест</span>
+															<span class="ways-preparation-text">145 657 платных мест</span>
+														</div>
+													</div>
+											</div>
+
+											<div class="ways-preparation__item__right">
+												<div class="ways-preparation__item__right-text">416 учебных программ</div>
+											</div>
+
+										</a>
+										<a href="#" class="ways-preparation__item">
+											<div class="ways-preparation__item__left">
+													<svg class="ways-preparation__item__left-img" width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_223_2720)">
+														<path d="M54.3998 16.0001H29.8665C29.2777 16.0001 28.7998 15.5222 28.7998 14.9334V9.60011C28.7998 9.01131 29.2777 8.53345 29.8665 8.53345H54.3998C54.9886 8.53345 55.4665 9.01131 55.4665 9.60011V14.9334C55.4665 15.5222 54.9886 16.0001 54.3998 16.0001ZM30.9331 13.8668H53.3331V10.6668H30.9331V13.8668Z" fill="#256FFF"/>
+														<path d="M42.6665 26.6666H29.8665C29.2777 26.6666 28.7998 26.1888 28.7998 25.6V19.2C28.7998 18.6112 29.2777 18.1333 29.8665 18.1333H42.6665C43.2553 18.1333 43.7331 18.6112 43.7331 19.2V25.6C43.7331 26.1888 43.2553 26.6666 42.6665 26.6666ZM30.9331 24.5333H41.5998V20.2666H30.9331V24.5333Z" fill="#256FFF"/>
+														<path d="M50.1331 36.2667H29.8665C29.2777 36.2667 28.7998 35.7888 28.7998 35.2V29.8667C28.7998 29.2779 29.2777 28.8 29.8665 28.8H50.1331C50.7219 28.8 51.1998 29.2779 51.1998 29.8667V35.2C51.1998 35.7888 50.7219 36.2667 50.1331 36.2667ZM30.9331 34.1334H49.0665V30.9334H30.9331V34.1334Z" fill="#256FFF"/>
+														<path d="M20.2665 30.9334H11.7332C11.1444 30.9334 10.6665 30.4555 10.6665 29.8667C10.6665 29.2779 11.1444 28.8 11.7332 28.8H20.2665C20.8553 28.8 21.3332 29.2779 21.3332 29.8667C21.3332 30.4555 20.8553 30.9334 20.2665 30.9334Z" fill="#256FFF"/>
+														<path d="M15.9998 35.2H11.7332C11.1444 35.2 10.6665 34.7221 10.6665 34.1333C10.6665 33.5445 11.1444 33.0667 11.7332 33.0667H15.9998C16.5886 33.0667 17.0665 33.5445 17.0665 34.1333C17.0665 34.7221 16.5886 35.2 15.9998 35.2Z" fill="#256FFF"/>
+														<path d="M20.2665 21.3333H11.7332C11.1444 21.3333 10.6665 20.8554 10.6665 20.2666C10.6665 19.6778 11.1444 19.2 11.7332 19.2H20.2665C20.8553 19.2 21.3332 19.6778 21.3332 20.2666C21.3332 20.8554 20.8553 21.3333 20.2665 21.3333Z" fill="#256FFF"/>
+														<path d="M15.9998 25.5999H11.7332C11.1444 25.5999 10.6665 25.122 10.6665 24.5332C10.6665 23.9444 11.1444 23.4666 11.7332 23.4666H15.9998C16.5886 23.4666 17.0665 23.9444 17.0665 24.5332C17.0665 25.122 16.5886 25.5999 15.9998 25.5999Z" fill="#256FFF"/>
+														<path d="M20.2665 11.7332H11.7332C11.1444 11.7332 10.6665 11.2553 10.6665 10.6665C10.6665 10.0777 11.1444 9.59985 11.7332 9.59985H20.2665C20.8553 9.59985 21.3332 10.0777 21.3332 10.6665C21.3332 11.2553 20.8553 11.7332 20.2665 11.7332Z" fill="#256FFF"/>
+														<path d="M15.9998 16H11.7332C11.1444 16 10.6665 15.5222 10.6665 14.9334C10.6665 14.3446 11.1444 13.8667 11.7332 13.8667H15.9998C16.5886 13.8667 17.0665 14.3446 17.0665 14.9334C17.0665 15.5222 16.5886 16 15.9998 16Z" fill="#256FFF"/>
+														<path d="M55.4668 46.9334H8.53346C7.94466 46.9334 7.4668 46.4556 7.4668 45.8668V41.6001C7.4668 41.0113 7.94466 40.5334 8.53346 40.5334H55.4668C56.0556 40.5334 56.5335 41.0113 56.5335 41.6001V45.8668C56.5335 46.4556 56.0556 46.9334 55.4668 46.9334ZM9.60013 44.8001H54.4001V42.6668H9.60013V44.8001Z" fill="#256FFF"/>
+														<path d="M60.8 44.8H55.4666C54.8778 44.8 54.4 44.3221 54.4 43.7333V42.6666H9.59997V43.7333C9.59997 44.3221 9.1221 44.8 8.5333 44.8H3.19997C2.61117 44.8 2.1333 44.3221 2.1333 43.7333V3.19997C2.1333 2.61117 2.61117 2.1333 3.19997 2.1333H60.8C61.3888 2.1333 61.8666 2.61117 61.8666 3.19997V43.7333C61.8666 44.3221 61.3888 44.8 60.8 44.8ZM56.5333 42.6666H59.7333V4.26663H4.26663V42.6666H7.46663V41.6C7.46663 41.0112 7.9445 40.5333 8.5333 40.5333H55.4666C56.0554 40.5333 56.5333 41.0112 56.5333 41.6V42.6666Z" fill="#256FFF"/>
+														<path d="M62.9333 4.26664H1.06667C0.477867 4.26664 0 3.78877 0 3.19997C0 2.61117 0.477867 2.1333 1.06667 2.1333H62.9333C63.5221 2.1333 64 2.61117 64 3.19997C64 3.78877 63.5221 4.26664 62.9333 4.26664Z" fill="#256FFF"/>
+														<path d="M31.9998 6.4C31.411 6.4 30.9331 5.92213 30.9331 5.33333V1.06667C30.9331 0.477867 31.411 0 31.9998 0C32.5886 0 33.0664 0.477867 33.0664 1.06667V5.33333C33.0664 5.92213 32.5886 6.4 31.9998 6.4Z" fill="#256FFF"/>
+														<path d="M33.0667 55.4667C32.4779 55.4667 32 54.9888 32 54.4V45.8667C32 45.2779 32.4779 44.8 33.0667 44.8C33.6555 44.8 34.1333 45.2779 34.1333 45.8667V54.4C34.1333 54.9888 33.6555 55.4667 33.0667 55.4667Z" fill="#256FFF"/>
+														<path d="M33.0667 63.9999C30.1259 63.9999 27.7334 61.6074 27.7334 58.6666C27.7334 55.7258 30.1259 53.3333 33.0667 53.3333C36.0075 53.3333 38.4001 55.7258 38.4001 58.6666C38.4001 61.6074 36.0075 63.9999 33.0667 63.9999ZM33.0667 55.4666C31.3025 55.4666 29.8667 56.9023 29.8667 58.6666C29.8667 60.4309 31.3025 61.8666 33.0667 61.8666C34.831 61.8666 36.2667 60.4309 36.2667 58.6666C36.2667 56.9023 34.831 55.4666 33.0667 55.4666Z" fill="#256FFF"/>
+														</g>
+														<defs>
+														<clipPath id="clip0_223_2720">
+														<rect width="64" height="64" fill="white"/>
+														</clipPath>
+														</defs>
+													</svg>
+													<div class="ways-preparation__item-text">
+														<div class="ways-preparation-head">Управление и менеджмент</div>
+														<div class="ways-preparation-text__bottom">
+															<span class="ways-preparation-text">23 345 учебных мест</span>
+															<span class="ways-preparation-text">145 657 платных мест</span>
+														</div>
+													</div>
+											</div>
+
+											<div class="ways-preparation__item__right">
+												<div class="ways-preparation__item__right-text">416 учебных программ</div>
+											</div>
+
+										</a>
+										<a href="#" class="ways-preparation__item">
+											<div class="ways-preparation__item__left">
+													<svg class="ways-preparation__item__left-img" width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_223_2720)">
+														<path d="M54.3998 16.0001H29.8665C29.2777 16.0001 28.7998 15.5222 28.7998 14.9334V9.60011C28.7998 9.01131 29.2777 8.53345 29.8665 8.53345H54.3998C54.9886 8.53345 55.4665 9.01131 55.4665 9.60011V14.9334C55.4665 15.5222 54.9886 16.0001 54.3998 16.0001ZM30.9331 13.8668H53.3331V10.6668H30.9331V13.8668Z" fill="#256FFF"/>
+														<path d="M42.6665 26.6666H29.8665C29.2777 26.6666 28.7998 26.1888 28.7998 25.6V19.2C28.7998 18.6112 29.2777 18.1333 29.8665 18.1333H42.6665C43.2553 18.1333 43.7331 18.6112 43.7331 19.2V25.6C43.7331 26.1888 43.2553 26.6666 42.6665 26.6666ZM30.9331 24.5333H41.5998V20.2666H30.9331V24.5333Z" fill="#256FFF"/>
+														<path d="M50.1331 36.2667H29.8665C29.2777 36.2667 28.7998 35.7888 28.7998 35.2V29.8667C28.7998 29.2779 29.2777 28.8 29.8665 28.8H50.1331C50.7219 28.8 51.1998 29.2779 51.1998 29.8667V35.2C51.1998 35.7888 50.7219 36.2667 50.1331 36.2667ZM30.9331 34.1334H49.0665V30.9334H30.9331V34.1334Z" fill="#256FFF"/>
+														<path d="M20.2665 30.9334H11.7332C11.1444 30.9334 10.6665 30.4555 10.6665 29.8667C10.6665 29.2779 11.1444 28.8 11.7332 28.8H20.2665C20.8553 28.8 21.3332 29.2779 21.3332 29.8667C21.3332 30.4555 20.8553 30.9334 20.2665 30.9334Z" fill="#256FFF"/>
+														<path d="M15.9998 35.2H11.7332C11.1444 35.2 10.6665 34.7221 10.6665 34.1333C10.6665 33.5445 11.1444 33.0667 11.7332 33.0667H15.9998C16.5886 33.0667 17.0665 33.5445 17.0665 34.1333C17.0665 34.7221 16.5886 35.2 15.9998 35.2Z" fill="#256FFF"/>
+														<path d="M20.2665 21.3333H11.7332C11.1444 21.3333 10.6665 20.8554 10.6665 20.2666C10.6665 19.6778 11.1444 19.2 11.7332 19.2H20.2665C20.8553 19.2 21.3332 19.6778 21.3332 20.2666C21.3332 20.8554 20.8553 21.3333 20.2665 21.3333Z" fill="#256FFF"/>
+														<path d="M15.9998 25.5999H11.7332C11.1444 25.5999 10.6665 25.122 10.6665 24.5332C10.6665 23.9444 11.1444 23.4666 11.7332 23.4666H15.9998C16.5886 23.4666 17.0665 23.9444 17.0665 24.5332C17.0665 25.122 16.5886 25.5999 15.9998 25.5999Z" fill="#256FFF"/>
+														<path d="M20.2665 11.7332H11.7332C11.1444 11.7332 10.6665 11.2553 10.6665 10.6665C10.6665 10.0777 11.1444 9.59985 11.7332 9.59985H20.2665C20.8553 9.59985 21.3332 10.0777 21.3332 10.6665C21.3332 11.2553 20.8553 11.7332 20.2665 11.7332Z" fill="#256FFF"/>
+														<path d="M15.9998 16H11.7332C11.1444 16 10.6665 15.5222 10.6665 14.9334C10.6665 14.3446 11.1444 13.8667 11.7332 13.8667H15.9998C16.5886 13.8667 17.0665 14.3446 17.0665 14.9334C17.0665 15.5222 16.5886 16 15.9998 16Z" fill="#256FFF"/>
+														<path d="M55.4668 46.9334H8.53346C7.94466 46.9334 7.4668 46.4556 7.4668 45.8668V41.6001C7.4668 41.0113 7.94466 40.5334 8.53346 40.5334H55.4668C56.0556 40.5334 56.5335 41.0113 56.5335 41.6001V45.8668C56.5335 46.4556 56.0556 46.9334 55.4668 46.9334ZM9.60013 44.8001H54.4001V42.6668H9.60013V44.8001Z" fill="#256FFF"/>
+														<path d="M60.8 44.8H55.4666C54.8778 44.8 54.4 44.3221 54.4 43.7333V42.6666H9.59997V43.7333C9.59997 44.3221 9.1221 44.8 8.5333 44.8H3.19997C2.61117 44.8 2.1333 44.3221 2.1333 43.7333V3.19997C2.1333 2.61117 2.61117 2.1333 3.19997 2.1333H60.8C61.3888 2.1333 61.8666 2.61117 61.8666 3.19997V43.7333C61.8666 44.3221 61.3888 44.8 60.8 44.8ZM56.5333 42.6666H59.7333V4.26663H4.26663V42.6666H7.46663V41.6C7.46663 41.0112 7.9445 40.5333 8.5333 40.5333H55.4666C56.0554 40.5333 56.5333 41.0112 56.5333 41.6V42.6666Z" fill="#256FFF"/>
+														<path d="M62.9333 4.26664H1.06667C0.477867 4.26664 0 3.78877 0 3.19997C0 2.61117 0.477867 2.1333 1.06667 2.1333H62.9333C63.5221 2.1333 64 2.61117 64 3.19997C64 3.78877 63.5221 4.26664 62.9333 4.26664Z" fill="#256FFF"/>
+														<path d="M31.9998 6.4C31.411 6.4 30.9331 5.92213 30.9331 5.33333V1.06667C30.9331 0.477867 31.411 0 31.9998 0C32.5886 0 33.0664 0.477867 33.0664 1.06667V5.33333C33.0664 5.92213 32.5886 6.4 31.9998 6.4Z" fill="#256FFF"/>
+														<path d="M33.0667 55.4667C32.4779 55.4667 32 54.9888 32 54.4V45.8667C32 45.2779 32.4779 44.8 33.0667 44.8C33.6555 44.8 34.1333 45.2779 34.1333 45.8667V54.4C34.1333 54.9888 33.6555 55.4667 33.0667 55.4667Z" fill="#256FFF"/>
+														<path d="M33.0667 63.9999C30.1259 63.9999 27.7334 61.6074 27.7334 58.6666C27.7334 55.7258 30.1259 53.3333 33.0667 53.3333C36.0075 53.3333 38.4001 55.7258 38.4001 58.6666C38.4001 61.6074 36.0075 63.9999 33.0667 63.9999ZM33.0667 55.4666C31.3025 55.4666 29.8667 56.9023 29.8667 58.6666C29.8667 60.4309 31.3025 61.8666 33.0667 61.8666C34.831 61.8666 36.2667 60.4309 36.2667 58.6666C36.2667 56.9023 34.831 55.4666 33.0667 55.4666Z" fill="#256FFF"/>
+														</g>
+														<defs>
+														<clipPath id="clip0_223_2720">
+														<rect width="64" height="64" fill="white"/>
+														</clipPath>
+														</defs>
+													</svg>
+													<div class="ways-preparation__item-text">
+														<div class="ways-preparation-head">Управление и менеджмент</div>
+														<div class="ways-preparation-text__bottom">
+															<span class="ways-preparation-text">23 345 учебных мест</span>
+															<span class="ways-preparation-text">145 657 платных мест</span>
+														</div>
+													</div>
+											</div>
+
+											<div class="ways-preparation__item__right">
+												<div class="ways-preparation__item__right-text">416 учебных программ</div>
+											</div>
+
+										</a>
+										<a href="#" class="ways-preparation__item">
+											<div class="ways-preparation__item__left">
+													<svg class="ways-preparation__item__left-img" width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<g clip-path="url(#clip0_223_2720)">
+														<path d="M54.3998 16.0001H29.8665C29.2777 16.0001 28.7998 15.5222 28.7998 14.9334V9.60011C28.7998 9.01131 29.2777 8.53345 29.8665 8.53345H54.3998C54.9886 8.53345 55.4665 9.01131 55.4665 9.60011V14.9334C55.4665 15.5222 54.9886 16.0001 54.3998 16.0001ZM30.9331 13.8668H53.3331V10.6668H30.9331V13.8668Z" fill="#256FFF"/>
+														<path d="M42.6665 26.6666H29.8665C29.2777 26.6666 28.7998 26.1888 28.7998 25.6V19.2C28.7998 18.6112 29.2777 18.1333 29.8665 18.1333H42.6665C43.2553 18.1333 43.7331 18.6112 43.7331 19.2V25.6C43.7331 26.1888 43.2553 26.6666 42.6665 26.6666ZM30.9331 24.5333H41.5998V20.2666H30.9331V24.5333Z" fill="#256FFF"/>
+														<path d="M50.1331 36.2667H29.8665C29.2777 36.2667 28.7998 35.7888 28.7998 35.2V29.8667C28.7998 29.2779 29.2777 28.8 29.8665 28.8H50.1331C50.7219 28.8 51.1998 29.2779 51.1998 29.8667V35.2C51.1998 35.7888 50.7219 36.2667 50.1331 36.2667ZM30.9331 34.1334H49.0665V30.9334H30.9331V34.1334Z" fill="#256FFF"/>
+														<path d="M20.2665 30.9334H11.7332C11.1444 30.9334 10.6665 30.4555 10.6665 29.8667C10.6665 29.2779 11.1444 28.8 11.7332 28.8H20.2665C20.8553 28.8 21.3332 29.2779 21.3332 29.8667C21.3332 30.4555 20.8553 30.9334 20.2665 30.9334Z" fill="#256FFF"/>
+														<path d="M15.9998 35.2H11.7332C11.1444 35.2 10.6665 34.7221 10.6665 34.1333C10.6665 33.5445 11.1444 33.0667 11.7332 33.0667H15.9998C16.5886 33.0667 17.0665 33.5445 17.0665 34.1333C17.0665 34.7221 16.5886 35.2 15.9998 35.2Z" fill="#256FFF"/>
+														<path d="M20.2665 21.3333H11.7332C11.1444 21.3333 10.6665 20.8554 10.6665 20.2666C10.6665 19.6778 11.1444 19.2 11.7332 19.2H20.2665C20.8553 19.2 21.3332 19.6778 21.3332 20.2666C21.3332 20.8554 20.8553 21.3333 20.2665 21.3333Z" fill="#256FFF"/>
+														<path d="M15.9998 25.5999H11.7332C11.1444 25.5999 10.6665 25.122 10.6665 24.5332C10.6665 23.9444 11.1444 23.4666 11.7332 23.4666H15.9998C16.5886 23.4666 17.0665 23.9444 17.0665 24.5332C17.0665 25.122 16.5886 25.5999 15.9998 25.5999Z" fill="#256FFF"/>
+														<path d="M20.2665 11.7332H11.7332C11.1444 11.7332 10.6665 11.2553 10.6665 10.6665C10.6665 10.0777 11.1444 9.59985 11.7332 9.59985H20.2665C20.8553 9.59985 21.3332 10.0777 21.3332 10.6665C21.3332 11.2553 20.8553 11.7332 20.2665 11.7332Z" fill="#256FFF"/>
+														<path d="M15.9998 16H11.7332C11.1444 16 10.6665 15.5222 10.6665 14.9334C10.6665 14.3446 11.1444 13.8667 11.7332 13.8667H15.9998C16.5886 13.8667 17.0665 14.3446 17.0665 14.9334C17.0665 15.5222 16.5886 16 15.9998 16Z" fill="#256FFF"/>
+														<path d="M55.4668 46.9334H8.53346C7.94466 46.9334 7.4668 46.4556 7.4668 45.8668V41.6001C7.4668 41.0113 7.94466 40.5334 8.53346 40.5334H55.4668C56.0556 40.5334 56.5335 41.0113 56.5335 41.6001V45.8668C56.5335 46.4556 56.0556 46.9334 55.4668 46.9334ZM9.60013 44.8001H54.4001V42.6668H9.60013V44.8001Z" fill="#256FFF"/>
+														<path d="M60.8 44.8H55.4666C54.8778 44.8 54.4 44.3221 54.4 43.7333V42.6666H9.59997V43.7333C9.59997 44.3221 9.1221 44.8 8.5333 44.8H3.19997C2.61117 44.8 2.1333 44.3221 2.1333 43.7333V3.19997C2.1333 2.61117 2.61117 2.1333 3.19997 2.1333H60.8C61.3888 2.1333 61.8666 2.61117 61.8666 3.19997V43.7333C61.8666 44.3221 61.3888 44.8 60.8 44.8ZM56.5333 42.6666H59.7333V4.26663H4.26663V42.6666H7.46663V41.6C7.46663 41.0112 7.9445 40.5333 8.5333 40.5333H55.4666C56.0554 40.5333 56.5333 41.0112 56.5333 41.6V42.6666Z" fill="#256FFF"/>
+														<path d="M62.9333 4.26664H1.06667C0.477867 4.26664 0 3.78877 0 3.19997C0 2.61117 0.477867 2.1333 1.06667 2.1333H62.9333C63.5221 2.1333 64 2.61117 64 3.19997C64 3.78877 63.5221 4.26664 62.9333 4.26664Z" fill="#256FFF"/>
+														<path d="M31.9998 6.4C31.411 6.4 30.9331 5.92213 30.9331 5.33333V1.06667C30.9331 0.477867 31.411 0 31.9998 0C32.5886 0 33.0664 0.477867 33.0664 1.06667V5.33333C33.0664 5.92213 32.5886 6.4 31.9998 6.4Z" fill="#256FFF"/>
+														<path d="M33.0667 55.4667C32.4779 55.4667 32 54.9888 32 54.4V45.8667C32 45.2779 32.4779 44.8 33.0667 44.8C33.6555 44.8 34.1333 45.2779 34.1333 45.8667V54.4C34.1333 54.9888 33.6555 55.4667 33.0667 55.4667Z" fill="#256FFF"/>
+														<path d="M33.0667 63.9999C30.1259 63.9999 27.7334 61.6074 27.7334 58.6666C27.7334 55.7258 30.1259 53.3333 33.0667 53.3333C36.0075 53.3333 38.4001 55.7258 38.4001 58.6666C38.4001 61.6074 36.0075 63.9999 33.0667 63.9999ZM33.0667 55.4666C31.3025 55.4666 29.8667 56.9023 29.8667 58.6666C29.8667 60.4309 31.3025 61.8666 33.0667 61.8666C34.831 61.8666 36.2667 60.4309 36.2667 58.6666C36.2667 56.9023 34.831 55.4666 33.0667 55.4666Z" fill="#256FFF"/>
+														</g>
+														<defs>
+														<clipPath id="clip0_223_2720">
+														<rect width="64" height="64" fill="white"/>
+														</clipPath>
+														</defs>
+													</svg>
+													<div class="ways-preparation__item-text">
+														<div class="ways-preparation-head">Управление и менеджмент</div>
+														<div class="ways-preparation-text__bottom">
+															<span class="ways-preparation-text">23 345 учебных мест</span>
+															<span class="ways-preparation-text">145 657 платных мест</span>
+														</div>
+													</div>
+											</div>
+
+											<div class="ways-preparation__item__right">
+												<div class="ways-preparation__item__right-text">416 учебных программ</div>
+											</div>
+
+										</a>
+
+									</div>
+								</div>
+
+								<div class="text-block">
+									<div class="section-head-between">
+										<div class="section-head">Отзывы</div>
+										<a href="#">Оставить отзыв</a>
+									</div>
+									
+									<div class="ask__item">
+										<div class="ask__item-top">
+											<div class="ask__item-image">
+												<img src="images/woman.png" alt="">
+											</div>
+											<div class="ask__item-text">
+												<div class="ask__item-name">Инга Иванова</div>
+												<div class="ask__item-univer">
+													27 июля, о программе <a href="#"> Прикладная информатика в энергетических системах</a> в <a href="#">	Колледж Архитектуры, Дизайна и Реинжиниринга № 26</a>
+												</div>
+											</div>
+										</div>
+										<div class="ask__item-ask">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor diam magna nisl arcu leo. Velit cursus in orci consectetur. Tincidunt risus nisl ut suspendisse scelerisque. Vulputate at eget sit sed sagittis. <br><br>
+											Blandit sed viverra aliquam convallis libero, id sed dui. Id viverra justo tellus ipsum, purus imperdiet amet, aenean facilisis. Proin molestie elit est eget amet egestas malesuada adipiscing dictumst. Nisl pulvinar facilisis quis et feugiat pellentesque consectetur. Quam pharetra, donec curabitur ultricies felis tincidunt in quam.</div>
+											<div class="ask__item-answer-wrap">
+												<a href="#" class="ask__item-answer">
+													<div class="ask__item-answer-image">
+		
+													</div>
+													<div class="ask__item-answer-text">
+														1 ответ
+													</div>
+												</a>
+	
+												<a class="ask__item-answer-send" href="#">Ответить</a>
+											</div>
+									</div>
+									<div class="ask__item">
+										<div class="ask__item-top">
+											<div class="ask__item-image">
+												<img src="images/woman.png" alt="">
+											</div>
+											<div class="ask__item-text">
+												<div class="ask__item-name">Инга Иванова</div>
+												<div class="ask__item-univer">
+													27 июля, о программе <a href="#"> Прикладная информатика в энергетических системах</a> в <a href="#">	Колледж Архитектуры, Дизайна и Реинжиниринга № 26</a>
+												</div>
+											</div>
+										</div>
+										<div class="ask__item-ask">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor diam magna nisl arcu leo. Velit cursus in orci consectetur. Tincidunt risus nisl ut suspendisse scelerisque. Vulputate at eget sit sed sagittis. <br><br>
+											Blandit sed viverra aliquam convallis libero, id sed dui. Id viverra justo tellus ipsum, purus imperdiet amet, aenean facilisis. Proin molestie elit est eget amet egestas malesuada adipiscing dictumst. Nisl pulvinar facilisis quis et feugiat pellentesque consectetur. Quam pharetra, donec curabitur ultricies felis tincidunt in quam.</div>
+											<div class="ask__item-answer-wrap">
+												<a href="#" class="ask__item-answer">
+													<div class="ask__item-answer-image">
+		
+													</div>
+													<div class="ask__item-answer-text">
+														1 ответ
+													</div>
+												</a>
+	
+												<a class="ask__item-answer-send" href="#">Ответить</a>
+											</div>
+									</div>
+									<div class="ask__item">
+										<div class="ask__item-top">
+											<div class="ask__item-image">
+												<img src="images/woman.png" alt="">
+											</div>
+											<div class="ask__item-text">
+												<div class="ask__item-name">Инга Иванова</div>
+												<div class="ask__item-univer">
+													27 июля, о программе <a href="#"> Прикладная информатика в энергетических системах</a> в <a href="#">	Колледж Архитектуры, Дизайна и Реинжиниринга № 26</a>
+												</div>
+											</div>
+										</div>
+										<div class="ask__item-ask">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor diam magna nisl arcu leo. Velit cursus in orci consectetur. Tincidunt risus nisl ut suspendisse scelerisque. Vulputate at eget sit sed sagittis. <br><br>
+											Blandit sed viverra aliquam convallis libero, id sed dui. Id viverra justo tellus ipsum, purus imperdiet amet, aenean facilisis. Proin molestie elit est eget amet egestas malesuada adipiscing dictumst. Nisl pulvinar facilisis quis et feugiat pellentesque consectetur. Quam pharetra, donec curabitur ultricies felis tincidunt in quam.</div>
+											<div class="ask__item-answer-wrap">
+												<a href="#" class="ask__item-answer">
+													<div class="ask__item-answer-image">
+		
+													</div>
+													<div class="ask__item-answer-text">
+														1 ответ
+													</div>
+												</a>
+	
+												<a class="ask__item-answer-send" href="#">Ответить</a>
+											</div>
+										</div>
+										<div class="btn-center">
+											<a href="#" class="btn btn-white">Все отзывы</a>
+										</div>
+								</div>
+
+								<div class="section-head">Новости</div>
+								<div class="inner-page__news">
+									<a href="#" class="news__item--no-img ">
+										<div class="news_date">1 сентября 2021</div>
+										<h5 class="news__item--no-img__head">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+									</a>
+									<a href="#" class="news__item--no-img ">
+										<div class="news_date">1 сентября 2021</div>
+										<h5 class="news__item--no-img__head">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+									</a>
+									<a href="#" class="news__item--no-img ">
+										<div class="news_date">1 сентября 2021</div>
+										<h5 class="news__item--no-img__head">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+									</a>
+									<a href="#" class="news__item--no-img ">
+										<div class="news_date">1 сентября 2021</div>
+										<h5 class="news__item--no-img__head">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+									</a>
+									<a href="#" class="news__item--no-img ">
+										<div class="news_date">1 сентября 2021</div>
+										<h5 class="news__item--no-img__head">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+									</a>
+									<a href="#" class="news__item--no-img ">
+										<div class="news_date">1 сентября 2021</div>
+										<h5 class="news__item--no-img__head">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+									</a>
+									<a href="#" class="news__item--no-img ">
+										<div class="news_date">1 сентября 2021</div>
+										<h5 class="news__item--no-img__head">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+									</a>
+									<a href="#" class="news__item--no-img ">
+										<div class="news_date">1 сентября 2021</div>
+										<h5 class="news__item--no-img__head">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+									</a>
+									<a href="#" class="news__item--no-img ">
+										<div class="news_date">1 сентября 2021</div>
+										<h5 class="news__item--no-img__head">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+									</a>
+								</div>
+
+								<div class="btn-center">
+									<a href="#" class="btn btn-white">Все новости</a>
+								</div>
+
+
+								<div class="page__content_contact ">
+									<div class="section-head">Контакты</div>
+									<div class="contact__wrap">
+										<div class="contact__item contact__item-adres">
+											<div class="contact__item-head">Адрес</div>
+											<div class="contact__item-text">Москва, пр-т Вернадского, д. 82, 
+												стр. 1 3-й корп. РАНХиГС</div>
+										</div>
+										<div class="contact__item contact__item-tel">
+											<div class="contact__item-head ">Общий телефон</div>
+											<a href="tel:+74959338004" class="contact__item-text">+7 495 933-80-04</a>
+										</div>
+										<div class="contact__item contact__item-tel">
+											<div class="contact__item-head">Приёмная комиссия</div>
+											<a href="tel:+74959338004" class="contact__item-text">+7 495 933-80-04</a>
+										</div>
+										<div class="contact__item contact__item-mail">
+											<div class="contact__item-head">E-mail</div>
+											<a href="mailto:mail@domain.ru" class="contact__item-text">mail@domain.ru</a>
+										</div>
+									</div>
+								</div>
+							
+
+								<div class="row">
+									<iframe class="main-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577325.3463670209!2d36.82514088019099!3d55.58152448288451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1594740422835!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+								</div>
+
+							</div>
+
+							<div class="page-content__filter col-12 col-lg-3">
+								<div class="page-content__filter__item page-content__filter__buttons">
+
+									<a href="#" class="page-content__filter__univer">
+										<img class="page-content__filter__univer-img" src="images/univerimage.png" alt="">
+										<span class="page-content__filter__univer-text">Колледж Архитектуры, Дизайна и Реинжиниринга № 26</span>
+									</a>
+									<a class="btn" href="#">Рассчитать шансы</a>
+									<a class="btn-opacity btn" href="#">Помочь выбрать</a>
+									<a class="btn-gray btn btn-elected" href="#"> 
+										<svg width="22px" height="20px" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15.0002 9.99984H18.3335V33.3332H15.0002V9.99984ZM21.6668 13.3332H25.0002V33.3332H21.6668V13.3332ZM28.3335 6.6665H31.6668V33.3332H28.3335V6.6665ZM8.3335 19.9998H11.6668V33.3332H8.3335V19.9998Z" fill="#256FFF"/>
+											</svg>											
+										<span>В избранное</span>	
+									</a>
+								</div>
+
+								<div class="employee__item">
+									<div class="employee__item-img">
+										<img src="images/person1.png" alt="">
+									</div>
+									<div class="employee__item-name">Инга Д.</div>
+									<div class="employee__item-text">Менеджер по работе с клиентами</div>
+								</div>
+
+								<a href="#" class="banners__item banners__item--red">
+									<div class="banners__item__anot">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</div>
+									<div class="banners__item__head">Поступи в колледж <br>
+										за 10 месяцев</div>
+									<div class="banners__item__text">Не получится — вернём деньги!</div>
+								</a>
+								
+							</div>
+
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		<footer class="section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="main-form-wrap">
+						<form class="main-form" action="">
+							<div class="section-head section-head--white">Остались вопросы? Мы ответим!</div>	
+							<div class="form__content">
+								<div class="input-row">
+									<input class="input" type="text" placeholder="Имя">
+									<input class="input" type="text" placeholder="Телефон">
+								</div>
+								<textarea class="textarea" placeholder="Комментарий (необязательно)" name="" id=""></textarea>
+								<div class="from__content-bottom">
+									<span class="from__content__pers">Нажимая на кнопку «Отправить», вы соглашетесь
+										с нашей политикой обработки персональных данных.</span>
+										<button class="btn btn-black">Отправить</button>
+								</div>
+							</div>
+							
+						</form>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="footer-logo-wrap">
+						<a class="footer-logo__item" href="#">
+							<img src="images/LOGOsmall.svg" alt="logo">
+						</a>
+
+						<div class="footer__social">
+							<a style="background-image: url('images/vk.svg');" class="footer__social__item" href="#"></a>
+							<a style="background-image: url('images/fb.svg');" class="footer__social__item" href="#"></a>
+							<a style="background-image: url('images/youtube.svg');" class="footer__social__item" href="#"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row justify-content-between">
+					<div class="footer__col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+						<span class="footer__col-head">Учебные заведения</span>
+						<a class="footer__col__link" href="#">Вузы</a>
+						<a class="footer__col__link" href="#">Колледжи</a>
+						<a class="footer__col__link" href="#">Повышение квалификации</a>
+						<a class="footer__col__link" href="#">Курсы переподготовки</a>
+						<a class="footer__col__link" href="#">Специальности</a>
+						<a class="footer__col__link" href="#">Учебным заведениям</a>
+					</div>
+					<div class="footer__col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+						<span class="footer__col-head">Полезная информация</span>
+						<a class="footer__col__link" href="#">Студентам</a>
+						<a class="footer__col__link" href="#">Абитуриентам</a>
+						<a class="footer__col__link" href="#">Статьи</a>
+						<a class="footer__col__link" href="#">Отзывы</a>
+						<a class="footer__col__link" href="#">Календарь мероприятий</a>
+						<a class="footer__col__link" href="#">Рейтинги вузов</a>
+					</div>
+
+					<div class="footer__col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+						<span class="footer__col-head">Сервисы</span>
+						<a class="footer__col__link" href="#">Тест на профориентацию</a>
+						<a class="footer__col__link" href="#">Калькулятор ЕГЭ</a>
+					</div>
+					
+					<div class="footer__col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+						<span class="footer__col-head">О нас</span>
+						<a class="footer__col__link" href="#">О компании</a>
+						<a class="footer__col__link" href="#">Новости</a>
+						<a class="footer__col__link" href="#">Специальные предложения</a>
+						<a class="footer__col__link" href="#">Контакты</a>
+					</div>
+
+					<div class="footer__col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+						<span class="footer__col-head">Контакты</span>
+						<a class="footer__col__link" href="#">mail@domain.com</a>
+						<a class="footer__col__phone" href="#">8 800 1234 567</a>
+						<a class="footer__col__btn" href="#">Закзать звонок</a>
+					</div>
+
+				</div>
+
+				<div class="footer__bottom">
+					<span>2021. Образовательный портал</span>
+					<a class="footer__bottom-link" href="#">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/circular/jQuery-plugin-progressbar.js"></script>
+	<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+	<script src="js/common.js"></script>
+
+	<script>
+			$('.progress-bar').loading({
+			'circle-size': '100px'
+		});
+
+		$('.about-slider').slick({
+			slidesToShow: 3,
+			autoplay: true,
+			nav: false
+		})
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+/* === DESKTOP FIRST === */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {
+
+}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {
+
+	.header__content-bottom{
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.content-bottom__links{
+		margin-left: 10px;
+		width: auto;
+	}
+	.content-bottom__gray-block{
+		display: none;
+	}
+	.content-bottom__small-goods{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.content-bottom__contact{
+		margin-left: 0;
+		width: auto;
+	}
+
+	.header__bottom-nav-item{
+		font-size: 13px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.header__logo{
+		width: 140px;
+	}
+
+	.header__content{
+		width: calc(100% - 140px);
+	}
+}
+
+/* md <= Large (lg) */
+@media (max-width : 992px) {
+
+	.header__content-top{
+		display: none;
+	}
+
+	.header__bottom{
+		
+	}
+	.mobile-search{
+		display: block;
+	}
+	.header__content-bottom{
+		padding-top: 0;
+	}
+	.header__bottom-nav{
+		display: none;
+	}
+
+	.burger{
+		display: block;
+		margin-right: 10px;
+	}
+	.header__top{
+		align-items: center;
+	}
+	
+	.small-goods__item{
+		width: 50px;
+		height: 50px;
+	}
+
+	.small-goods__item img{
+		width: 100%;
+	}
+	.header__content{
+		padding-left: 10px;
+	}
+
+/* sm <= Medium (md) */
+@media (max-width : 768px) {
+
+	.content-bottom__small-goods{
+		display: none;
+	}	
+
+}
+
+/* xs <= Small (sm) */
+@media (max-width : 576px) {
+
+	.mob-menu-wrap{
+		width: 100vw;
+		transform: translateX(-100vw);
+	}
+
+	.mob-menu-wrap--active{
+		transform: translateX(0vw);
+	}
+	
+	.contact__phone{
+		margin-bottom: 10px;
+		font-size: 15px;
+	}
+	.contact__time{
+		font-size: 12px;
+	}
+	.contact__time-head{
+		margin-right: 10px;
+	}
+	.content-bottom__links-item{
+		margin-bottom: 9px;
+	}
+	.contact__time{
+		margin-bottom: 9px;
+	}
+	.contact__phone{
+		margin-bottom: 3px;
+	}
+
+	.content-bottom__links{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.content-bottom__links-item{
+		margin-right: 20px;
+	}
+	.content-bottom__contact{
+		width: 100%;
+		margin-top: 10px;
+	}
+	.header__top{
+		align-items: flex-start;
+	}
+}
+
+
+@media (max-width: 380px){
+	.header__top{
+		flex-wrap: wrap;
+	}
+	.header__content{
+		width: 100%;
+	}
+	.header__logo{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.burger{
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+}
+
+}
