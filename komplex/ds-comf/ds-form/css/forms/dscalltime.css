@@ -1,3 +1,0 @@
-#dscalltime-form [class*="call"].inline label { float: left; margin-right: 10px; }
-#dscalltime-form [class*="call"].inline select { float: left; width: auto; }
-#dscalltime-form [class*="call"].inline + .inline label { margin-left: 10px; }

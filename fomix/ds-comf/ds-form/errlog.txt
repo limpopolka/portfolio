@@ -1,6 +1,0 @@
-[15-Jun-2019 18:12:49 UTC] PHP Fatal error:  Cannot redeclare exec() in /home/otptester/web/za-door.ru.star-way.ru/public_html/ds-comf/ds-form/template/custom/dswopros/do.php on line 28
-[20-Jun-2019 11:30:49 UTC] PHP Parse error:  syntax error, unexpected ''attributs'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/otptester/web/za-door.ru.star-way.ru/public_html/ds-comf/ds-form/forms/dsfeedback.php on line 88
-[29-Jun-2019 19:13:38 UTC] PHP Notice:  Undefined variable: name in /home/otptester/web/za-door.ru.star-way.ru/public_html/ds-comf/ds-form/classes/DSFormSend.php on line 32
-[29-Jun-2019 19:13:50 UTC] PHP Notice:  Undefined variable: name in /home/otptester/web/za-door.ru.star-way.ru/public_html/ds-comf/ds-form/classes/DSFormSend.php on line 32
-[29-Jun-2019 19:14:28 UTC] PHP Notice:  Undefined variable: name in /home/otptester/web/za-door.ru.star-way.ru/public_html/ds-comf/ds-form/classes/DSFormSend.php on line 32
-[29-Jun-2019 19:18:54 UTC] PHP Notice:  Undefined variable: name in /home/otptester/web/za-door.ru.star-way.ru/public_html/ds-comf/ds-form/classes/DSFormSend.php on line 32
